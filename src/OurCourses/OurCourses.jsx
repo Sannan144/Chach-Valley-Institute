@@ -43,7 +43,7 @@ const OurCourses = () => {
   return (
     <>
       <Logo />
-      <Tabs />
+      {/* <Tabs /> */}
 
       <div className="bg-[#265336] w-full px-3 sm:px-8 py-10">
         <h2

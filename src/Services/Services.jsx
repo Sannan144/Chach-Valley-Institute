@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <>
       <Logo />
-      <Tabs />
+      {/* <Tabs /> */}
 
       {/* Heading Section */}
       <div className="bg-[#255235] text-white text-center py-12 px-4">

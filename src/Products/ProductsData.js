@@ -1,7 +1,7 @@
 const products = [
   // 1. Priority: Top Seller / Core Product
   {
-    id: 1,
+    id: 'Product Sticker Label',
     name: "Product Sticker Label (Custom)",
     images: [
       "https://hazken.com/assets/images/bg/Square-Sticker-Design.jpg",
