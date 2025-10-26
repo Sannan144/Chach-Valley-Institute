@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
 import Tabs from '../Tabs/Tabs'
-import HomeText from '../HomeText/Hometext'
+import HomeText from '../HomeText/HomeText'
 import Rating from '../Rating/Rating'
 import Offer from '../Offer/Offer'
 
