@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { FaTimes } from "react-icons/fa"
 import courses from "./CoursesData"
+import Logo from "../Logo/Logo"
+import Offer from "../Offer/Offer"
 
 const OurCourses = () => {
   const [selectedCourse, setSelectedCourse] = useState(null)
@@ -15,12 +17,16 @@ const OurCourses = () => {
 
   return (
     <>
+      <Logo/>
+
+      <Offer/>
+      
       <div className="bg-[#265336] w-full px-2 sm:px-8 py-5">
         <h2
-          style={{ fontSize: "clamp(30px,5vw,50px)" }}
+          style={{ fontSize: "clamp(44px,5vw,50px)" }}
           className="font-bold mb-4 text-white ml-6 sm:ml-0"
         >
-          <span className="text-black">What</span> We Offer
+          Our Courses
         </h2>
 
         <div className="flex justify-center gap-3 sm:gap-5 flex-wrap">

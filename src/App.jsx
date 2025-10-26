@@ -1,32 +1,18 @@
 import './App.css'
-import Logo from './Logo/Logo'
-import Tabs from './Tabs/Tabs'
-import HomeText from './HomeText/Hometext'
+import { Routes, Route } from 'react-router-dom'
+import Home from './Home/Home'
 import OurCourses from './OurCourses/OurCourses'
-import Rating from './Rating/Rating'
+import Products from './Products/Products'
+import Services from './Services/Services'
 
 function App() {
-
-
   return (
-    <>
-      <div className='main max-w-[1600px] h-fit mx-auto'>
-        
-        <Logo/>
-        <Tabs/>
-        <div className='hidden md:block'>
-          <HomeText/>
-          <Rating/>
-          <OurCourses/>
-        </div>
-        <div className='block md:hidden'>
-          <OurCourses/>
-          <Rating/>
-          <HomeText/>
-        </div>
-
-      </div>     
-    </>
+    <Routes>
+      <Route path='/' element={<Home/>} />  
+      <Route path='/courses' element={<OurCourses/>} />  
+      <Route path='/products' element={<Products/>} />  
+      <Route path='/services' element={<Services/>} />  
+    </Routes>
   )
 }
 

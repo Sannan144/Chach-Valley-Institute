@@ -2,7 +2,7 @@ const courses = [
   {
     id: 1,
     title: 'Local E-commerce Course',
-    duration: '12 Weeks | 5 classes per Week',
+    duration: '14 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online',
     learn: [
       'Winning Product Hunting (Tools & Technique)',
