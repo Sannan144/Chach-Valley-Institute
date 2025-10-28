@@ -7,7 +7,7 @@ const Offer = () => {
 
   return (
     <section className="py-16 px-3 md:px-0 bg-[#255235]">
-      <h2 style={{ fontSize: "clamp(44px,5vw,50px)" }} className="font-bold mx-3 mb-4 text-white">
+      <h2 style={{ fontSize: "clamp(30px,5vw,50px)" }} className="font-bold mx-3 mb-4 text-white">
           What we offer
       </h2>
       <div className="max-w-6xl mx-auto text-center">

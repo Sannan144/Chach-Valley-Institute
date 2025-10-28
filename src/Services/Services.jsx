@@ -1,12 +1,12 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
-import Offer from '../Offer/Offer'
+import Tabs from '../Tabs/Tabs'
 
 const Services = () => {
   return (
     <>
     <Logo/>
-    <Offer/>
+    <Tabs/>
     <div className="p-6">
       <h1 className="text-2xl font-semibold text-green-700">Services Page</h1>
       <p className="mt-2 text-gray-600">

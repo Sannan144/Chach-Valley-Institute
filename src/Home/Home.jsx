@@ -4,11 +4,13 @@ import Tabs from '../Tabs/Tabs'
 import HomeText from '../HomeText/HomeText'
 import Rating from '../Rating/Rating'
 import Offer from '../Offer/Offer'
+import WhatsappButton from '../WhatsappButton/WhatsappButton'
 
 const Home = () => {
   return (
     <div className='main mx-auto h-fit max-w-[1600px]'>
       <Logo/>
+      <WhatsappButton/>
       <Tabs/>
       <HomeText />
       <Rating />
