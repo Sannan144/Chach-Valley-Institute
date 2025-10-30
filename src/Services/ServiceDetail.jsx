@@ -10,27 +10,42 @@ const ServiceDetail = () => {
   const navigate = useNavigate();
   const service = ServicesData.find((s) => s.slug === serviceId);
 
-  // Form state
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [budget, setBudget] = useState("");
-  const [category, setCategory] = useState(service?.formOptions?.[0] || "");
+  const [category, setCategory] = useState(service?.formOptions[0] || "");
 
-  if (!service)
-    return <h2 className="text-center mt-20 text-xl">Service Not Found</h2>;
+  const whatsappNumber = "03120574560"; // apna number yahan daalain
 
-  // Submit handler for WhatsApp
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!name || !email || !budget || !category) {
+      alert("Please fill all fields");
+      return;
+    }
 
-    const whatsappNumber = "03120574560"; // Aapka WhatsApp number
-    const message = `Service Request: ${service.title}%0AName: ${name}%0AEmail: ${email}%0ABudget: ${budget}%0ACategory: ${category}`;
+    // Clean message with line breaks
+    const message = `Service Request: ${service.title}
+Name: ${name}
+Email: ${email}
+Budget: ${budget}
+Category: ${category}`;
 
+    // Open WhatsApp
     window.open(
       `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,
       "_blank"
     );
+
+    // Reset form
+    setName("");
+    setEmail("");
+    setBudget("");
+    setCategory(service?.formOptions[0] || "");
   };
+
+  if (!service)
+    return <h2 className="text-center mt-20 text-xl">Service Not Found</h2>;
 
   return (
     <>
@@ -40,7 +55,7 @@ const ServiceDetail = () => {
       {/* Back Button */}
       <button
         onClick={() => navigate(-1)}
-        className="fixed top-10 right-5 bg-[#255235] text-white px-12 py-2 rounded-full z-50 cursor-pointer hover:bg-[#1f3f27] transition"
+        className="fixed top-10 right-5 z-50 px-12 py-2 bg-[#255235] text-white rounded-full cursor-pointer hover:bg-[#1f3f27] transition"
       >
         Back
       </button>
@@ -68,8 +83,8 @@ const ServiceDetail = () => {
 
         {/* Form */}
         <form
-          className="bg-gray-100 p-6 rounded-xl shadow-md"
           onSubmit={handleSubmit}
+          className="bg-gray-100 p-6 rounded-xl shadow-md"
         >
           <h2 className="text-2xl font-bold mb-4">Request this Service</h2>
 
@@ -78,10 +93,9 @@ const ServiceDetail = () => {
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full p-2 border rounded"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              required
+              className="w-full p-2 border rounded"
             />
           </div>
 
@@ -90,10 +104,9 @@ const ServiceDetail = () => {
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full p-2 border rounded"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
+              className="w-full p-2 border rounded"
             />
           </div>
 
@@ -102,20 +115,18 @@ const ServiceDetail = () => {
             <input
               type="text"
               placeholder="Your Budget"
-              className="w-full p-2 border rounded"
               value={budget}
               onChange={(e) => setBudget(e.target.value)}
-              required
+              className="w-full p-2 border rounded"
             />
           </div>
 
           <div className="mb-4">
             <label className="block mb-1 font-medium">Category</label>
             <select
-              className="w-full p-2 border rounded"
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              required
+              className="w-full p-2 border rounded"
             >
               {service.formOptions.map((option, idx) => (
                 <option key={idx} value={option}>
