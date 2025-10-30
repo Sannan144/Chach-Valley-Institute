@@ -17,7 +17,7 @@ const OurCourses = () => {
 
   const showData = (course) => {
     setSelectedCourse(course);
-    setShowForm(false); // reset form visibility
+    setShowForm(false);
     resetFormFields();
   };
 
@@ -89,119 +89,129 @@ Education: ${education}`;
         </div>
       </div>
 
-      {/* Modal for Course Details */}
-      {selectedCourse && (
-        <div className="w-full h-screen bg-black/60 fixed left-0 top-0 z-50">
-          <div className="w-[90%] sm:w-[500px] h-[90vh] sm:h-[500px] bg-white rounded-xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-4 relative overflow-hidden">
+      {/* Full-Screen Form Modal */}
+      {showForm && (
+        <div className="fixed inset-0 z-50 bg-black/70 flex justify-center items-center p-4">
+          <div className="bg-white w-full max-w-md md:max-w-lg lg:max-w-xl rounded-xl p-6 relative shadow-2xl overflow-y-auto max-h-[90vh]">
             <FaTimes
-              onClick={close}
-              className="text-red-600 text-2xl absolute top-3 right-3 cursor-pointer hover:scale-110 transition-transform"
-              title="Close"
+              onClick={() => setShowForm(false)}
+              className="absolute top-4 right-4 text-red-600 text-2xl cursor-pointer hover:scale-110 transition-transform"
             />
 
-            <div className="h-full pr-2 overflow-y-auto space-y-4">
-              <h3 className="text-xl font-bold text-[#265336]">
-                {selectedCourse.title}
-              </h3>
-              <p className="text-sm text-gray-600">
-                <strong>Duration:</strong> {selectedCourse.duration}
-              </p>
-              <p className="text-sm text-gray-600">
-                <strong>Mode:</strong> {selectedCourse.Mode}
-              </p>
+            <h2 className="text-2xl font-bold text-[#265336] mb-4 text-center">
+              Admission Form - {selectedCourse?.title}
+            </h2>
 
-              <div>
-                <h4 className="font-semibold text-gray-700">
-                  What You'll Learn:
-                </h4>
-                <ul className="list-disc ml-5 text-sm text-gray-700">
-                  {selectedCourse.learn.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+                className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Education"
+                value={education}
+                onChange={(e) => setEducation(e.target.value)}
+                className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
+                required
+              />
 
-              <div>
-                <h4 className="font-semibold text-gray-700">Who Can Join:</h4>
-                <ul className="list-disc ml-5 text-sm text-gray-700">
-                  {selectedCourse.Join.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+              <button
+                type="submit"
+                className="bg-[#265336] text-white w-full py-3 rounded-lg hover:bg-[#1d422b] transition-all font-semibold"
+              >
+                Send via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
 
-              <div>
-                <h4 className="font-semibold text-gray-700">Outcomes:</h4>
-                <ul className="list-disc ml-5 text-sm text-gray-700">
-                  {selectedCourse.Outcome.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+      {/* Course Details Modal */}
+      {selectedCourse && !showForm && (
+        <div className="fixed inset-0 z-40 bg-black/50 flex justify-center items-center p-4">
+          <div className="bg-white w-full max-w-2xl rounded-xl p-6 relative shadow-2xl overflow-y-auto max-h-[90vh]">
+            <FaTimes
+              onClick={close}
+              className="absolute top-4 right-4 text-red-600 text-2xl cursor-pointer hover:scale-110 transition-transform"
+            />
+            <h3 className="text-xl font-bold text-[#265336] mb-2">
+              {selectedCourse.title}
+            </h3>
+            <p className="text-sm text-gray-600">
+              <strong>Duration:</strong> {selectedCourse.duration}
+            </p>
+            <p className="text-sm text-gray-600">
+              <strong>Mode:</strong> {selectedCourse.Mode}
+            </p>
 
-              <div className="tracking-tighter">
-                <p className="text-sm text-gray-700">
-                  <strong>Fee:</strong> Rs. {selectedCourse.Fee} /-
-                </p>
-                <p className="text-sm text-gray-600">
-                  <strong>Installments:</strong> Available
-                </p>
-                <p className="text-sm text-gray-600">
-                  <strong>Free Demo Class:</strong> Yes
-                </p>
-              </div>
-
-              {/* Admission Form Button */}
-              {!showForm ? (
-                <button
-                  onClick={() => setShowForm(true)}
-                  className="bg-[#265336] cursor-pointer px-4 py-2 rounded text-white w-full hover:bg-[#1d422b] transition-all mt-4"
-                >
-                  Admission Form
-                </button>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-2 mt-3">
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    className="border p-2 rounded w-full"
-                    required
-                  />
-                  <input
-                    type="text"
-                    placeholder="Phone Number"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    className="border p-2 rounded w-full"
-                    required
-                  />
-                  <input
-                    type="text"
-                    placeholder="Address"
-                    value={address}
-                    onChange={(e) => setAddress(e.target.value)}
-                    className="border p-2 rounded w-full"
-                    required
-                  />
-                  <input
-                    type="text"
-                    placeholder="Education"
-                    value={education}
-                    onChange={(e) => setEducation(e.target.value)}
-                    className="border p-2 rounded w-full"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    className="bg-[#265336] cursor-pointer px-4 py-2 rounded text-white w-full hover:bg-[#1d422b] transition-all"
-                  >
-                    Send via WhatsApp
-                  </button>
-                </form>
-              )}
+            <div className="mt-3">
+              <h4 className="font-semibold text-gray-700">
+                What You'll Learn:
+              </h4>
+              <ul className="list-disc ml-5 text-sm text-gray-700">
+                {selectedCourse.learn.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
             </div>
+
+            <div className="mt-3">
+              <h4 className="font-semibold text-gray-700">Who Can Join:</h4>
+              <ul className="list-disc ml-5 text-sm text-gray-700">
+                {selectedCourse.Join.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mt-3">
+              <h4 className="font-semibold text-gray-700">Outcomes:</h4>
+              <ul className="list-disc ml-5 text-sm text-gray-700">
+                {selectedCourse.Outcome.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="mt-3 tracking-tighter">
+              <p className="text-sm text-gray-700">
+                <strong>Fee:</strong> Rs. {selectedCourse.Fee} /-
+              </p>
+              <p className="text-sm text-gray-600">
+                <strong>Installments:</strong> Available
+              </p>
+              <p className="text-sm text-gray-600">
+                <strong>Free Demo Class:</strong> Yes
+              </p>
+            </div>
+
+            <button
+              onClick={() => setShowForm(true)}
+              className="bg-[#265336] cursor-pointer px-4 py-2 rounded text-white w-full hover:bg-[#1d422b] transition-all mt-4"
+            >
+              Admission Form
+            </button>
           </div>
         </div>
       )}
