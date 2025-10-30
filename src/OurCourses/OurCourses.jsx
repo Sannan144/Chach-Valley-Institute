@@ -7,13 +7,48 @@ import Footer from "../Footer/Footer";
 
 const OurCourses = () => {
   const [selectedCourse, setSelectedCourse] = useState(null);
+  const [showForm, setShowForm] = useState(false);
+
+  // Form Fields
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [education, setEducation] = useState("");
 
   const showData = (course) => {
     setSelectedCourse(course);
+    setShowForm(false); // reset form visibility
+    resetFormFields();
   };
 
   const close = () => {
     setSelectedCourse(null);
+    setShowForm(false);
+    resetFormFields();
+  };
+
+  const resetFormFields = () => {
+    setName("");
+    setPhone("");
+    setAddress("");
+    setEducation("");
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!name || !phone || !address || !education) {
+      alert("Please fill all fields!");
+      return;
+    }
+
+    const message = `Admission Request for ${selectedCourse.title}:
+Name: ${name}
+Phone: ${phone}
+Address: ${address}
+Education: ${education}`;
+
+    const url = `https://wa.me/03120574560?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
   };
 
   return (
@@ -29,7 +64,6 @@ const OurCourses = () => {
           Our Courses
         </h2>
 
-        {/* ✅ Responsive Grid Layout */}
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 place-items-center">
           {courses.map((box, index) => (
             <div
@@ -55,7 +89,7 @@ const OurCourses = () => {
         </div>
       </div>
 
-      {/* ✅ Modal for Course Details */}
+      {/* Modal for Course Details */}
       {selectedCourse && (
         <div className="w-full h-screen bg-black/60 fixed left-0 top-0 z-50">
           <div className="w-[90%] sm:w-[500px] h-[90vh] sm:h-[500px] bg-white rounded-xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 p-4 relative overflow-hidden">
@@ -109,7 +143,6 @@ const OurCourses = () => {
                 <p className="text-sm text-gray-700">
                   <strong>Fee:</strong> Rs. {selectedCourse.Fee} /-
                 </p>
-
                 <p className="text-sm text-gray-600">
                   <strong>Installments:</strong> Available
                 </p>
@@ -118,14 +151,62 @@ const OurCourses = () => {
                 </p>
               </div>
 
-              <button className="bg-[#265336] mt-3 px-4 py-2 rounded-lg text-white cursor-pointer hover:bg-[#1d422b] transition-all">
-                Admission Form
-              </button>
+              {/* Admission Form Button */}
+              {!showForm ? (
+                <button
+                  onClick={() => setShowForm(true)}
+                  className="bg-[#265336] cursor-pointer px-4 py-2 rounded text-white w-full hover:bg-[#1d422b] transition-all mt-4"
+                >
+                  Admission Form
+                </button>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-2 mt-3">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    className="border p-2 rounded w-full"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    className="border p-2 rounded w-full"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Address"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                    className="border p-2 rounded w-full"
+                    required
+                  />
+                  <input
+                    type="text"
+                    placeholder="Education"
+                    value={education}
+                    onChange={(e) => setEducation(e.target.value)}
+                    className="border p-2 rounded w-full"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="bg-[#265336] cursor-pointer px-4 py-2 rounded text-white w-full hover:bg-[#1d422b] transition-all"
+                  >
+                    Send via WhatsApp
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>
       )}
-        <Footer/>
+
+      <Footer />
     </>
   );
 };
