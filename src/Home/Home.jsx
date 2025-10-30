@@ -5,6 +5,7 @@ import HomeText from '../HomeText/HomeText'
 import Rating from '../Rating/Rating'
 import Offer from '../Offer/Offer'
 import WhatsappButton from '../WhatsappButton/WhatsappButton'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <HomeText />
       <Rating />
       <Offer />
+      <Footer/>
     </div>
   )
 }

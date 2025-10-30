@@ -1,0 +1,142 @@
+import React, { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import Logo from "../Logo/Logo";
+import Tabs from "../Tabs/Tabs";
+import Footer from "../Footer/Footer";
+import ServicesData from "./ServicesData";
+
+const ServiceDetail = () => {
+  const { serviceId } = useParams();
+  const navigate = useNavigate();
+  const service = ServicesData.find((s) => s.slug === serviceId);
+
+  // Form state
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [budget, setBudget] = useState("");
+  const [category, setCategory] = useState(service?.formOptions?.[0] || "");
+
+  if (!service)
+    return <h2 className="text-center mt-20 text-xl">Service Not Found</h2>;
+
+  // Submit handler for WhatsApp
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const whatsappNumber = "03120574560"; // Aapka WhatsApp number
+    const message = `Service Request: ${service.title}%0AName: ${name}%0AEmail: ${email}%0ABudget: ${budget}%0ACategory: ${category}`;
+
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,
+      "_blank"
+    );
+  };
+
+  return (
+    <>
+      <Logo />
+      <Tabs />
+
+      {/* Back Button */}
+      <button
+        onClick={() => navigate(-1)}
+        className="fixed top-10 right-5 bg-[#255235] text-white px-12 py-2 rounded-full z-50 cursor-pointer hover:bg-[#1f3f27] transition"
+      >
+        Back
+      </button>
+
+      <div className="max-w-4xl mx-auto py-16 px-4">
+        {/* Service Title */}
+        <h1 className="text-4xl font-bold text-[#255235] mb-6">{service.title}</h1>
+
+        {/* Image */}
+        <img
+          src={service.image}
+          alt={service.title}
+          className="w-full h-96 object-cover rounded-xl mb-6"
+        />
+
+        {/* Description */}
+        <p className="text-gray-700 text-lg mb-6">{service.description}</p>
+
+        {/* Bullets */}
+        <ul className="list-disc list-inside text-gray-700 mb-6">
+          {service.bullets.map((item, idx) => (
+            <li key={idx}>{item}</li>
+          ))}
+        </ul>
+
+        {/* Form */}
+        <form
+          className="bg-gray-100 p-6 rounded-xl shadow-md"
+          onSubmit={handleSubmit}
+        >
+          <h2 className="text-2xl font-bold mb-4">Request this Service</h2>
+
+          <div className="mb-4">
+            <label className="block mb-1 font-medium">Name</label>
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full p-2 border rounded"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block mb-1 font-medium">Email</label>
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full p-2 border rounded"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block mb-1 font-medium">Budget</label>
+            <input
+              type="text"
+              placeholder="Your Budget"
+              className="w-full p-2 border rounded"
+              value={budget}
+              onChange={(e) => setBudget(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block mb-1 font-medium">Category</label>
+            <select
+              className="w-full p-2 border rounded"
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              required
+            >
+              {service.formOptions.map((option, idx) => (
+                <option key={idx} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            className="bg-[#255235] text-white px-6 py-2 rounded-full hover:bg-[#1f3f27] transition"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <Footer />
+    </>
+  );
+};
+
+export default ServiceDetail;

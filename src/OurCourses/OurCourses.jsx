@@ -3,6 +3,7 @@ import { FaTimes } from "react-icons/fa";
 import courses from "./CoursesData";
 import Logo from "../Logo/Logo";
 import Tabs from "../Tabs/Tabs";
+import Footer from "../Footer/Footer";
 
 const OurCourses = () => {
   const [selectedCourse, setSelectedCourse] = useState(null);
@@ -124,6 +125,7 @@ const OurCourses = () => {
           </div>
         </div>
       )}
+        <Footer/>
     </>
   );
 };
