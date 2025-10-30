@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import courses from "./CoursesData";
 import Logo from "../Logo/Logo";
@@ -14,6 +14,15 @@ const OurCourses = () => {
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [education, setEducation] = useState("");
+
+  // **Prevent background scroll when popup is open**
+  useEffect(() => {
+    if (showForm || selectedCourse) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [showForm, selectedCourse]);
 
   const showData = (course) => {
     setSelectedCourse(course);
@@ -103,38 +112,61 @@ Education: ${education}`;
             </h2>
 
             <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="text"
-                placeholder="Your Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Phone Number"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Address"
-                value={address}
-                onChange={(e) => setAddress(e.target.value)}
-                className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
-                required
-              />
-              <input
-                type="text"
-                placeholder="Education"
-                value={education}
-                onChange={(e) => setEducation(e.target.value)}
-                className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
-                required
-              />
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Phone Number
+                </label>
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Address
+                </label>
+                <input
+                  type="text"
+                  placeholder="Address"
+                  value={address}
+                  onChange={(e) => setAddress(e.target.value)}
+                  className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Education
+                </label>
+                <input
+                  type="text"
+                  placeholder="Education"
+                  value={education}
+                  onChange={(e) => setEducation(e.target.value)}
+                  className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
+                  required
+                />
+              </div>
 
               <button
                 type="submit"
@@ -150,7 +182,7 @@ Education: ${education}`;
       {/* Course Details Modal */}
       {selectedCourse && !showForm && (
         <div className="fixed inset-0 z-40 bg-black/50 flex justify-center items-center p-4">
-          <div className="bg-white w-full max-w-2xl rounded-xl p-6 relative shadow-2xl overflow-y-auto max-h-[90vh]">
+          <div className="bg-white w-full max-w-[500px] rounded-xl p-6 relative shadow-2xl overflow-y-auto max-h-[90vh]">
             <FaTimes
               onClick={close}
               className="absolute top-4 right-4 text-red-600 text-2xl cursor-pointer hover:scale-110 transition-transform"
