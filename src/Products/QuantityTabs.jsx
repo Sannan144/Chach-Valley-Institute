@@ -17,7 +17,7 @@ const QuantityTabs = ({ tierPrices }) => {
           <button
             key={range}
             onClick={() => setSelectedRange(range)}
-            className={`px-4 cursor-pointer py-2 rounded-full border font-semibold transition-all duration-300 ${
+            className={`px-4 py-2 rounded-full border font-semibold transition-all duration-300 cursor-pointer ${
               selectedRange === range
                 ? "bg-[#265336] text-white border-[#265336]"
                 : "border-gray-300 text-gray-700 hover:border-[#265336]"
@@ -30,7 +30,7 @@ const QuantityTabs = ({ tierPrices }) => {
 
       {selectedRange && (
         <p className="text-xl font-bold text-[#265336]">
-          Price: Rs {tierPrices[selectedRange].toLocaleString()}
+          {selectedRange} Price: Rs {tierPrices[selectedRange].toLocaleString()}
         </p>
       )}
     </div>

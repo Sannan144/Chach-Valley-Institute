@@ -95,16 +95,17 @@ const Products = () => {
       {selectedProduct && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 animate-fadeIn p-0">
           <div className="bg-white w-full h-full p-6 md:p-10 relative overflow-y-auto hide-scrollbar">
+            {/* Close Button (Fixed & Red) */}
             <button
-              className="absolute top-5 right-6 text-gray-700 font-bold text-3xl hover:text-[#265336] transition-transform duration-300 hover:scale-125 cursor-pointer z-50"
+              className="fixed top-5 right-6 text-red-600 font-bold text-3xl hover:text-red-800 transition-transform duration-300 hover:scale-125 cursor-pointer z-50"
               onClick={closeModal}
             >
               ✕
             </button>
 
             <div className="flex flex-col md:flex-row gap-8 h-full">
+              {/* Left Side: Images */}
               <div className="flex flex-col md:flex-row gap-4 flex-1 items-center justify-center">
-                {/* Main Image Slider */}
                 <div
                   className="flex-1 flex justify-center items-center relative overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100"
                   onMouseDown={startDrag}
@@ -124,10 +125,7 @@ const Products = () => {
                     }}
                   >
                     {selectedProduct.images.map((img, idx) => (
-                      <div
-                        key={idx}
-                        className="flex-shrink-0 w-full h-96 relative"
-                      >
+                      <div key={idx} className="flex-shrink-0 w-full h-96 relative">
                         <img
                           src={img}
                           alt={`slide-${idx}`}
@@ -158,9 +156,10 @@ const Products = () => {
                 </div>
               </div>
 
-              {/* Product Details */}
+              {/* Right Side: Details */}
               <div className="flex-1 flex flex-col justify-center text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl font-extrabold text-[#265336] mb-4">
+                {/* Product Name: Single Line */}
+                <h2 className="text-lg sm:text-2xl md:text-3xl font-extrabold text-[#265336] mb-4 truncate whitespace-nowrap">
                   {selectedProduct.name}
                 </h2>
 
@@ -177,10 +176,7 @@ const Products = () => {
                 </div>
 
                 <p className="text-gray-600 mb-6 text-sm md:text-base leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse vitae lacus vitae arcu malesuada tincidunt.
-                  Aenean at nisi nec odio efficitur tincidunt non sit amet
-                  ligula.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae lacus vitae arcu malesuada tincidunt. Aenean at nisi nec odio efficitur tincidunt non sit amet ligula.
                 </p>
 
                 <button className="flex justify-center items-center gap-2 bg-[#265336] text-white px-6 py-3 rounded-full hover:bg-[#1f4229] hover:scale-105 transition-all duration-300 cursor-pointer font-semibold mx-auto md:mx-0">
@@ -189,6 +185,7 @@ const Products = () => {
                 </button>
               </div>
             </div>
+            
           </div>
         </div>
       )}

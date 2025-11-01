@@ -52,12 +52,12 @@ Category: ${category}`;
       <Logo />
       <Tabs />
 
-      {/* Back Button */}
+      {/* Close Button (Red Cross) */}
       <button
         onClick={() => navigate(-1)}
-        className="fixed top-10 right-5 z-50 px-12 py-2 bg-[#255235] text-white rounded-full cursor-pointer hover:bg-[#1f3f27] transition"
+        className="fixed cursor-pointer top-5 right-5 z-50 w-10 h-10 flex items-center justify-center bg-red-500 text-white text-2xl font-bold rounded-full hover:bg-red-600 transition"
       >
-        Back
+        &times;
       </button>
 
       <div className="max-w-4xl mx-auto py-16 px-4">

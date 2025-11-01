@@ -29,7 +29,8 @@ const Services = () => {
           {ServicesData.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group cursor-pointer"
+              onClick={() => navigate(`/services/${service.slug}`)} // Card click
             >
               {/* Image */}
               <div className="h-48 overflow-hidden">
@@ -47,9 +48,12 @@ const Services = () => {
                 </h2>
                 <p className="text-gray-600 text-sm mb-4">{service.description}</p>
 
-                {/* Navigate to dynamic route */}
+                {/* Navigate button */}
                 <button
-                  onClick={() => navigate(`/services/${service.slug}`)}
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevent card click
+                    navigate(`/services/${service.slug}`);
+                  }}
                   className="bg-[#255235] cursor-pointer text-white px-4 py-2 rounded-full font-medium hover:bg-[#1f3f27] transition-all duration-300"
                 >
                   Learn More
