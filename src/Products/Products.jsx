@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaStar, FaShoppingCart } from "react-icons/fa";
 import products from "./ProductsData";
+import QuantityTabs from "./QuantityTabs";
 import Logo from "../Logo/Logo";
 import Tabs from "../Tabs/Tabs";
 import Footer from "../Footer/Footer";
@@ -9,21 +10,23 @@ const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [mainImage, setMainImage] = useState("");
 
+  useEffect(() => {
+    document.body.style.overflow = selectedProduct ? "hidden" : "auto";
+    return () => (document.body.style.overflow = "auto");
+  }, [selectedProduct]);
+
   const openModal = (product) => {
     setSelectedProduct(product);
-    setMainImage(product.images[0]); // default main image
+    setMainImage(product.images[0]);
   };
 
-  const closeModal = () => {
-    setSelectedProduct(null);
-  };
+  const closeModal = () => setSelectedProduct(null);
 
   return (
     <>
       <Logo />
       <Tabs />
 
-      {/* Product Grid */}
       <div className="bg-[#f3f4f6] min-h-screen w-full py-10 px-4 sm:px-10">
         <h2
           style={{ fontSize: "clamp(30px, 4vw, 48px)" }}
@@ -64,11 +67,9 @@ const Products = () => {
         </div>
       </div>
 
-      {/* Full-Screen Modal */}
       {selectedProduct && (
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 animate-fadeIn p-0">
-          <div className="bg-white w-full h-full p-6 md:p-10 relative overflow-y-auto">
-            {/* Close Button */}
+          <div className="bg-white w-full h-full p-6 md:p-10 relative overflow-y-auto hide-scrollbar">
             <button
               className="absolute top-5 right-6 text-gray-700 font-bold text-3xl hover:text-[#265336] transition-transform duration-300 hover:scale-125 cursor-pointer z-50"
               onClick={closeModal}
@@ -76,11 +77,8 @@ const Products = () => {
               ✕
             </button>
 
-            {/* Product Content */}
             <div className="flex flex-col md:flex-row gap-8 h-full">
-              {/* Left Side - Images */}
               <div className="flex flex-col md:flex-row gap-4 flex-1 items-center justify-center">
-                {/* Main Image */}
                 <div className="flex-1 flex justify-center items-center">
                   <div className="aspect-square w-full max-w-md overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100">
                     <img
@@ -91,7 +89,6 @@ const Products = () => {
                   </div>
                 </div>
 
-                {/* Thumbnails */}
                 <div className="flex md:flex-col gap-3 justify-center items-center">
                   {selectedProduct.images.map((img, idx) => (
                     <div
@@ -113,15 +110,12 @@ const Products = () => {
                 </div>
               </div>
 
-              {/* Right Side - Details */}
               <div className="flex-1 flex flex-col justify-center text-center md:text-left">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-[#265336] mb-4">
                   {selectedProduct.name}
                 </h2>
 
-                <p className="text-2xl font-bold text-[#265336] mb-4">
-                  {selectedProduct.price}
-                </p>
+                <QuantityTabs tierPrices={selectedProduct.tierPrices} />
 
                 <div className="flex justify-center md:justify-start items-center gap-2 mb-4">
                   <FaStar className="text-[#facc15]" />
@@ -135,8 +129,9 @@ const Products = () => {
 
                 <p className="text-gray-600 mb-6 text-sm md:text-base leading-relaxed">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse vitae lacus vitae arcu malesuada tincidunt. Aenean
-                  at nisi nec odio efficitur tincidunt non sit amet ligula.
+                  Suspendisse vitae lacus vitae arcu malesuada tincidunt.
+                  Aenean at nisi nec odio efficitur tincidunt non sit amet
+                  ligula.
                 </p>
 
                 <button className="flex justify-center items-center gap-2 bg-[#265336] text-white px-6 py-3 rounded-full hover:bg-[#1f4229] hover:scale-105 transition-all duration-300 cursor-pointer font-semibold mx-auto md:mx-0">
@@ -155,4 +150,3 @@ const Products = () => {
 };
 
 export default Products;
-2
