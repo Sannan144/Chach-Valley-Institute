@@ -8,7 +8,8 @@ import Footer from "../Footer/Footer";
 
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [mainImage, setMainImage] = useState("");
+  const [mainIndex, setMainIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = selectedProduct ? "hidden" : "auto";
@@ -17,10 +18,30 @@ const Products = () => {
 
   const openModal = (product) => {
     setSelectedProduct(product);
-    setMainImage(product.images[0]);
+    setMainIndex(0);
   };
 
   const closeModal = () => setSelectedProduct(null);
+
+  const nextImage = () => {
+    if (!animating) {
+      setAnimating(true);
+      setMainIndex((prev) => (prev + 1) % selectedProduct.images.length);
+      setTimeout(() => setAnimating(false), 300);
+    }
+  };
+
+  const prevImage = () => {
+    if (!animating) {
+      setAnimating(true);
+      setMainIndex(
+        (prev) =>
+          (prev - 1 + selectedProduct.images.length) %
+          selectedProduct.images.length
+      );
+      setTimeout(() => setAnimating(false), 300);
+    }
+  };
 
   return (
     <>
@@ -79,26 +100,49 @@ const Products = () => {
 
             <div className="flex flex-col md:flex-row gap-8 h-full">
               <div className="flex flex-col md:flex-row gap-4 flex-1 items-center justify-center">
-                <div className="flex-1 flex justify-center items-center">
-                  <div className="aspect-square w-full max-w-md overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100">
-                    <img
-                      src={mainImage}
-                      alt="main"
-                      className="w-full h-full object-cover"
-                    />
+                <div className="flex-1 flex justify-center items-center relative">
+                  <div className="aspect-square w-full max-w-md overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100 relative">
+                    <div
+                      className="w-full h-full transition-transform duration-300"
+                      style={{
+                        transform: `translateX(-${mainIndex * 100}%)`,
+                        display: "flex",
+                      }}
+                    >
+                      {selectedProduct.images.map((img, idx) => (
+                        <img
+                          key={idx}
+                          src={img}
+                          alt={`slide-${idx}`}
+                          className="w-full h-full object-cover flex-shrink-0"
+                        />
+                      ))}
+                    </div>
+                    <button
+                      className="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+                      onClick={prevImage}
+                    >
+                      ◀
+                    </button>
+                    <button
+                      className="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
+                      onClick={nextImage}
+                    >
+                      ▶
+                    </button>
                   </div>
                 </div>
 
-                <div className="flex md:flex-col gap-3 justify-center items-center">
+                <div className="flex md:flex-col gap-3 justify-center items-center mt-4 md:mt-0">
                   {selectedProduct.images.map((img, idx) => (
                     <div
                       key={idx}
                       className={`w-20 h-20 rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-300 hover:scale-110 ${
-                        img === mainImage
+                        idx === mainIndex
                           ? "border-[#265336]"
                           : "border-gray-300"
                       }`}
-                      onClick={() => setMainImage(img)}
+                      onClick={() => setMainIndex(idx)}
                     >
                       <img
                         src={img}
