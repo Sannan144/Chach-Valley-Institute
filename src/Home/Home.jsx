@@ -11,7 +11,6 @@ const Home = () => {
   return (
     <div className='main mx-auto h-fit max-w-[1600px]'>
       <Logo/>
-      <WhatsappButton/>
       <Tabs/>
       <HomeText />
       <Rating />
