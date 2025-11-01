@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { FaStar, FaShoppingCart } from "react-icons/fa";
 import products from "./ProductsData";
 import QuantityTabs from "./QuantityTabs";
@@ -9,7 +9,8 @@ import Footer from "../Footer/Footer";
 const Products = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [mainIndex, setMainIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
+  const isDragging = useRef(false);
+  const startX = useRef(0);
 
   useEffect(() => {
     document.body.style.overflow = selectedProduct ? "hidden" : "auto";
@@ -23,24 +24,27 @@ const Products = () => {
 
   const closeModal = () => setSelectedProduct(null);
 
-  const nextImage = () => {
-    if (!animating) {
-      setAnimating(true);
-      setMainIndex((prev) => (prev + 1) % selectedProduct.images.length);
-      setTimeout(() => setAnimating(false), 300);
+  const startDrag = (e) => {
+    isDragging.current = true;
+    startX.current = e.pageX || e.touches[0].pageX;
+  };
+
+  const onDrag = (e) => {
+    if (!isDragging.current) return;
+    const x = e.pageX || e.touches[0].pageX;
+    const delta = startX.current - x;
+
+    if (delta > 50 && mainIndex < selectedProduct.images.length - 1) {
+      setMainIndex(mainIndex + 1);
+      isDragging.current = false;
+    } else if (delta < -50 && mainIndex > 0) {
+      setMainIndex(mainIndex - 1);
+      isDragging.current = false;
     }
   };
 
-  const prevImage = () => {
-    if (!animating) {
-      setAnimating(true);
-      setMainIndex(
-        (prev) =>
-          (prev - 1 + selectedProduct.images.length) %
-          selectedProduct.images.length
-      );
-      setTimeout(() => setAnimating(false), 300);
-    }
+  const endDrag = () => {
+    isDragging.current = false;
   };
 
   return (
@@ -100,47 +104,47 @@ const Products = () => {
 
             <div className="flex flex-col md:flex-row gap-8 h-full">
               <div className="flex flex-col md:flex-row gap-4 flex-1 items-center justify-center">
-                <div className="flex-1 flex justify-center items-center relative">
-                  <div className="aspect-square w-full max-w-md overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100 relative">
-                    <div
-                      className="w-full h-full transition-transform duration-300"
-                      style={{
-                        transform: `translateX(-${mainIndex * 100}%)`,
-                        display: "flex",
-                      }}
-                    >
-                      {selectedProduct.images.map((img, idx) => (
+                {/* Main Image Slider */}
+                <div
+                  className="flex-1 flex justify-center items-center relative overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100"
+                  onMouseDown={startDrag}
+                  onMouseMove={onDrag}
+                  onMouseUp={endDrag}
+                  onMouseLeave={endDrag}
+                  onTouchStart={startDrag}
+                  onTouchMove={onDrag}
+                  onTouchEnd={endDrag}
+                  style={{ cursor: isDragging.current ? "grabbing" : "grab" }}
+                >
+                  <div
+                    className="flex transition-transform duration-300"
+                    style={{
+                      transform: `translateX(-${mainIndex * 100}%)`,
+                      width: `${selectedProduct.images.length * 100}%`,
+                    }}
+                  >
+                    {selectedProduct.images.map((img, idx) => (
+                      <div
+                        key={idx}
+                        className="flex-shrink-0 w-full h-96 relative"
+                      >
                         <img
-                          key={idx}
                           src={img}
                           alt={`slide-${idx}`}
-                          className="w-full h-full object-cover flex-shrink-0"
+                          className="w-full h-full object-cover"
                         />
-                      ))}
-                    </div>
-                    <button
-                      className="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
-                      onClick={prevImage}
-                    >
-                      ◀
-                    </button>
-                    <button
-                      className="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100"
-                      onClick={nextImage}
-                    >
-                      ▶
-                    </button>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
+                {/* Thumbnails */}
                 <div className="flex md:flex-col gap-3 justify-center items-center mt-4 md:mt-0">
                   {selectedProduct.images.map((img, idx) => (
                     <div
                       key={idx}
                       className={`w-20 h-20 rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-300 hover:scale-110 ${
-                        idx === mainIndex
-                          ? "border-[#265336]"
-                          : "border-gray-300"
+                        idx === mainIndex ? "border-[#265336]" : "border-gray-300"
                       }`}
                       onClick={() => setMainIndex(idx)}
                     >
@@ -154,6 +158,7 @@ const Products = () => {
                 </div>
               </div>
 
+              {/* Product Details */}
               <div className="flex-1 flex flex-col justify-center text-center md:text-left">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-[#265336] mb-4">
                   {selectedProduct.name}
