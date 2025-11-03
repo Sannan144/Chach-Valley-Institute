@@ -5,10 +5,10 @@ import Logo from "../Logo/Logo";
 import Tabs from "../Tabs/Tabs";
 
 const ContactUs = () => {
-  const phoneNumber = "+923001234567";
-  const whatsappNumber = "+923001234567";
+  const phoneNumber = "+923120574560";
+  const whatsappNumber = "+923120574560";
   const email = "info@example.com";
-  const address = "123 Green Street, Lahore, Pakistan";
+  const address = "VPO Waisa Tehsil Hazro District Attock";
 
   return (
     <>

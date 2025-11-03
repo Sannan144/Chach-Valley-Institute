@@ -14,46 +14,19 @@ const Footer = () => {
               Quick Links
             </h2>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/"
-                  className="hover:text-lime-300 transition duration-200"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/courses"
-                  className="hover:text-lime-300 transition duration-200"
-                >
-                  Courses
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/products"
-                  className="hover:text-lime-300 transition duration-200"
-                >
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="hover:text-lime-300 transition duration-200"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="hover:text-lime-300 transition duration-200"
-                >
-                  Contact
-                </Link>
-              </li>
+              
+              {['home','courses','products','services','contact-us'].map((item,index)=>{
+                return <li>
+                        <Link
+                          key={index}
+                          to={item === 'home' ? '/' : `/${item}`}
+                          className="hover:text-lime-300 capitalize transition duration-200"
+                        >
+                           {item}
+                         </Link>
+                      </li>
+               })} 
+
             </ul>
           </div>
 

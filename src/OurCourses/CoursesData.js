@@ -1,7 +1,7 @@
 const courses = [
   {
     id: 1,
-    title: 'Local E-commerce Course',
+    title: 'E-commerce Course',
     duration: '14 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online',
     learn: [
