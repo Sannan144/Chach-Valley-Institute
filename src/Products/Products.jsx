@@ -157,7 +157,7 @@ const Products = () => {
               </div>
 
               {/* Right Side: Details */}
-              <div className="flex-1 flex flex-col justify-center text-center md:text-left">
+              <div className="flex-1 pb-4 md:pb-0 flex flex-col justify-center text-center md:text-left">
                 {/* Product Name: Single Line */}
                 <h2 className="text-lg sm:text-2xl md:text-3xl font-extrabold text-[#265336] mb-4 truncate whitespace-nowrap">
                   {selectedProduct.name}
@@ -175,14 +175,15 @@ const Products = () => {
                   </span>
                 </div>
 
-                <p className="text-gray-600 mb-6 text-sm md:text-base leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae lacus vitae arcu malesuada tincidunt. Aenean at nisi nec odio efficitur tincidunt non sit amet ligula.
-                </p>
-
                 <button className="flex justify-center items-center gap-2 bg-[#265336] text-white px-6 py-3 rounded-full hover:bg-[#1f4229] hover:scale-105 transition-all duration-300 cursor-pointer font-semibold mx-auto md:mx-0">
                   <FaShoppingCart />
                   Buy Now
                 </button>
+                
+                <p className="text-gray-600 my-6 text-sm md:text-base leading-relaxed">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae lacus vitae arcu malesuada tincidunt. Aenean at nisi nec odio efficitur tincidunt non sit amet ligula.
+                </p>
+
               </div>
             </div>
             

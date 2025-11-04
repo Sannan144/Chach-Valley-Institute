@@ -15,7 +15,7 @@ const Footer = () => {
             </h2>
             <ul className="space-y-2">
               
-              {['home','courses','products','services','contact-us'].map((item,index)=>{
+              {['home','courses','products','services','contact-us','blog'].map((item,index)=>{
                 return <li>
                         <Link
                           key={index}

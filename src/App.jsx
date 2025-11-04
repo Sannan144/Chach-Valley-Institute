@@ -7,6 +7,7 @@ import Services from './Services/Services';
 import ServiceDetail from './Services/ServiceDetail'; // naya component
 import ContactUs from './Contact us/ContactUs';
 import WhatsappButton from './WhatsappButton/WhatsappButton';
+import Blog from './Blog/Blog';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path='/products' element={<Products />} />  
       <Route path='/services' element={<Services />} />  
       <Route path='/contact-us' element={<ContactUs/>} />  
+      <Route path='/blog' element={<Blog/>} />  
       
       {/* Dynamic route for each service */}
       <Route path='/services/:serviceId' element={<ServiceDetail />} />
