@@ -17,6 +17,9 @@ export default function Slider() {
     "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&q=60&w=400",
     "https://plus.unsplash.com/premium_photo-1681666713741-3e307db44f68?auto=format&fit=crop&q=60&w=400",
     "https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?auto=format&fit=crop&q=60&w=400",
+    "https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?auto=format&fit=crop&q=60&w=400",
+    "https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?auto=format&fit=crop&q=60&w=400",
+    "https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?auto=format&fit=crop&q=60&w=400",
   ];
 
   return (
