@@ -13,10 +13,10 @@ import "./Styles.css";
 
 export default function Slider() {
   const slides = [
-    "https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?auto=format&fit=crop&q=60&w=400",
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=60&w=400",
     "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&q=60&w=400",
     "https://plus.unsplash.com/premium_photo-1681666713741-3e307db44f68?auto=format&fit=crop&q=60&w=400",
-    "https://plus.unsplash.com/premium_photo-1761966668077-7adbb3c06bc2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&q=60&w=400",
+    "https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?auto=format&fit=crop&q=60&w=400",
   ];
 
   return (
@@ -25,7 +25,6 @@ export default function Slider() {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        loop={true}             // 🔁 makes the slider infinite
         className="mySwiper"
       >
         {slides.map((img, index) => (

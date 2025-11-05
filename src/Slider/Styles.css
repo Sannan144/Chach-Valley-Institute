@@ -1,35 +1,40 @@
 /* App container with vertical spacing */
 #app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;    /* space above slider */
-  margin-bottom: 50px; /* space below slider */
-}
-
-/* Swiper size */
-.swiper {
-  width: 300px;  /* square width */
-  height: 300px; /* square height */
-}
-
-/* Slide styling */
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  overflow: hidden;
-  background-color: #000;
-  cursor: grab;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* ensures image covers square without stretching */
-}
-
-.swiper-slide:active {
-  cursor: grabbing;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;    /* space above slider */
+    margin-bottom: 50px; /* space below slider */
+  }
+  
+  /* Swiper size */
+  .swiper {
+    width: 300px;  /* square width */
+    height: 300px; /* square height */
+  }
+  
+  /* Slide styling */
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures image covers square without stretching */
+  }
+  
+  /* Optional: change cursor on hover */
+  .swiper-slide {
+    cursor: grab;
+  }
+  
+  .swiper-slide:active {
+    cursor: grabbing;
+  }
+  
