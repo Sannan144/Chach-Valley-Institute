@@ -9,7 +9,7 @@ import "swiper/css/effect-cards";
 // Import required modules
 import { EffectCards } from "swiper/modules";
 
-import "./styles.css";
+import "./Styles.css";
 
 export default function Slider() {
   const slides = [
