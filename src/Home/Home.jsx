@@ -6,7 +6,6 @@ import Rating from '../Rating/Rating'
 import Offer from '../Offer/Offer'
 import WhatsappButton from '../WhatsappButton/WhatsappButton'
 import Footer from '../Footer/Footer'
-import Slider from '../Slider/Slider'
 
 const Home = () => {
   return (
@@ -15,7 +14,6 @@ const Home = () => {
       <Tabs/>
       <HomeText />
       <Rating />
-      <Slider/>
       <Offer />
       <Footer/>
     </div>

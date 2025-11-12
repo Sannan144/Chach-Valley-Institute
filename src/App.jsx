@@ -8,6 +8,7 @@ import ServiceDetail from './Services/ServiceDetail'; // naya component
 import ContactUs from './Contact us/ContactUs';
 import WhatsappButton from './WhatsappButton/WhatsappButton';
 import Blog from './Blog/Blog';
+import ScrollToTop from './ScrollToTop/ScrollToTop';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Route path='/services/:serviceId' element={<ServiceDetail />} />
     </Routes>
     <WhatsappButton/>
+    <ScrollToTop/>
     </>
   );
 }
