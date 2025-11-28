@@ -264,7 +264,7 @@ const Products = () => {
                         <input
                           type="text"
                           name="phone"
-                          placeholder="All-Time Active Phone"
+                          placeholder="Active Phone Number"
                           onChange={handleFormChange}
                           required
                           className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
@@ -302,7 +302,7 @@ const Products = () => {
                 )}
 
                 <p className="text-gray-600 my-6 text-sm md:text-base leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae lacus vitae arcu malesuada tincidunt. Aenean at nisi nec odio efficitur tincidunt non sit amet ligula.
+                  {selectedProduct.desc}
                 </p>
               </div>
             </div>

@@ -1,26 +1,26 @@
 // OfferData.js
 
 const OfferData = [
+  {
+    id: 2,
+    title: "Courses",
+    image:
+      "https://previews.123rf.com/images/yupiramos/yupiramos1504/yupiramos150403284/38389765-e-learning-design-over-white-background-vector-illustration.jpg",
+    description: "Learn in-demand skills with expert-led courses — start today and upgrade your future.",
+  },
     {
       id: 1,
       title: "Products",
       image:
-        "https://images.unsplash.com/photo-1629198688000-71f23e745b6e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=400",
-      description: "High-quality products at the best prices.",
-    },
-    {
-      id: 2,
-      title: "Courses",
-      image:
-        "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvdXJzZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=400",
-      description: "Learn new skills with our expert-led courses.",
+        "https://codexoxo.com/wp-content/uploads/2019/02/ecommerce-tablet.png",
+      description: "Premium quality products at unbeatable prices — made to last and designed for you.",
     },
     {
       id: 3,
       title: "Services",
       image:
-        "https://images.unsplash.com/photo-1605152276897-4f618f831968?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8U2VydmljZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=400",
-      description: "Professional services tailored to your needs.",
+        "https://penzilweb.com/wp-content/uploads/2022/05/penzilweb-web-design-development-E-commerce-development.png",
+      description: "Professional, reliable and customized services — tailored to meet your exact needs.",
     },
   ];
   

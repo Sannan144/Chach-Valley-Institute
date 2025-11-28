@@ -28,7 +28,23 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
           <div className="bg-[#f0fdf4] p-6 rounded-lg shadow-lg">
             <h3 className="font-semibold text-[#265336] text-xl mb-3">What You'll Learn:</h3>
             <ul className="list-disc ml-5 text-gray-700 space-y-1">
-              {course.learn.map((item, i) => <li key={i}>{item}</li>)}
+              {course.learn.map((item, i) => {
+
+                return(
+                  <div>
+                    <h1 className="font-bold">{item.heading}</h1>
+                    {item.subParts.map((valu)=>{
+                    return(
+                      <>
+                     <p>{valu}</p>
+                      </>
+                    )  
+                  }
+                  )}
+                  </div>
+                )
+
+              })}
             </ul>
           </div>
 
@@ -36,7 +52,21 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
           <div className="bg-[#fefce8] p-6 rounded-lg shadow-lg">
             <h3 className="font-semibold text-[#b45309] text-xl mb-3">Who Can Join:</h3>
             <ul className="list-disc ml-5 text-gray-700 space-y-1">
-              {course.Join.map((item, i) => <li key={i}>{item}</li>)}
+              {course.Join.map((item, i) => {
+                return(
+                  <div>
+                    <h1 className="font-bold">{item.heading}</h1>
+                    {item.subParts.map((valu)=>{
+                    return(
+                      <>
+                     <p>{valu}</p>
+                      </>
+                    )  
+                  }
+                  )}
+                  </div>
+                )
+              })}
             </ul>
           </div>
 
@@ -44,7 +74,21 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
           <div className="bg-[#eff6ff] p-6 rounded-lg shadow-lg md:col-span-2">
             <h3 className="font-semibold text-[#1e40af] text-xl mb-3">Outcomes:</h3>
             <ul className="list-disc ml-5 text-gray-700 space-y-1">
-              {course.Outcome.map((item, i) => <li key={i}>{item}</li>)}
+              {course.Outcome.map((item, i) => {
+                return(
+                  <div>
+                    <h1 className="font-bold">{item.heading}</h1>
+                    {item.subParts.map((valu)=>{
+                    return(
+                      <>
+                     <p>{valu}</p>
+                      </>
+                    )  
+                  }
+                  )}
+                  </div>
+                )
+              })}
             </ul>
           </div>
 
@@ -52,7 +96,7 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
           <div className="bg-[#fef2f2] p-6 rounded-lg shadow-lg md:col-span-2 flex flex-col gap-3">
             <p className="text-gray-800 font-medium"><strong>Fee:</strong> Rs. {course.Fee} /-</p>
             <p className="text-gray-600"><strong>Installments:</strong> Available</p>
-            <p className="text-gray-600"><strong>Free Demo Class:</strong> Yes</p>
+            <p className="text-gray-600"><strong>Free Demo Class:</strong> 3 Days Free Demo Class for Everyone </p>
           </div>
         </div>
 

@@ -22,7 +22,7 @@ const Offer = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-48 object-cover transform transition-transform duration-500 hover:scale-110"
+                  className="w-full h-80 object-cover transform transition-transform duration-500 hover:scale-110"
                 />
               </div>
 
