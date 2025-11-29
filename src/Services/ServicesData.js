@@ -5,6 +5,7 @@ const ServicesData = [
     title: "Web Development",
     image: "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=400",
     description: "We build modern and responsive websites using the latest technologies.",
+    subParts:['This is subpart'],
     bullets: [
       "Responsive design for all devices",
       "SEO optimized structure",

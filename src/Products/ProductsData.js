@@ -11,58 +11,87 @@ const products = [
     rating: "4.7 out of 5",
     sold: 121,
     price: "Rs. 2999",
-  //   desc:acrylicFrameDescription = [
-  // 'Customizable Acrylic Photo Frame , Elegant, Modern, and Personalized',
-  // 'Overview',
-  // 'Transform your precious memories into timeless art with our Customizable Acrylic Photo Frame. Perfect for gifting or personal use, this frame combines modern elegance with high-quality craftsmanship. Made from premium clear acrylic, it showcases your favorite photos with crystal-clear visibility and a polished, contemporary look. Whether it’s for a wedding, anniversary, birthday, or office décor, this frame makes every memory shine.',
-  // 'Key Features',
-  // '1. Premium Acrylic Material',
-  // 'Made from high-quality, durable acrylic, ensuring long-lasting clarity and strength.',
-  // 'Scratch-resistant and lightweight, providing superior protection for your photos.',
-  // 'Transparent and polished edges create a sleek, modern aesthetic.',
-  // '2. Fully Customizable Design',
-  // 'Personalize with names, dates, or messages for a unique keepsake.',
-  // 'Supports both vertical and horizontal photo placements.',
-  // 'Choose from a variety of sizes to perfectly fit your space or gifting needs.',
-  // '3. Crystal-Clear Photo Display',
-  // 'High transparency allows your photo’s colors and details to stand out vividly.',
-  // 'Frameless design gives a minimalist and elegant touch, perfect for modern homes and offices.',
-  // 'Easy to insert and remove photos without damage.',
-  // '4. Versatile Usage',
-  // 'Ideal for home décor, office desks, shelves, and mantelpieces.',
-  // 'Makes a perfect personalized gift for birthdays, weddings, anniversaries, graduations, or special occasions.',
-  // 'Great for displaying family portraits, couple photos, travel memories, or artwork.',
-  // '5. Easy to Maintain',
-  // 'Simply wipe with a soft, dry cloth to maintain its crystal-clear appearance.',
-  // 'Resistant to fingerprints and smudges compared to traditional glass frames.',
-  // 'Product Specifications',
-  // 'Material: Premium Acrylic',
-  // 'Frame Type: Frameless, Transparent',
-  // 'Dimensions: Available in multiple sizes (4x6, 5x7, 8x10 inches, and custom options)',
-  // 'Orientation: Horizontal & Vertical',
-  // 'Personalization: Laser-engraved or printed text options',
-  // 'Weight: Lightweight, easy to handle and display',
-  // 'Why Choose Our Acrylic Photo Frame?',
-  // 'Elegant & Modern: Adds a stylish touch to any space with its contemporary design.',
-  // 'Durable & Safe: No fragile glass to worry about, yet provides the same elegant clarity.',
-  // 'Personalized Memories: Turn your special moments into a one-of-a-kind keepsake.',
-  // 'Gift-Ready Packaging: Comes carefully packed, making it ready for gifting without extra effort.',
-  // 'How to Customize',
-  // 'Choose your preferred size.',
-  // 'Upload your photo(s).',
-  // 'Enter your custom text (name, date, or message).',
-  // 'Preview your design and place your order.',
-  // 'Our skilled team will craft your acrylic frame and ship it safely to your doorstep.',
-  // 'Perfect For:',
-  // 'Weddings & Anniversaries',
-  // 'Birthdays & Celebrations',
-  // 'Office & Home Décor',
-  // 'Graduation & Achievements',
-  // 'Gifts for Loved Ones',
-  // 'Customer Reviews',
-  // '⭐⭐⭐⭐⭐ “Absolutely love the frame! The acrylic is crystal clear, and the engraving looks perfect. It was a hit as a wedding gift!”',
-  // '⭐⭐⭐⭐⭐ “High-quality product and very easy to customize. Looks so elegant on my office desk!”',
-    // ],
+    title:'Customizable Acrylic Photo Frame , Elegant, Modern, and Personalized',
+    desc: [
+  {
+    heading: "Overview",
+    subParts: [
+      "Transform your precious memories into timeless art with our Customizable Acrylic Photo Frame. Perfect for gifting or personal use, this frame combines modern elegance with high-quality craftsmanship. Made from premium clear acrylic, it showcases your favorite photos with crystal-clear visibility and a polished, contemporary look. Whether it’s for a wedding, anniversary, birthday, or office décor, this frame makes every memory shine."
+    ]
+  },
+  {
+    heading: "Key Features",
+    subParts: [
+      "1. Premium Acrylic Material",
+      "Made from high-quality, durable acrylic, ensuring long-lasting clarity and strength.",
+      "Scratch-resistant and lightweight, providing superior protection for your photos.",
+      "Transparent and polished edges create a sleek, modern aesthetic.",
+      "2. Fully Customizable Design",
+      "Personalize with names, dates, or messages for a unique keepsake.",
+      "Supports both vertical and horizontal photo placements.",
+      "Choose from a variety of sizes to perfectly fit your space or gifting needs.",
+      "3. Crystal-Clear Photo Display",
+      "High transparency allows your photo’s colors and details to stand out vividly.",
+      "Frameless design gives a minimalist and elegant touch, perfect for modern homes and offices.",
+      "Easy to insert and remove photos without damage.",
+      "4. Versatile Usage",
+      "Ideal for home décor, office desks, shelves, and mantelpieces.",
+      "Makes a perfect personalized gift for birthdays, weddings, anniversaries, graduations, or special occasions.",
+      "Great for displaying family portraits, couple photos, travel memories, or artwork.",
+      "5. Easy to Maintain",
+      "Simply wipe with a soft, dry cloth to maintain its crystal-clear appearance.",
+      "Resistant to fingerprints and smudges compared to traditional glass frames."
+    ]
+  },
+  {
+    heading: "Product Specifications",
+    subParts: [
+      "Material: Premium Acrylic",
+      "Frame Type: Frameless, Transparent",
+      "Dimensions: Available in multiple sizes (4x6, 5x7, 8x10 inches, and custom options)",
+      "Orientation: Horizontal & Vertical",
+      "Personalization: Laser-engraved or printed text options",
+      "Weight: Lightweight, easy to handle and display"
+    ]
+  },
+  {
+    heading: "Why Choose Our Acrylic Photo Frame?",
+    subParts: [
+      "Elegant & Modern: Adds a stylish touch to any space with its contemporary design.",
+      "Durable & Safe: No fragile glass to worry about, yet provides the same elegant clarity.",
+      "Personalized Memories: Turn your special moments into a one-of-a-kind keepsake.",
+      "Gift-Ready Packaging: Comes carefully packed, making it ready for gifting without extra effort."
+    ]
+  },
+  {
+    heading: "How to Customize",
+    subParts: [
+      "Choose your preferred size.",
+      "Upload your photo(s).",
+      "Enter your custom text (name, date, or message).",
+      "Preview your design and place your order.",
+      "Our skilled team will craft your acrylic frame and ship it safely to your doorstep."
+    ]
+  },
+  {
+    heading: "Perfect For:",
+    subParts: [
+      "Weddings & Anniversaries",
+      "Birthdays & Celebrations",
+      "Office & Home Décor",
+      "Graduation & Achievements",
+      "Gifts for Loved Ones"
+    ]
+  },
+  {
+    heading: "Customer Reviews",
+    subParts: [
+      "⭐⭐⭐⭐⭐ “Absolutely love the frame! The acrylic is crystal clear, and the engraving looks perfect. It was a hit as a wedding gift!”",
+      "⭐⭐⭐⭐⭐ “High-quality product and very easy to customize. Looks so elegant on my office desk!”"
+    ]
+  }
+]
+,
     tierPrices: { "2x1 inches 1000Pc": 2999, "3x2 inches 1000Pc": 3599, "4x3 inches 1000Pc": 4599, "5x4 inches 1000 Pc": 5599, "6.5x4 inches 1000Pc": 6599 },
   },
   {

@@ -46,7 +46,7 @@ Education: ${education}`;
             <div
               key={course.id}
               onClick={() => { setSelectedCourse(course); setShowForm(false); resetForm(); }}
-              className="bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer w-[160px] sm:w-[180px] md:w-[200px] lg:w-[220px] flex flex-col items-center justify-between text-center group"
+              className="bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 cursor-pointer w-[175px] sm:w-[180px] md:w-[200px] lg:w-[220px] flex flex-col items-center justify-between text-center group"
             >
               <div className="w-full h-38 overflow-hidden mb-3 border-4 border-[#265336]/10 group-hover:border-[#265336]/40 transition-all duration-300">
                 <img src={course.img} alt={course.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />

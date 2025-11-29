@@ -300,10 +300,17 @@ const Products = () => {
                     </div>
                   </div>
                 )}
-
-                <p className="text-gray-600 my-6 text-sm md:text-base leading-relaxed">
-                  {selectedProduct.desc}
-                </p>
+                  <h1 className="text-xl font-bold my-2">{selectedProduct.title}</h1>
+                  <div className="text-left">
+                    {selectedProduct.desc.map((val)=>{
+                      return(
+                        <>
+                        <h2 className="font-bold">{val.heading}</h2>
+                        <p>{val.subParts}</p>
+                        </>
+                      )
+                    })}
+                  </div>
               </div>
             </div>
           </div>

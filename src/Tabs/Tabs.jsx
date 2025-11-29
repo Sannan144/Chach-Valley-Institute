@@ -5,12 +5,12 @@ import { NavLink } from "react-router-dom";
 const Tabs = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuItems = ["home", "courses", "products", "services", "contact-us", "blog"];
+  const menuItems = ["home", "courses", "products", "services", "blog", "contact-us"];
 
   return (
-    <div className="px-4 py-3 relative">
+    <div className="sm:px-4 md:px-[0px] lg:px-4 py-3 relative">
       {/* ✅ Desktop Tabs */}
-      <div className="hidden md:flex gap-4 capitalize justify-around">
+      <div className="hidden md:flex sm:gap-4 md:gap-[0px]  lg:gap-4 capitalize justify-around">
         {menuItems.map((item, i) => (
           <NavLink
             key={i}
