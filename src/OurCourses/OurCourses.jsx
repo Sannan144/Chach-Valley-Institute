@@ -18,7 +18,6 @@ const OurCourses = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, phone, address, education } = formData;
-    if (!name || !phone || !address || !education) return alert("Please fill all fields!");
 
     const message = `Admission Request for ${selectedCourse.title}:
 Name: ${name}

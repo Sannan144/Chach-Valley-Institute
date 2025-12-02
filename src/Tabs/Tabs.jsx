@@ -24,10 +24,11 @@ const Tabs = () => {
 
       {/* ✅ Mobile Menu Button */}
       <div
-        className="md:hidden text-3xl cursor-pointer relative z-50 text-[#255235]"
+        className="md:hidden text-3xl cursor-pointer relative z-50 text-[#255235] ml-8 flex"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? <HiX /> : <HiMenu />}
+        {isOpen ? <HiX /> : <HiMenu />} 
+        <p className="text-2xl font-bold ml-2">Home</p>
       </div>
 
       {/* ✅ Animated Mobile Sidebar */}

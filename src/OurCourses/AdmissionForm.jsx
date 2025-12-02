@@ -32,7 +32,6 @@ const AdmissionForm = ({ course, onClose, formData, setFormData, onSubmit }) => 
                 value={formData[field]}
                 onChange={handleChange}
                 className="border p-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-[#265336]"
-                required
               />
             </div>
           ))}

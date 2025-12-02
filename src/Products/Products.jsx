@@ -170,7 +170,7 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="flex md:flex-col gap-3 justify-center items-center mt-4 md:mt-0">
+                <div className="flex md:flex-col gap-3 justify-center flex-wrap items-center mt-4 md:mt-0">
                   {selectedProduct.images.map((img, idx) => (
                     <div
                       key={idx}
@@ -306,7 +306,13 @@ const Products = () => {
                       return(
                         <>
                         <h2 className="font-bold">{val.heading}</h2>
-                        <p>{val.subParts}</p>
+                        {
+                          val.subParts.map((item)=>{
+                            return(
+                              <p>{item}<br/></p>
+                            )
+                          })
+                        }
                         </>
                       )
                     })}
