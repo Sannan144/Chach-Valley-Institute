@@ -24,9 +24,10 @@ const ServiceDetail = () => {
       return;
     }
 
-    // Clean message with line breaks
-    const message = `Service Request: ${service.title}
-📝 Name: ${name}
+    // WhatsApp Message With Emojis
+    const message = `📌 *Service Request*\n
+🛠️ Service: ${service.title}
+🪪 Name: ${name}
 📧 Email: ${email}
 💸 Budget: ${budget}
 📂 Category: ${category}`;
@@ -52,7 +53,7 @@ const ServiceDetail = () => {
       <Logo />
       <Tabs />
 
-      {/* Close Button (Red Cross) */}
+      {/* Close Button */}
       <button
         onClick={() => navigate(-1)}
         className="fixed cursor-pointer top-5 right-5 z-50 w-10 h-10 flex items-center justify-center bg-red-500 text-white text-2xl font-bold rounded-full hover:bg-red-600 transition"
@@ -61,33 +62,29 @@ const ServiceDetail = () => {
       </button>
 
       <div className="max-w-4xl mx-auto py-16 px-4">
-        {/* Service Title */}
-        <h1 className="text-4xl font-bold text-[#255235] mb-6">{service.title}</h1>
+        <h1 className="text-4xl font-bold text-[#255235] mb-6">
+          {service.title}
+        </h1>
 
-        {/* Image */}
         <img
           src={service.image}
           alt={service.title}
           className="w-full h-96 object-cover rounded-xl mb-6"
         />
 
-        {/* Description */}
         <div className="mb-5">
-        {service.desc.map((srv)=>{
-          return(
-            <>
-              <h2 className="font-bold">{srv.heading}</h2>
-              {srv.subParts.map((sp)=>{
-                return(
-                  <p>{sp}</p>
-                )
-              })}
-            </>
-          )
-        })}
+          {service.desc.map((srv) => {
+            return (
+              <>
+                <h2 className="font-bold">{srv.heading}</h2>
+                {srv.subParts.map((sp) => {
+                  return <p>{sp}</p>;
+                })}
+              </>
+            );
+          })}
         </div>
 
-        {/* Form */}
         <form
           onSubmit={handleSubmit}
           className="bg-gray-100 p-6 rounded-xl shadow-md"
