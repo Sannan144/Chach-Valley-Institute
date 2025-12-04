@@ -42,7 +42,7 @@ const Services = () => {
               </div>
 
               {/* Content */}
-              <div className="p-5 text-center flex flex-col justify-between h-[140px]">
+              <div className="p-5 text-center flex flex-col justify-between h-[160px]">
                 <h2 className="text-xl font-bold text-[#255235] mb-2">
                   {service.title}
                 </h2>
@@ -59,7 +59,7 @@ const Services = () => {
                     e.stopPropagation(); // Prevent card click
                     navigate(`/services/${service.slug}`);
                   }}
-                  className="bg-[#255235] cursor-pointer text-white px-4 py-2 rounded-full font-medium hover:bg-[#1f3f27] transition-all duration-300"
+                  className="bg-[#255235] cursor-pointer text-white px-4 py-2 rounded-full font-medium hover:bg-[#1f3f27] transition-all duration-300 mb-10"
                 >
                   Learn More
                 </button>
