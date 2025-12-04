@@ -12,7 +12,7 @@ const QuantityTabs = ({ tierPrices }) => {
 
   return (
     <div className="mb-6">
-      <div className="flex justify-center md:justify-start mb-3 flex-wrap text-sm gap-1 sm:gap-2">
+      <div className="flex justify-center md:justify-start mb-3 flex-wrap text-[12px] sm:text-sm gap-[1px] sm:gap-2">
         {priceKeys.map((range) => (
           <button
             key={range}

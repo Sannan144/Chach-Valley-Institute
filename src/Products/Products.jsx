@@ -4,6 +4,7 @@ import products from "./ProductsData";
 import QuantityTabs from "./QuantityTabs";
 import Logo from "../Logo/Logo";
 import Tabs from "../Tabs/Tabs";
+import "./Products.css";
 import Footer from "../Footer/Footer";
 
 const Products = () => {
@@ -170,23 +171,26 @@ const Products = () => {
                   </div>
                 </div>
 
-                <div className="flex md:flex-col gap-3 justify-center flex-wrap items-center mt-4 md:mt-0">
-                  {selectedProduct.images.map((img, idx) => (
-                    <div
-                      key={idx}
-                      className={`w-20 h-20 rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-300 hover:scale-110 ${
-                        idx === mainIndex ? "border-[#265336]" : "border-gray-300"
-                      }`}
-                      onClick={() => setMainIndex(idx)}
-                    >
-                      <img
-                        src={img}
-                        alt={`thumb-${idx}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ))}
-                </div>
+                <div className="w-full mt-4 md:mt-0">
+  <div className="flex gap-3 overflow-x-auto no-scrollbar py-2 px-1" >
+    {selectedProduct.images.map((img, idx) => (
+      <div
+        key={idx}
+        className={`min-w-[80px] min-h-[80px] rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-300 hover:scale-110 ${
+          idx === mainIndex ? "border-[#265336]" : "border-gray-300"
+        }`}
+        onClick={() => setMainIndex(idx)}
+      >
+        <img
+          src={img}
+          alt={`thumb-${idx}`}
+          className="w-full h-full object-cover"
+        />
+      </div>
+    ))}
+  </div>
+</div>
+
               </div>
 
               <div className="flex-1 pb-4 md:pb-0 flex flex-col justify-center text-center md:text-left">
@@ -300,7 +304,7 @@ const Products = () => {
                     </div>
                   </div>
                 )}
-                  <h1 className="text-xl font-bold my-2">{selectedProduct.title}</h1>
+                  <h1 className="text-medium sm:text-lg font-bold my-2 md:text-xl">{selectedProduct.title}</h1>
                   <div className="text-left">
                     {selectedProduct.desc.map((val)=>{
                       return(

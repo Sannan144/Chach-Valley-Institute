@@ -107,7 +107,7 @@ const products = [
   }
 ]
 ,
-    tierPrices: { "2x1 inches 1000Pc": 2999, "3x2 inches 1000Pc": 3599, "4x3 inches 1000Pc": 4599, "5x4 inches 1000 Pc": 5599, "6.5x4 inches 1000Pc": 6599 },
+    tierPrices: { "3x2 inches 1000Pc": 2999, "3x2 inches 1000Pc": 3599, "4x3 inches 1000Pc": 4599, "5x4 inches 1000 Pc": 5599, "6.5x4 inches 1000Pc": 6599 },
   },
   {
     id: 2,
