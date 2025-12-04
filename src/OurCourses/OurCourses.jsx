@@ -20,10 +20,10 @@ const OurCourses = () => {
     const { name, phone, address, education } = formData;
 
     const message = `Admission Request for ${selectedCourse.title}:
-Name: ${name}
-Phone: ${phone}
-Address: ${address}
-Education: ${education}`;
+📝 Name: ${name}
+📞 Phone: ${phone}
+🏠 Address: ${address}
+🎓 Education: ${education}`;
 
     window.open(`https://wa.me/03120574560?text=${encodeURIComponent(message)}`, "_blank");
   };

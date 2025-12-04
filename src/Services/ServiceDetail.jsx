@@ -26,10 +26,10 @@ const ServiceDetail = () => {
 
     // Clean message with line breaks
     const message = `Service Request: ${service.title}
-Name: ${name}
-Email: ${email}
-Budget: ${budget}
-Category: ${category}`;
+📝 Name: ${name}
+📧 Email: ${email}
+💸 Budget: ${budget}
+📂 Category: ${category}`;
 
     // Open WhatsApp
     window.open(
