@@ -72,14 +72,20 @@ Category: ${category}`;
         />
 
         {/* Description */}
-        <p className="text-gray-700 text-lg mb-6">{service.description}</p>
-
-        {/* Bullets */}
-        <ul className="list-disc list-inside text-gray-700 mb-6">
-          {service.bullets.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
+        <div className="mb-5">
+        {service.desc.map((srv)=>{
+          return(
+            <>
+              <h2 className="font-bold">{srv.heading}</h2>
+              {srv.subParts.map((sp)=>{
+                return(
+                  <p>{sp}</p>
+                )
+              })}
+            </>
+          )
+        })}
+        </div>
 
         {/* Form */}
         <form

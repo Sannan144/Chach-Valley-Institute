@@ -139,7 +139,7 @@ const Products = () => {
               ✕
             </button>
 
-            <div className="flex flex-col md:flex-row gap-8 h-full">
+            <div className="flex flex-col gap-8 h-full">
               <div className="flex flex-col md:flex-row gap-4 flex-1 items-center justify-center">
                 <div
                   className="flex-1 flex justify-center items-center relative overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100"
@@ -160,14 +160,18 @@ const Products = () => {
                     }}
                   >
                     {selectedProduct.images.map((img, idx) => (
-                      <div key={idx} className="flex-shrink-0 w-full h-96 relative">
-                        <img
-                          src={img}
-                          alt={`slide-${idx}`}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    ))}
+                    <div
+                      key={idx}
+                      className="flex-shrink-0 w-full h-96 relative"
+                    >
+                      <img
+                        src={img}
+                        alt={`slide-${idx}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ))}
+
                   </div>
                 </div>
 
@@ -176,7 +180,7 @@ const Products = () => {
     {selectedProduct.images.map((img, idx) => (
       <div
         key={idx}
-        className={`min-w-[80px] min-h-[80px] rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-300 hover:scale-110 ${
+        className={`w-[80px] h-[80px] rounded-lg overflow-hidden flex-shrink-0 border-2 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-110 ${
           idx === mainIndex ? "border-[#265336]" : "border-gray-300"
         }`}
         onClick={() => setMainIndex(idx)}
@@ -321,6 +325,10 @@ const Products = () => {
                       )
                     })}
                   </div>
+              <div className="h-20 bg-[#265339] w-[calc(100%+3rem)] -mx-6"></div>
+
+
+
               </div>
             </div>
           </div>

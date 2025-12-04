@@ -33,7 +33,7 @@ const Services = () => {
               onClick={() => navigate(`/services/${service.slug}`)} // Card click
             >
               {/* Image */}
-              <div className="h-48 overflow-hidden">
+              <div className="h-64 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -42,11 +42,16 @@ const Services = () => {
               </div>
 
               {/* Content */}
-              <div className="p-5 text-center flex flex-col justify-between h-[220px]">
+              <div className="p-5 text-center flex flex-col justify-between h-[140px]">
                 <h2 className="text-xl font-bold text-[#255235] mb-2">
                   {service.title}
                 </h2>
-                <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+                {service?.desc?.[0]?.heading && (
+                  <p className="text-gray-600 mb-2">
+                    {service.desc[0].heading}
+                  </p>
+                )}
+
 
                 {/* Navigate button */}
                 <button
