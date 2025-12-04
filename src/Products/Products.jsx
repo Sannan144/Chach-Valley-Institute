@@ -194,7 +194,7 @@ const Products = () => {
               </div>
 
               <div className="flex-1 pb-4 md:pb-0 flex flex-col justify-center text-center md:text-left">
-                <h2 className="text-lg sm:text-2xl md:text-3xl font-extrabold text-[#265336] mb-4 truncate whitespace-nowrap">
+                <h2 className="text-lg sm:text-2xl md:text-3xl font-extrabold text-[#265336] mb-4">
                   {selectedProduct.name}
                 </h2>
 
@@ -304,7 +304,7 @@ const Products = () => {
                     </div>
                   </div>
                 )}
-                  <h1 className="text-medium sm:text-lg font-bold my-2 md:text-xl">{selectedProduct.title}</h1>
+                  <h1 className="text-medium sm:text-lg font-bold my-2 md:text-xl text-left text-[#265336]">{selectedProduct.title}</h1>
                   <div className="text-left">
                     {selectedProduct.desc.map((val)=>{
                       return(
