@@ -65,7 +65,6 @@ const ServiceDetail = () => {
         <h1 className="text-4xl font-bold text-[#255235] mb-6">
           {service.title}
         </h1>
-
         <img
           src={service.image}
           alt={service.title}

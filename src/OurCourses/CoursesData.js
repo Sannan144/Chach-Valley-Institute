@@ -3,7 +3,7 @@ const courses = [
   // ===== COURSE 1 =====
   {
     id: 1,
-    img:'https://cbx-prod.b-cdn.net/COLOURBOX45449407.jpg?width=800&height=800&quality=70',
+    img:'https://i.ibb.co/srHRbYV/e-commerce-1.png',
     title: 'E-commerce Course',
     duration: '12 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
@@ -132,7 +132,7 @@ const courses = [
   // ===== COURSE 2 =====
   {
     id: 2,
-    img:'https://www.canadianacademyofit.com/assets/images/media/pictures/courses/web_design_with_html_css.jpg',
+    img:'https://i.ibb.co/93mfqszZ/web-1.png',
     title: 'Web Development',
     duration: '24 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
@@ -249,7 +249,7 @@ const courses = [
   // ===== COURSE 3 =====
   {
     id: 3,
-    img:'https://plus.unsplash.com/premium_photo-1764258888293-dfdc8d0eb8a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8',
+    img:'https://i.ibb.co/WpYRCbCD/ms-office-1.png',
     title: 'Microsoft Office Mastery',
     duration: '12 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
@@ -332,7 +332,7 @@ const courses = [
   // ===== COURSE 4 =====
   {
     id: 4,
-    img:'https://plus.unsplash.com/premium_photo-1764258888293-dfdc8d0eb8a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8',
+    img:'https://i.ibb.co/wZjWWyw7/spoken-1.png',
     title: 'Spoken English',
     duration: '12 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
@@ -402,7 +402,7 @@ const courses = [
   // ===== COURSE 5 =====
   {
     id: 5,
-    img:'https://plus.unsplash.com/premium_photo-1764258888293-dfdc8d0eb8a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8',
+    img:'https://i.ibb.co/XxTqnfS8/graphic-2.png',
     title: 'Graphic Designing',
     duration: '12 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
@@ -472,7 +472,7 @@ const courses = [
   // ===== COURSE 6 =====
   {
     id: 6,
-    img:'https://plus.unsplash.com/premium_photo-1764258888293-dfdc8d0eb8a1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8',
+    img:'https://i.ibb.co/cKzt7bsQ/autocad-1.png',
     title: 'AutoCAD Mastery',
     duration: '12 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
