@@ -128,7 +128,9 @@ const Products = () => {
                   </p>
                 </div>
                 <p className="text-gray-600 text-xs mt-1">{item.sold} sold</p>
-                <p className="font-bold text-[#265336] mt-2">{item.price}</p>
+                {
+                  item.inpVal == "False" ? <></> : <p className="font-bold text-[#265336] mt-2">{item.price}</p>
+                }
               </div>
             </div>
           ))}
@@ -217,11 +219,11 @@ const Products = () => {
                       </label>
                       <span>(In inches)</span>
                       <input
-                        type="text"
+                        type="number"
                         name="length"
                         value={formData.length}
                         onChange={handleFormChange}
-                        className="border w-[50px]"
+                        className="border text-center w-[50px]"
                       />
                     </div>
 
@@ -231,11 +233,11 @@ const Products = () => {
                       </label>
                       <span>(In inches)</span>
                       <input
-                        type="text"
+                        type="number"
                         name="width"
                         value={formData.width}
                         onChange={handleFormChange}
-                        className="border w-[50px]"
+                        className="border text-center w-[50px]"
                       />
                     </div>
 
@@ -248,7 +250,7 @@ const Products = () => {
                         name="quantity"
                         value={formData.quantity}
                         onChange={handleFormChange}
-                        className="border w-[50px]"
+                        className="border text-center w-[50px]"
                       />
                     </div>
                   </form>

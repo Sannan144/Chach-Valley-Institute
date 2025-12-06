@@ -3,7 +3,7 @@ import React from 'react'
 const Logo = () => {
   return (
     <div className='flex justify-between items-center px-2 py-3 border-b-2 border-[#255235] relative pointer-events-none'>
-        <img className='object-cover sm:w-[100px] w-[90px]' src='/images/logo2.jpg' />
+        <img className='object-cover sm:w-[100px] w-[70px]' src='/images/logo2.jpg' />
         <h2 style={{fontSize:'clamp(26px,7.3vw,70px)'}} className='font-bold leading-none tracking-tighter text-center tracking-wide'><span className='text-[#255034]'>Chach Valley</span> Institute</h2>
         <img className='object-cover sm:w-[100px] w-[90px]' src='/images/logo1.jpg' />
     </div>
