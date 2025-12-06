@@ -14,7 +14,7 @@ const products = [
     ],
     rating: "4.7 out of 5",
     sold: 121,
-    price: "Rs. 2999",
+    price: "Rs. 2,999",
     title:'Premium Quality Sticker Label Rectangle Self-Adhesive Paper Labels for Packaging, Jar, Bottle, Gift Box, Crafts, Branding & Office Use Easy Peel & Strong Stick Matte Finish 1000pcs',
     desc: [
 
@@ -107,11 +107,13 @@ const products = [
   }
 ]
 ,
-    tierPrices: { "3x2 inches 1000Pc": 2999, "4.5x3 inches 1000Pc": 7999, "6.5x3 inches 1000 Pc": 9999 , "6.5x4.5 inches 1000Pc": 14999 },
-  },
+inpVal : 'False',
+    tierPrices: { "3x2 inches 1000Pc": 2999, "4.5x3 inches 1000Pc": 7999, "6.5x3 inches 1000Pc": 9999 , "6.5x4.5 inches 1000 Pc": 14999 },
+  }, 
   {
     id: 2,
-    name: "Smartphone (Flagship Model)",
+    inpVal:'False',
+    name: "Product Sticker Label (Square)",
     images: [
       "https://hazken.com/assets/images/bg/Square-Sticker-Design.jpg",
       "https://img.avery.com/f_auto,q_auto,c_scale,w_600/web/weprint/labels/img-health-beauty",
@@ -124,93 +126,100 @@ const products = [
     ],
     rating: "4.8 out of 5",
     sold: 180,
-    price: "Rs. 70,000",
-        title:'Customizable Acrylic Photo Frame , Elegant, Modern, and Personalized',
+    price: "Rs. 2,999",
+        title:'Premium Quality Sticker Label Square Self-Adhesive Paper Labels for Packaging, Jar, Bottle, Gift Box, Crafts, Branding & Office Use Easy Peel & Strong Stick Matte Finish 1000pcs',
     desc: [
+
   {
-    heading: "Overview",
+    heading: '⭐ PREMIUM STICKER LABELS with Lamination — Waterproof & Long Lasting ⭐:',
     subParts: [
-      "Transform your precious memories into timeless art with our Customizable Acrylic Photo Frame. Perfect for gifting or personal use, this frame combines modern elegance with high-quality craftsmanship. Made from premium clear acrylic, it showcases your favorite photos with crystal-clear visibility and a polished, contemporary look. Whether it’s for a wedding, anniversary, birthday, or office décor, this frame makes every memory shine."
+      'Perfect for Packaging | Branding | Jars | Boxes | Bottles | Shops | Office & Small Businesses:'
     ]
   },
+
   {
-    heading: "Key Features",
+    heading: '💥 اردو جائزہ:',
     subParts: [
-      "1. Premium Acrylic Material",
-      "Made from high-quality, durable acrylic, ensuring long-lasting clarity and strength.",
-      "Scratch-resistant and lightweight, providing superior protection for your photos.",
-      "Transparent and polished edges create a sleek, modern aesthetic.",
-      "2. Fully Customizable Design",
-      "Personalize with names, dates, or messages for a unique keepsake.",
-      "Supports both vertical and horizontal photo placements.",
-      "Choose from a variety of sizes to perfectly fit your space or gifting needs.",
-      "3. Crystal-Clear Photo Display",
-      "High transparency allows your photo’s colors and details to stand out vividly.",
-      "Frameless design gives a minimalist and elegant touch, perfect for modern homes and offices.",
-      "Easy to insert and remove photos without damage.",
-      "4. Versatile Usage",
-      "Ideal for home décor, office desks, shelves, and mantelpieces.",
-      "Makes a perfect personalized gift for birthdays, weddings, anniversaries, graduations, or special occasions.",
-      "Great for displaying family portraits, couple photos, travel memories, or artwork.",
-      "5. Easy to Maintain",
-      "Simply wipe with a soft, dry cloth to maintain its crystal-clear appearance.",
-      "Resistant to fingerprints and smudges compared to traditional glass frames."
+      'کیا آپ کے اسٹیکرز آسانی سے اتر جاتے ہیں یا پانی میں خراب ہو جاتے ہیں؟',
+      'اب حاصل کریں لیمینیشن والے پریمیم واٹر پروف اسٹیکر لیبلز — بزنس اور پیکجنگ کے لیے بہترین!'
     ]
   },
+
   {
-    heading: "Product Specifications",
+    heading: '✨ Why Our Product is Special? (Features):',
     subParts: [
-      "Material: Premium Acrylic",
-      "Frame Type: Frameless, Transparent",
-      "Dimensions: Available in multiple sizes (4x6, 5x7, 8x10 inches, and custom options)",
-      "Orientation: Horizontal & Vertical",
-      "Personalization: Laser-engraved or printed text options",
-      "Weight: Lightweight, easy to handle and display"
+      'Premium Quality Sticker Label Paper:',
+      'Matte Laminated Finish – Waterproof & Scratch Resistant:',
+      'Strong Adhesive – sticks firmly on any surface:',
+      'Easy Peel Design – hassle free application:',
+      'Clean & Neat Finishing for Professional Look:',
+      'Works with pens, ink, marker & printing:',
+      'Lightweight & Easy to Store:',
+      'Perfect for gifting, packaging, bottles & boxes:'
     ]
   },
+
   {
-    heading: "Why Choose Our Acrylic Photo Frame?",
+    heading: '💡 BEST USES (Where to Use?):',
     subParts: [
-      "Elegant & Modern: Adds a stylish touch to any space with its contemporary design.",
-      "Durable & Safe: No fragile glass to worry about, yet provides the same elegant clarity.",
-      "Personalized Memories: Turn your special moments into a one-of-a-kind keepsake.",
-      "Gift-Ready Packaging: Comes carefully packed, making it ready for gifting without extra effort."
+      'Spice jars, kitchen jars, pantry labels:',
+      'Cosmetics bottle & jars:',
+      'Food packages, small business packaging:',
+      'Gift boxes, envelopes & craft decoration:',
+      'Office organizing & school projects:',
+      'Branding, inventory & product labeling:'
     ]
   },
+
   {
-    heading: "How to Customize",
+    heading: '⭐ کسٹم سائز پرنٹنگ دستیاب ⭐:',
     subParts: [
-      "Choose your preferred size.",
-      "Upload your photo(s).",
-      "Enter your custom text (name, date, or message).",
-      "Preview your design and place your order.",
-      "Our skilled team will craft your acrylic frame and ship it safely to your doorstep."
+      'ہم صرف اسٹینڈرڈ سائز نہیں، کسٹم سائز بھی پرنٹ کرتے ہیں!',
+      'اگر آپ اپنے باکس، جار یا پروڈکٹ کے مطابق سائز چاہتے ہیں → ہم بنا دیں گے!'
     ]
   },
+
   {
-    heading: "Perfect For:",
+    heading: '🛍 Available Sizes & Prices:',
     subParts: [
-      "Weddings & Anniversaries",
-      "Birthdays & Celebrations",
-      "Office & Home Décor",
-      "Graduation & Achievements",
-      "Gifts for Loved Ones"
+      'Custom Size / Design / Branding Available – Just Send Your Logo:'
     ]
   },
+
   {
-    heading: "Customer Reviews",
+    heading: '🧵 Material & Finish (Quality Details):',
     subParts: [
-      "⭐⭐⭐⭐⭐ “Absolutely love the frame! The acrylic is crystal clear, and the engraving looks perfect. It was a hit as a wedding gift!”",
-      "⭐⭐⭐⭐⭐ “High-quality product and very easy to customize. Looks so elegant on my office desk!”"
+      'Premium Paper Sticker Material:',
+      'Matte Lamination:',
+      'Water-Proof & Moisture Resistant:',
+      'Perfect Adhesive & Long-lasting:',
+      'Professional Premium Look:'
     ]
+  },
+
+  {
+    heading: '🔥 کیوں ضروری ہیں یہ لیبلز؟ (فوائد):',
+    subParts: [
+      'آپ کا پروڈکٹ اور پیکجنگ بالکل برانڈڈ جیسی لگتی ہے:',
+      'وقت کی بچت ہوتی ہے اور آرگنائز کرنا آسان:',
+      'دکانداروں، آن لائن سیلرز اور آفس کے لیے بہترین:',
+      'آسانی سے لگ جائیں، اور کوئی گندا پن نہیں:',
+      'گھر، دکان، اسکول اور دفتر ہر جگہ بہترین!'
+    ]
+  },
+
+  {
+    heading: '🌟⭐ اپنی برانڈنگ کو اپ گریڈ کریں اور کسٹمر کو متاثر کریں ⭐🌟:',
+    subParts: []
   }
 ]
 ,
-    tierPrices: { "2x2 inches 1000Pc": 3499, "3x3 inches 1000Pc": 4499, "4x4 inches 1000Pc": 5499, "5x5 inches 1000 Pc": 6499, "6x6 inches 1000Pc": 6499},
+    tierPrices: { "2x2 inches 1000Pc": 2999, "3x3 inches 1000Pc": 4999, "4.5x4.5 inches 1000Pc": 9999,"6.5x6.5 inches 1000Pc": 19999},
 },
   {
     id: 3,
-    name: "Mechanical Keyboard",
+    inpVal:'False',
+    name: "Product Sticker Label (Circle)",
     images: [
       "https://i.etsystatic.com/18509635/r/il/c1a1f0/7117777291/il_794xN.7117777291_sp39.jpg",
       "https://i.etsystatic.com/29013226/r/il/1bbbd5/5907697353/il_794xN.5907697353_e1g4.jpg",
@@ -221,138 +230,386 @@ const products = [
     ],
     rating: "4.6 out of 5",
     sold: 145,
-    price: "Rs. 8,500",
-       title:'Customizable Acrylic Photo Frame , Elegant, Modern, and Personalized',
+    price: "Rs. 3,499",
+        title:'Premium Quality Sticker Label Circle Self-Adhesive Paper Labels for Packaging, Jar, Bottle, Gift Box, Crafts, Branding & Office Use Easy Peel & Strong Stick Matte Finish 1000pcs',
     desc: [
+
   {
-    heading: "Overview",
+    heading: '⭐ PREMIUM STICKER LABELS with Lamination — Waterproof & Long Lasting ⭐:',
     subParts: [
-      "Transform your precious memories into timeless art with our Customizable Acrylic Photo Frame. Perfect for gifting or personal use, this frame combines modern elegance with high-quality craftsmanship. Made from premium clear acrylic, it showcases your favorite photos with crystal-clear visibility and a polished, contemporary look. Whether it’s for a wedding, anniversary, birthday, or office décor, this frame makes every memory shine."
+      'Perfect for Packaging | Branding | Jars | Boxes | Bottles | Shops | Office & Small Businesses:'
     ]
   },
+
   {
-    heading: "Key Features",
+    heading: '💥 اردو جائزہ:',
     subParts: [
-      "1. Premium Acrylic Material",
-      "Made from high-quality, durable acrylic, ensuring long-lasting clarity and strength.",
-      "Scratch-resistant and lightweight, providing superior protection for your photos.",
-      "Transparent and polished edges create a sleek, modern aesthetic.",
-      "2. Fully Customizable Design",
-      "Personalize with names, dates, or messages for a unique keepsake.",
-      "Supports both vertical and horizontal photo placements.",
-      "Choose from a variety of sizes to perfectly fit your space or gifting needs.",
-      "3. Crystal-Clear Photo Display",
-      "High transparency allows your photo’s colors and details to stand out vividly.",
-      "Frameless design gives a minimalist and elegant touch, perfect for modern homes and offices.",
-      "Easy to insert and remove photos without damage.",
-      "4. Versatile Usage",
-      "Ideal for home décor, office desks, shelves, and mantelpieces.",
-      "Makes a perfect personalized gift for birthdays, weddings, anniversaries, graduations, or special occasions.",
-      "Great for displaying family portraits, couple photos, travel memories, or artwork.",
-      "5. Easy to Maintain",
-      "Simply wipe with a soft, dry cloth to maintain its crystal-clear appearance.",
-      "Resistant to fingerprints and smudges compared to traditional glass frames."
+      'کیا آپ کے اسٹیکرز آسانی سے اتر جاتے ہیں یا پانی میں خراب ہو جاتے ہیں؟',
+      'اب حاصل کریں لیمینیشن والے پریمیم واٹر پروف اسٹیکر لیبلز — بزنس اور پیکجنگ کے لیے بہترین!'
     ]
   },
+
   {
-    heading: "Product Specifications",
+    heading: '✨ Why Our Product is Special? (Features):',
     subParts: [
-      "Material: Premium Acrylic",
-      "Frame Type: Frameless, Transparent",
-      "Dimensions: Available in multiple sizes (4x6, 5x7, 8x10 inches, and custom options)",
-      "Orientation: Horizontal & Vertical",
-      "Personalization: Laser-engraved or printed text options",
-      "Weight: Lightweight, easy to handle and display"
+      'Premium Quality Sticker Label Paper:',
+      'Matte Laminated Finish – Waterproof & Scratch Resistant:',
+      'Strong Adhesive – sticks firmly on any surface:',
+      'Easy Peel Design – hassle free application:',
+      'Clean & Neat Finishing for Professional Look:',
+      'Works with pens, ink, marker & printing:',
+      'Lightweight & Easy to Store:',
+      'Perfect for gifting, packaging, bottles & boxes:'
     ]
   },
+
   {
-    heading: "Why Choose Our Acrylic Photo Frame?",
+    heading: '💡 BEST USES (Where to Use?):',
     subParts: [
-      "Elegant & Modern: Adds a stylish touch to any space with its contemporary design.",
-      "Durable & Safe: No fragile glass to worry about, yet provides the same elegant clarity.",
-      "Personalized Memories: Turn your special moments into a one-of-a-kind keepsake.",
-      "Gift-Ready Packaging: Comes carefully packed, making it ready for gifting without extra effort."
+      'Spice jars, kitchen jars, pantry labels:',
+      'Cosmetics bottle & jars:',
+      'Food packages, small business packaging:',
+      'Gift boxes, envelopes & craft decoration:',
+      'Office organizing & school projects:',
+      'Branding, inventory & product labeling:'
     ]
   },
+
   {
-    heading: "How to Customize",
+    heading: '⭐ کسٹم سائز پرنٹنگ دستیاب ⭐:',
     subParts: [
-      "Choose your preferred size.",
-      "Upload your photo(s).",
-      "Enter your custom text (name, date, or message).",
-      "Preview your design and place your order.",
-      "Our skilled team will craft your acrylic frame and ship it safely to your doorstep."
+      'ہم صرف اسٹینڈرڈ سائز نہیں، کسٹم سائز بھی پرنٹ کرتے ہیں!',
+      'اگر آپ اپنے باکس، جار یا پروڈکٹ کے مطابق سائز چاہتے ہیں → ہم بنا دیں گے!'
     ]
   },
+
   {
-    heading: "Perfect For:",
+    heading: '🛍 Available Sizes & Prices:',
     subParts: [
-      "Weddings & Anniversaries",
-      "Birthdays & Celebrations",
-      "Office & Home Décor",
-      "Graduation & Achievements",
-      "Gifts for Loved Ones"
+      'Custom Size / Design / Branding Available – Just Send Your Logo:'
     ]
   },
+
   {
-    heading: "Customer Reviews",
+    heading: '🧵 Material & Finish (Quality Details):',
     subParts: [
-      "⭐⭐⭐⭐⭐ “Absolutely love the frame! The acrylic is crystal clear, and the engraving looks perfect. It was a hit as a wedding gift!”",
-      "⭐⭐⭐⭐⭐ “High-quality product and very easy to customize. Looks so elegant on my office desk!”"
+      'Premium Paper Sticker Material:',
+      'Matte Lamination:',
+      'Water-Proof & Moisture Resistant:',
+      'Perfect Adhesive & Long-lasting:',
+      'Professional Premium Look:'
+    ]
+  },
+
+  {
+    heading: '🔥 کیوں ضروری ہیں یہ لیبلز؟ (فوائد):',
+    subParts: [
+      'آپ کا پروڈکٹ اور پیکجنگ بالکل برانڈڈ جیسی لگتی ہے:',
+      'وقت کی بچت ہوتی ہے اور آرگنائز کرنا آسان:',
+      'دکانداروں، آن لائن سیلرز اور آفس کے لیے بہترین:',
+      'آسانی سے لگ جائیں، اور کوئی گندا پن نہیں:',
+      'گھر، دکان، اسکول اور دفتر ہر جگہ بہترین!'
+    ]
+  },
+
+  {
+    heading: '🌟⭐ اپنی برانڈنگ کو اپ گریڈ کریں اور کسٹمر کو متاثر کریں ⭐🌟:',
+    subParts: []
+  }
+]
+,
+    tierPrices: { "2x2 inches 1000Pc": 3499, "3x3 inches 1000Pc": 6499, "4.5x4.5 inches 1000Pc": 12999,"6.5x6.5 inches 1000Pc": 22999 },
+  },
+  {
+    id: 4,
+    inpVal:'False',
+    name: "Custom Business Logo Sign (Acrylic)",
+    images: [
+      "https://i.etsystatic.com/48493458/r/il/cd09f7/6770623099/il_794xN.6770623099_tjs8.jpg",
+      "https://i.etsystatic.com/48493458/r/il/fb5041/6770622967/il_1140xN.6770622967_ip8u.jpg",
+      "https://i.etsystatic.com/48493458/r/il/57e780/7107961199/il_340x270.7107961199_mcig.jpg",
+      'https://wolfandflower.com/cdn/shop/products/21d5742d747f4b629c7ee6e941f0a480.thumbnail.0000000000.jpg?v=1677761597&width=3840',
+      'https://i.etsystatic.com/29965959/r/il/3af7e8/4009807917/il_570xN.4009807917_frv7.jpg',
+      'https://i.etsystatic.com/53853120/r/il/934ce3/6444445526/il_570xN.6444445526_os0h.jpg',
+    ],
+    rating: "4.5 out of 5",
+    sold: 120,
+    price: "Rs. 3,999",
+   title: "Custom Acrylic Brand Logo Board (No LED)",
+
+desc: [
+
+  {
+    heading: "⭐ Premium Acrylic Brand Logo Board — Modern & Elegant ⭐",
+    subParts: [
+      "Perfect for Shops | Salons | Cafés | Studios | Boutiques | Home Décor"
+    ]
+  },
+
+  {
+    heading: "✨ Product Description:",
+    subParts: [
+      "Modern and luxurious acrylic logo board designed to enhance your brand image.",
+      "Crafted with high-quality acrylic for a premium and professional look.",
+      "Perfect for displaying brand name, shop name, or logo with clean finishing."
+    ]
+  },
+
+  {
+    heading: "💡 Why Choose Our Acrylic Logo Board? (Features)",
+    subParts: [
+      "Premium acrylic sheet with smooth finishing:",
+      "Golden Letter Patch for a luxury look:",
+      "Strong & long-lasting material:",
+      "Scratch-resistant surface for durability:",
+      "Easy to install – ready-to-hang design:"
+    ]
+  },
+
+  {
+    heading: "🏪 Best For (Where to Use?)",
+    subParts: [
+      "Beauty Salons & Nail Bars:",
+      "Clothing Boutiques & Fashion Stores:",
+      "Restaurants, Cafés & Studios:",
+      "Home Decoration Walls:",
+      "Office Name Boards & Reception Areas:"
+    ]
+  },
+
+  {
+    heading: "📌 Custom Options Available:",
+    subParts: [
+      "Any size can be made:",
+      "Any font or logo can be added:",
+      "Material: Clear Acrylic with Golden Patch Letters:",
+      "Wall-mounted design ready to install:"
+    ]
+  },
+
+  {
+    heading: "⚙ Specifications:",
+    subParts: [
+      "No LED lights included:",
+      "Acrylic logo board only:",
+      "Premium finishing & premium durability:",
+      "Long-lasting and clean professional look:"
+    ]
+  },
+
+  {
+    heading: "🚚 Nationwide Delivery Available:",
+    subParts: [
+      "Cash on Delivery across Pakistan:",
+      "Safe packaging for secure delivery:"
     ]
   }
 ]
 ,
-    tierPrices: { "1 piece": 8500, "5-10 pieces": 8000, "11-20 pieces": 7500, "20+ pieces": 7000 },
-  },
-  {
-    id: 4,
-    name: "Gaming Mouse",
-    images: [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=60&w=400",
-      "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&q=60&w=400",
-      "https://plus.unsplash.com/premium_photo-1681666713741-3e307db44f68?auto=format&fit=crop&q=60&w=400",
-      "https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?auto=format&fit=crop&q=60&w=400",
-    ],
-    rating: "4.5 out of 5",
-    sold: 120,
-    price: "Rs. 3,200",
-    desc:'This is the description',
-    tierPrices: { "1 piece": 3200, "5-10 pieces": 3000, "11-20 pieces": 2800, "20+ pieces": 2600 },
+    tierPrices: { "12x12 inches": 3999, "16x16 inches": 5999, "20x20 inches": 7999, "24x24 inches": 9999 },
   },
   {
     id: 5,
-    name: "Wireless Headphones",
+    inpVal:'False',
+    name: "Custom Acrylic 3D Letters",
     images: [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=60&w=400",
-      "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&q=60&w=400",
-      "https://plus.unsplash.com/premium_photo-1681666713741-3e307db44f68?auto=format&fit=crop&q=60&w=400",
-      "https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?auto=format&fit=crop&q=60&w=400",
+      
+      'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/r/s/rs28750_f7ce7f8045704d9ece0728794ee226cc5083985f.jpeg',
+      'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/r/s/rs29567_0458dbbfaeef56cfe32f00ea506c8741325b1b7f.jpeg',
+      'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/r/s/rs25089_img_e0947.jpg',
+      'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/r/s/rs26476_a74e055dad8ea230e9da47f76678f67752c6a52c.jpeg',
+      'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/r/s/rs36164_2c098e2ef55e4cbd05d7466208b9d421472e480b.jpg',
+      'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/i/m/img_9505-edit1080.jpg',
+
     ],
     rating: "4.7 out of 5",
     sold: 210,
     price: "Rs. 5,500",
-    desc:'This is the description',
-    tierPrices: { "1 piece": 5500, "5-10 pieces": 5200, "11-20 pieces": 5000, "20+ pieces": 4800 },
+    title: "Laser cut Logo Sign, Spa Sign, Custom Business Sign, Reception Logo Sign, Mirror Sign, Lobby Sign, Company Sign, Office Sign, Acrylic Letters",
+
+desc: [
+
+  {
+    heading: "✨ Premium 3D Acrylic Word Cut Logo Signs — Modern, Elegant & Professional",
+    subParts: [
+      "Perfect for Offices | Lobby Walls | Salons | Spas | Hotels | Restaurants | Corporate Branding"
+    ]
+  },
+
+  {
+    heading: "🌟 Product Overview:",
+    subParts: [
+      "High-quality Custom 3D Acrylic Logo Signs designed to enhance brand identity:",
+      "Perfect laser-cut finishing for a premium and modern look:",
+      "Create your company name, logo, or custom text in a beautiful 3D format:",
+      "Elegant wall signs suitable for reception areas, offices, showrooms & studios:"
+    ]
+  },
+
+  {
+    heading: "🔧 Features (Why Choose This?):",
+    subParts: [
+      "Precision Laser Cut — sharp, clean & professional edges:",
+      "Durable Acrylic Material — long-lasting & fade-resistant:",
+      "Awesome Finishing — world-class quality craftsmanship:",
+      "Thickness Options: 3mm / 4mm / 5mm / 8mm:",
+      "Easy Installation — hardware included for hassle-free setup:",
+      "Customizable — sizes, fonts & logo designs can all be modified:"
+    ]
+  },
+
+  {
+    heading: "📐 Available Sizes:",
+    subParts: [
+      "Fully Custom Sizes also available as per customer request:"
+    ]
+  },
+
+  {
+    heading: "💡 Ideal For (Where to Install?):",
+    subParts: [
+      "Office reception walls & meeting rooms:",
+      "Spa & salon branding:",
+      "Boutiques & showrooms:",
+      "Restaurants, cafés & hotels:",
+      "Studio, clinic or corporate office walls:",
+      "Any business wanting premium wall branding:"
+    ]
+  },
+
+  {
+    heading: "🛠 Installation & Build Quality:",
+    subParts: [
+      "Lightweight & strong acrylic body:",
+      "Easy to mount with wall hardware:",
+      "Smooth edges, premium polish & scratch-resistant surface:",
+      "Designed to look elegant & high-end in any environment:"
+    ]
+  },
+
+  {
+    heading: "🚀 Benefits (Why You Need This?):",
+    subParts: [
+      "Boosts brand recognition instantly:",
+      "Creates a premium business image:",
+      "Clients get a strong first impression:",
+      "Perfect for professional décor:",
+      "Customizable for any industry or business type:"
+    ]
+  },
+
+  {
+    heading: "🎨 Customization Options:",
+    subParts: [
+      "Custom Logo Cutting:",
+      "Any font or shape possible:",
+      "Matte, Glossy & Mirror Acrylic finish options:",
+      "Multiple color choices available:"
+    ]
+  },
+
+  {
+    heading: "🌟 Upgrade Your Wall Branding Today!",
+    subParts: [
+      "Premium 3D acrylic logos that give your brand a luxury identity:"
+    ]
+  }
+
+]
+,
+    tierPrices: {  "12x12 inches": 3999,
+  "16x16 inches": 5999,
+  "20x20 inches": 7999,
+  "12x18 inches": 4499,
+  "18x24 inches": 7499,
+  "24x36 inches": 12999,
+  "18x18 inches": 5499,
+  "24x24 inches": 9999,
+  "30x30 inches": 13999,
+  "36x36 inches": 16999,
+   },
   },
   {
     id: 6,
-    name: "Smartwatch",
+    inpVal:'False',
+    name: "Custom Vinyl Sticker",
     images: [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=60&w=400",
-      "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&q=60&w=400",
-      "https://plus.unsplash.com/premium_photo-1681666713741-3e307db44f68?auto=format&fit=crop&q=60&w=400",
-      "https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?auto=format&fit=crop&q=60&w=400",
+     'https://i.etsystatic.com/34380410/r/il/8ca239/6892053892/il_794xN.6892053892_bbkr.jpg',  
+     'https://i.etsystatic.com/52221413/r/il/ea1889/5996517752/il_794xN.5996517752_oegj.jpg',
+     'https://i.etsystatic.com/52221413/r/il/8e4a38/6044682615/il_794xN.6044682615_rit9.jpg',
+     'https://i.etsystatic.com/34380410/r/il/54c4bc/6361344596/il_794xN.6361344596_611c.jpg',
+     'https://i.etsystatic.com/34380410/r/il/370bf0/6862182954/il_794xN.6862182954_78wc.jpg',
+     'https://i.etsystatic.com/34380410/r/il/d6e089/5871804620/il_794xN.5871804620_40pm.jpg',
+  
+
     ],
     rating: "4.6 out of 5",
     sold: 150,
-    price: "Rs. 12,000",
-    desc:'This is the description',
-    tierPrices: { "1 piece": 12000, "5-10 pieces": 11500, "11-20 pieces": 11000, "20+ pieces": 10500 },
+    price: "Rs. 999",
+    title: "Customize Handwritten Vinyl Lettering, Calligraphy Stickers, Personalized Decals, Name Tags, Glass Names, Gift Box Decor, Custom Text Labels",
+
+desc: [
+
+  {
+    heading: "✨ Personalised Vinyl Sticker Labels — Perfect for Any Smooth Surface",
+    subParts: [
+      "Ideal for glass, plastic, acrylic, cardboard, mirrors & glossy surfaces:",
+      "Perfect for bottles, gift boxes, wine glasses, pantry jars & décor items:"
+    ]
+  },
+
+  {
+    heading: "🌟 Product Overview:",
+    subParts: [
+      "Custom vinyl lettering crafted with premium adhesive material:",
+      "Perfect for names, tags, gift boxes & personalized décor:",
+      "Smooth finishing with clean calligraphy style for elegant look:"
+    ]
+  },
+
+  {
+    heading: "📦 Application Instructions:",
+    subParts: [
+      "Ensure the surface is clean before applying:",
+      "Press gently to avoid air bubbles:",
+      "Let the sticker settle for 2–3 days before washing:",
+      "Hand wash only to prevent peeling:"
+    ]
+  },
+
+  {
+    heading: "⚠ Shop Policy:",
+    subParts: [
+      "Custom items are non-refundable after cutting:",
+      "Check spelling, font, size & color before placing order:",
+      "Vinyl is permanent but may vary on unusual surfaces:"
+    ]
+  },
+
+  {
+    heading: "🚚 Processing & Shipping:",
+    subParts: [
+      "Made to order — usually ready in 2–3 days:",
+      "Standard shipping may not include tracking:",
+      "Tracking option available at checkout:"
+    ]
+  },
+
+  {
+    heading: "🎁 Perfect For:",
+    subParts: [
+      "Gift boxes | Wedding décor | Glass names | Pantry labels | Personalized gifts | Car windows | Party favors:"
+    ]
+  }
+
+]
+,
+    tierPrices: { "12x6 inches": 999, "12x12 inches": 11500, "11-20 pieces": 11000, "20+ pieces": 10500 },
   },
   {
     id: 7,
     name: "Tablet (10 inch Display)",
+    inpVal:'True',
     images: [
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=60&w=400",
       "https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&q=60&w=400",
@@ -362,9 +619,70 @@ const products = [
     rating: "4.5 out of 5",
     sold: 100,
     price: "Rs. 25,000",
-    desc:'This is the description',
-    tierPrices: { "1 piece": 25000, "5-10 pieces": 24000, "11-20 pieces": 23000, "20+ pieces": 22000 },
+    desc: [
+
+  {
+    heading: "✨ Personalised Vinyl Sticker Labels — Perfect for Any Smooth Surface",
+    subParts: [
+      "Ideal for glass, plastic, acrylic, cardboard, mirrors & glossy surfaces:",
+      "Perfect for bottles, gift boxes, wine glasses, pantry jars & décor items:"
+    ]
   },
+
+  {
+    heading: "🌟 Product Overview:",
+    subParts: [
+      "Custom vinyl lettering crafted with premium adhesive material:",
+      "Perfect for names, tags, gift boxes & personalized décor:",
+      "Smooth finishing with clean calligraphy style for elegant look:"
+    ]
+  },
+
+  {
+    heading: "📦 Application Instructions:",
+    subParts: [
+      "Ensure the surface is clean before applying:",
+      "Press gently to avoid air bubbles:",
+      "Let the sticker settle for 2–3 days before washing:",
+      "Hand wash only to prevent peeling:"
+    ]
+  },
+
+  {
+    heading: "⚠ Shop Policy:",
+    subParts: [
+      "Custom items are non-refundable after cutting:",
+      "Check spelling, font, size & color before placing order:",
+      "Vinyl is permanent but may vary on unusual surfaces:"
+    ]
+  },
+
+  {
+    heading: "🚚 Processing & Shipping:",
+    subParts: [
+      "Made to order — usually ready in 2–3 days:",
+      "Standard shipping may not include tracking:",
+      "Tracking option available at checkout:"
+    ]
+  },
+
+  {
+    heading: "🎁 Perfect For:",
+    subParts: [
+      "Gift boxes | Wedding décor | Glass names | Pantry labels | Personalized gifts | Car windows | Party favors:"
+    ]
+  }
+
+]
+,
+    tierPrices:{
+  "1 piece (12x6 inches)": 199,
+  "5-10 pieces (12x6 inches)": 180,
+  "11-20 pieces (12x6 inches)": 160,
+  "20+ pieces (12x6 inches)": 140
+},
+  },
+
   {
     id: 8,
     name: "Bluetooth Speaker",

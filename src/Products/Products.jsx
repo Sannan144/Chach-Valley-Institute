@@ -12,13 +12,16 @@ const Products = () => {
   const [mainIndex, setMainIndex] = useState(0);
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
-    name: "",
-    address: "",
-    city: "",
-    phone: "",
-    whatsapp: "",
-    quantity: 1,
-  });
+  name: "",
+  address: "",
+  city: "",
+  phone: "",
+  whatsapp: "",
+  quantity: 1,
+  length: "",  
+  width: "",   
+});
+
   const isDragging = useRef(false);
   const startX = useRef(0);
 
@@ -73,12 +76,15 @@ const Products = () => {
 
 📦 *Product:* ${selectedProduct.name}
 🔢 *Quantity:* ${formData.quantity}
+📏 *Length:* ${formData.length} inches
+📐 *Width:* ${formData.width} inches
 
 👤 *Name:* ${formData.name}
 🏠 *Address:* ${formData.address}
 🏙️ *City:* ${formData.city}
 📞 *Phone:* ${formData.phone}
 💬 *WhatsApp:* ${formData.whatsapp}`;
+
 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
@@ -176,24 +182,24 @@ const Products = () => {
                 </div>
 
                 <div className="w-full mt-4 md:mt-0">
-  <div className="flex gap-3 overflow-x-auto no-scrollbar py-2 px-1" >
-    {selectedProduct.images.map((img, idx) => (
-      <div
-        key={idx}
-        className={`w-[80px] h-[80px] rounded-lg overflow-hidden flex-shrink-0 border-2 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-110 ${
-          idx === mainIndex ? "border-[#265336]" : "border-gray-300"
-        }`}
-        onClick={() => setMainIndex(idx)}
-      >
-        <img
-          src={img}
-          alt={`thumb-${idx}`}
-          className="w-full h-full object-cover"
-        />
-      </div>
-    ))}
-  </div>
-</div>
+                <div className="flex gap-3 overflow-x-auto no-scrollbar py-2 px-1" >
+                  {selectedProduct.images.map((img, idx) => (
+                    <div
+                      key={idx}
+                      className={`w-[80px] h-[80px] rounded-lg overflow-hidden flex-shrink-0 border-2 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-110 ${
+                        idx === mainIndex ? "border-[#265336]" : "border-gray-300"
+                      }`}
+                      onClick={() => setMainIndex(idx)}
+                    >
+                      <img
+                        src={img}
+                        alt={`thumb-${idx}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               </div>
 
@@ -202,7 +208,54 @@ const Products = () => {
                   {selectedProduct.name}
                 </h2>
 
-                <QuantityTabs tierPrices={selectedProduct.tierPrices} />
+                {
+                  selectedProduct.inpVal == "False" ?
+                  <form>
+                    <div className="flex items-center justify-center gap-2">
+                      <label className="font-bold text-lg bg-[#265336] text-white px-3 rounded-full">
+                        Length
+                      </label>
+                      <span>(In inches)</span>
+                      <input
+                        type="text"
+                        name="length"
+                        value={formData.length}
+                        onChange={handleFormChange}
+                        className="border w-[50px]"
+                      />
+                    </div>
+
+                    <div className="flex items-center justify-center gap-2 my-2">
+                      <label className="font-bold text-lg bg-[#265336] text-white px-3 rounded-full">
+                        Width
+                      </label>
+                      <span>(In inches)</span>
+                      <input
+                        type="text"
+                        name="width"
+                        value={formData.width}
+                        onChange={handleFormChange}
+                        className="border w-[50px]"
+                      />
+                    </div>
+
+                    <div className="flex items-center justify-center gap-2 mb-2">
+                      <label className="font-bold text-lg bg-[#265336] text-white px-3 rounded-full">
+                        Quantity
+                      </label>
+                      <input
+                        type="number"
+                        name="quantity"
+                        value={formData.quantity}
+                        onChange={handleFormChange}
+                        className="border w-[50px]"
+                      />
+                    </div>
+                  </form>
+ 
+                  :
+                  <QuantityTabs tierPrices={selectedProduct.tierPrices} />
+                }
 
                 <div className="flex justify-center md:justify-start items-center gap-2 mb-4">
                   <FaStar className="text-[#facc15]" />
