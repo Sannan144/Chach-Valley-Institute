@@ -102,7 +102,7 @@ inpVal : 'False',
   }, 
   // Product 02
   {
-    id: 4,
+    id: 2,
     inpVal:'False',
     name: "Custom Business Logo Sign (Acrylic)",
     images: [
@@ -112,6 +112,7 @@ inpVal : 'False',
       'https://wolfandflower.com/cdn/shop/products/21d5742d747f4b629c7ee6e941f0a480.thumbnail.0000000000.jpg?v=1677761597&width=3840',
       'https://i.etsystatic.com/29965959/r/il/3af7e8/4009807917/il_570xN.4009807917_frv7.jpg',
       'https://i.etsystatic.com/53853120/r/il/934ce3/6444445526/il_570xN.6444445526_os0h.jpg',
+      'https://i.etsystatic.com/23233579/r/il/52b35d/3125359866/il_794xN.3125359866_ddwl.jpg',
     ],
     rating: "4.5 out of 5",
     sold: 120,
@@ -191,7 +192,7 @@ desc: [
   },
   // Product 03
   {
-    id: 5,
+    id: 3,
     inpVal:'False',
     name: "Custom Acrylic 3D Letters",
     images: [
@@ -202,6 +203,7 @@ desc: [
       'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/r/s/rs26476_a74e055dad8ea230e9da47f76678f67752c6a52c.jpeg',
       'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/r/s/rs36164_2c098e2ef55e4cbd05d7466208b9d421472e480b.jpg',
       'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/i/m/img_9505-edit1080.jpg',
+      'https://i.etsystatic.com/23233579/r/il/52b35d/3125359866/il_794xN.3125359866_ddwl.jpg',
 
     ],
     rating: "4.7 out of 5",
@@ -328,7 +330,7 @@ subParts: [
   },
   // Product 04
   {
-    id: 6,
+    id: 4,
     inpVal:'False',
     name: "Custom Vinyl Sticker",
     images: [
@@ -338,6 +340,7 @@ subParts: [
      'https://i.etsystatic.com/34380410/r/il/54c4bc/6361344596/il_794xN.6361344596_611c.jpg',
      'https://i.etsystatic.com/34380410/r/il/370bf0/6862182954/il_794xN.6862182954_78wc.jpg',
      'https://i.etsystatic.com/34380410/r/il/d6e089/5871804620/il_794xN.5871804620_40pm.jpg',
+     'https://i.etsystatic.com/10420830/r/il/d11e2f/700851107/il_794xN.700851107_f0iz.jpg',
   
 
     ],
@@ -536,6 +539,7 @@ subParts: [
       'https://i.etsystatic.com/51524498/r/il/abe191/6122455987/il_794xN.6122455987_a8lz.jpg',
       'https://i.etsystatic.com/51524498/r/il/0e1eab/6175951348/il_794xN.6175951348_tny0.jpg',
      'https://i.etsystatic.com/51524498/r/il/0f23d1/6189009201/il_794xN.6189009201_ekvt.jpg',
+     'https://i.etsystatic.com/10420830/r/il/d11e2f/700851107/il_794xN.700851107_f0iz.jpg',
     ],
     rating: "4.4 out of 5",
     sold: 95,
@@ -763,6 +767,721 @@ subParts: [
 ],
 
     tierPrices: { "6x3 inches": 1299, "6x6 inches": 1799, "12x6 inches": 2999, "18x10 inches": 4499 },
+  },
+   // Product 09
+  {
+    id: 9,
+    inpVal:'False',
+    name: "Office Wall Art Sticker",
+    images: [
+      'https://i.etsystatic.com/23233579/r/il/dd1ae6/5058089536/il_794xN.5058089536_tee4.jpg',
+      'https://i.etsystatic.com/23233579/r/il/52b35d/3125359866/il_794xN.3125359866_ddwl.jpg',
+      'https://i.etsystatic.com/10420830/r/il/4f0131/5617689515/il_794xN.5617689515_t4y0.jpg',
+      'https://i.etsystatic.com/10420830/r/il/ecf1a9/6012169433/il_794xN.6012169433_f981.jpg',
+      'https://i.etsystatic.com/18058682/r/il/1802cb/1638892589/il_794xN.1638892589_a39g.jpg',
+      'https://i.etsystatic.com/13793121/r/il/64f539/3504882747/il_794xN.3504882747_j25z.jpg',
+      'https://i.etsystatic.com/5318266/r/il/2eb687/3932061374/il_794xN.3932061374_cenc.jpg',
+      'https://i.etsystatic.com/22555528/r/il/0c16f3/3583215271/il_794xN.3583215271_b3in.jpg',
+      'https://i.etsystatic.com/9524724/r/il/60f72c/5012160219/il_794xN.5012160219_rh2r.jpg',
+
+
+    ],
+    rating: "4.6 out of 5",
+    sold: 150,
+    // price: "Rs. 999",
+
+    title: "Design Creative Office Modern Wall Art Sticker(Multi Colour)",
+
+desc: [
+  {
+    heading: '✨ Custom Company Name Wall Decor — Premium Office Branding',
+    subParts: [
+      '• Perfect for offices, meeting rooms, lobbies & workspaces:',
+      '• Add your company name, values, quotes, or motivational lines:',
+      '• Professional look that enhances workplace environment:'
+    ]
+  },
+
+  {
+    heading: '🌟 About Our Decals:',
+    subParts: [
+      '• Made with high-quality self-adhesive vinyl film:',
+      '• Safe for children & indoor spaces:',
+      '• Easy to apply and remove without residue:',
+      '• Not reusable (single-use vinyl):',
+      '• Best for smooth, clean, and untextured walls:',
+      '• Not recommended for fresh paint or highly textured walls:',
+      '• Quote/name decals come as one complete piece — no separate letter installation needed:'
+    ]
+  },
+
+  {
+    heading: '📦 What You Will Receive:',
+    subParts: [
+      '• Custom vinyl wall decal:',
+      '• Step-by-step application instructions:',
+      '• Video tutorial link for easy installation:'
+    ]
+  },
+
+  {
+    heading: '🎨 Custom Orders:',
+    subParts: [
+      '• Any design, quote, or font can be customized:',
+      '• No additional charges for custom work:',
+      '• Share your company name or text in chat for your draft:',
+      '• We are always available to assist with design options:'
+    ]
+  },
+
+  {
+    heading: '🚚 Processing & Shipping:',
+    subParts: [
+      '• Each decal is made after your order with your selected color:',
+      '• Processing time: usually within 1–3 business days:',
+      '• Tracking provided for all orders:',
+      '• Worldwide shipping available:'
+    ]
+  },
+
+  {
+    heading: '💯 Satisfaction Guarantee:',
+    subParts: [
+      '• Customer satisfaction is our top priority:',
+      '• If anything doesn’t meet your expectations, message us first:',
+      '• We are always here to help resolve any concerns:'
+    ]
+  }
+]
+
+,
+    // tierPrices: { "12x6 inches": 999, "12x12 inches": 11500, "11-20 pieces": 11000, "20+ pieces": 10500 },
+  },
+  // Product 10
+  {
+    id: 10,
+    name: "Custom Quote 20x10 inches",
+    images: [
+      'https://i.etsystatic.com/18058682/r/il/1802cb/1638892589/il_794xN.1638892589_a39g.jpg',
+      'https://i.etsystatic.com/23233579/r/il/0e407c/2411921587/il_794xN.2411921587_5tz4.jpg',
+      'https://i.etsystatic.com/22646829/r/il/2b08f0/5331714865/il_794xN.5331714865_1ujo.jpg',
+      'https://i.etsystatic.com/22646829/r/il/533093/4742709134/il_794xN.4742709134_tp7b.jpg',
+      'https://i.etsystatic.com/17955691/r/il/de3a6a/6634436893/il_794xN.6634436893_ng65.jpg',
+      'https://i.etsystatic.com/17955691/r/il/5d42e1/6586319484/il_794xN.6586319484_mlrc.jpg',
+
+    ],
+    rating: "4.7 out of 5",
+    sold: 170,
+    price: "Rs. 999",
+
+    title : 'Custom Success Sign Office Quote Sticker Vinyl Sticker Office Decor Wall Art 20 x 10 inches',
+
+    desc:[
+  {
+    heading: '✨ Custom Quote Decor — Premium Office Branding',
+    subParts: [
+      '• Perfect for offices, meeting rooms, lobbies & workspaces:',
+      '• Add your company name, values, quotes, or motivational lines:',
+      '• Professional look that enhances workplace environment:'
+    ]
+  },
+
+  {
+    heading: '🌟 About Our Decals:',
+    subParts: [
+      '• Made with high-quality self-adhesive vinyl film:',
+      '• Safe for children & indoor spaces:',
+      '• Easy to apply and remove without residue:',
+      '• Not reusable (single-use vinyl):',
+      '• Best for smooth, clean, and untextured walls:',
+      '• Not recommended for fresh paint or highly textured walls:',
+      '• Quote/name decals come as one complete piece — no separate letter installation needed:'
+    ]
+  },
+
+  {
+    heading: '📦 What You Will Receive:',
+    subParts: [
+      '• Custom vinyl wall decal:',
+      '• Step-by-step application instructions:',
+      '• Video tutorial link for easy installation:'
+    ]
+  },
+
+  {
+    heading: '🎨 Custom Orders:',
+    subParts: [
+      '• Any design, quote, or font can be customized:',
+      '• No additional charges for custom work:',
+      '• Share your company name or text in chat for your draft:',
+      '• We are always available to assist with design options:'
+    ]
+  },
+
+  {
+    heading: '🚚 Processing & Shipping:',
+    subParts: [
+      '• Each decal is made after your order with your selected color:',
+      '• Processing time: usually within 1–3 business days:',
+      '• Tracking provided for all orders:',
+      '• Worldwide shipping available:'
+    ]
+  },
+
+  {
+    heading: '💯 Satisfaction Guarantee:',
+    subParts: [
+      '• Customer satisfaction is our top priority:',
+      '• If anything doesn’t meet your expectations, message us first:',
+      '• We are always here to help resolve any concerns:'
+    ]
+  }
+],
+
+
+    tierPrices: { "1 Piece": 1299, "5 Pieces": 1099, "10 Pieces": 999, "20 Pieces": 899 },
+  },
+  // Product 11
+  {
+    id: 11,
+    name: "Masnoon Dua stickers Pack of 10",
+    images: [
+     'https://www.islamichabitat.com/cdn/shop/files/IMG_6488.jpg?v=1723184915',
+     'https://www.islamichabitat.com/cdn/shop/files/IMG_6476.jpg?v=1723184914',
+     'https://www.islamichabitat.com/cdn/shop/files/IMG_6487.jpg?v=1723184914',
+
+    ],
+    rating: "4.7 out of 5",
+    sold: 170,
+    price: "Rs. 999",
+
+    title : 'Dua Stickers – Elevate Your Daily Spiritual Practice 3x2 inches pack of 10',
+
+    desc:[
+      {
+  heading: "Dua Stickers – Essential Daily Prayers (Waterproof & Durable)",
+  subParts: [
+    "✨ Transform your daily routine with Dua Stickers – a simple yet powerful way to keep essential prayers at your fingertips.",
+    "• Beautifully designed stickers that act as gentle reminders of important duas:",
+    "• Premium-quality, waterproof & long-lasting material:",
+    "• Suitable for mirrors, doors, fridges, notebooks & more:",
+    "• Helps you stay spiritually connected throughout the day:"
+  ]
+},
+
+{
+  heading: "💡 Why You'll Love Them:",
+  subParts: [
+    "✔ High-Quality & Long-Lasting – Premium waterproof vinyl:",
+    "✔ Easy to Apply & Remove – No residue left:",
+    "✔ Clear Arabic & English text – Aesthetic & easy to read:",
+    "✔ Perfect for home, office & travel:",
+    "✔ Great for kids & adults to memorize duas effortlessly:"
+  ]
+},
+
+{
+  heading: "📜 Includes 10 Essential Duas:",
+  subParts: [
+    "1.📌 Dua When Entering the House",
+    "2.📌 Dua When Leaving the House",
+    "3.📌 Dua Before Eating",
+    "4.📌 Dua After Eating",
+    "5.📌 Dua for Entering the Toilet",
+    "6.📌 Dua for Leaving the Toilet",
+    "7.📌 Dua for Looking in the Mirror",
+    "8.📌 Dua for Wearing Clothes",
+    "9.📌 Dua Before Sleeping",
+    "10.📌 Dua Upon Waking Up",
+  ]
+},
+
+{
+  heading: "📏 Product Details:",
+  subParts: [
+    "• Size: 3x2 inches:",
+    "• Quantity: 10 Stickers:",
+    "• Printed on durable, waterproof material:",
+    "• Strong adhesion yet easy to remove:"
+  ]
+},
+
+{
+  heading: "🛍 Price Options:",
+  subParts: [
+    '{ "1 Pieces (10 Pack)": 999 }',
+    '{ "5 Pieces (10 Pack)": 949 }',
+    '{ "10 Pieces (10 Pack)": 899 }',
+    '{ "20 Pieces (10 Pack)": 799 }'
+  ]
+},
+
+{
+  heading: "📦 What You Will Receive:",
+  subParts: [
+    "• Pack of high-quality dua stickers:",
+    "• Clean and clear printing:",
+    "• Ready-to-use adhesive stickers:"
+  ]
+},
+
+{
+  heading: "📝 Shop Policy:",
+  subParts: [
+    "• All items are made on order:",
+    "• No cancellations after processing begins:",
+    "• If you receive a damaged or incorrect item, contact us within 24 hours:",
+    "• We ensure safe packaging & fast handling:",
+    "• Custom requests are always welcome:"
+  ]
+},
+
+{
+  heading: "💯 Satisfaction Guarantee:",
+  subParts: [
+    "• Customer satisfaction is our top priority:",
+    "• If anything doesn’t meet your expectations, message us immediately:",
+    "• We are always available to resolve your concerns:"
+  ]
+}
+
+],
+
+
+    tierPrices: { "1 Pieces (10 Pack)": 999, "5 Pieces (10 Pack)": 949, "10 Pieces (10 Pack)": 899, "20 Pieces (10 Pack)": 799 },
+  },
+  // Product 12
+  {
+    id: 12,
+    name: "Masnoon Dua Stickers Pack of 20",
+    images: [
+     'https://www.islamichabitat.com/cdn/shop/files/IMG_6488.jpg?v=1723184915',
+     'https://www.islamichabitat.com/cdn/shop/files/IMG_6476.jpg?v=1723184914',
+     'https://www.islamichabitat.com/cdn/shop/files/IMG_6487.jpg?v=1723184914',
+
+    ],
+    rating: "4.7 out of 5",
+    sold: 170,
+    price: "Rs. 1499",
+
+    title : 'Dua Stickers – Elevate Your Daily Spiritual Practice 3x2 inches pack of 20',
+
+    desc:[
+  {
+    heading: "Dua Stickers – Essential Daily Prayers (Waterproof & Durable)",
+    subParts: [
+      "✨ Transform your daily routine with Dua Stickers – a simple yet powerful way to keep essential prayers at your fingertips.",
+      "• Beautifully designed stickers that act as gentle reminders of important duas:",
+      "• Premium-quality, waterproof & long-lasting material:",
+      "• Suitable for mirrors, doors, fridges, notebooks & more:",
+      "• Helps you stay spiritually connected throughout the day:"
+    ]
+  },
+
+  {
+    heading: "💡 Why You'll Love Them:",
+    subParts: [
+      "✔ High-Quality & Long-Lasting – Premium waterproof vinyl:",
+      "✔ Easy to Apply & Remove – No residue left:",
+      "✔ Clear Arabic & English text – Aesthetic & easy to read:",
+      "✔ Perfect for home, office & travel:",
+      "✔ Great for kids & adults to memorize duas effortlessly:"
+    ]
+  },
+
+  {
+    heading: "📜 Includes 20 Essential Duas:",
+    subParts: [
+      "1.📌 Dua When Entering the House",
+      "2.📌 Dua When Leaving the House",
+      "3.📌 Dua Before Eating",
+      "4.📌 Dua After Eating",
+      "5.📌 Dua for Entering the Toilet",
+      "6.📌 Dua for Leaving the Toilet",
+      "7.📌 Dua for Looking in the Mirror",
+      "8.📌 Dua for Wearing Clothes",
+      "9.📌 Dua Before Sleeping",
+      "10.📌 Dua Upon Waking Up",
+      "11.📌 Dua When Entering the Masjid",
+      "12.📌 Dua When Leaving the Masjid",
+      "13.📌 Dua for Traveling",
+      "14.📌 Dua for Protection",
+      "15.📌 Dua for Seeking Knowledge",
+      "16.📌 Dua When Sneezing",
+      "17.📌 Dua for Visiting the Sick",
+      "18.📌 Dua for Rain",
+      "19.📌 Dua for Stress & Worry",
+      "20.📌 Dua for Parents"
+    ]
+  },
+
+  {
+    heading: "📏 Product Details:",
+    subParts: [
+      "• Size: 3x2 inches:",
+      "• Quantity: 20 Stickers:",
+      "• Printed on durable, waterproof material:",
+      "• Strong adhesion yet easy to remove:"
+    ]
+  },
+
+  {
+    heading: "🛍 Price Options:",
+    subParts: [
+      '"1 Piece (20 Pack)": 1499 ',
+      '"5 Pieces (20 Pack)": 1399 ',
+      '"10 Pieces (20 Pack)": 1299 ',
+      '"20 Pieces (20 Pack)": 1199 '
+    ]
+  },
+
+  {
+    heading: "📦 What You Will Receive:",
+    subParts: [
+      "• Pack of high-quality dua stickers:",
+      "• Clean and clear printing:",
+      "• Ready-to-use adhesive stickers:"
+    ]
+  },
+
+  {
+    heading: "📝 Shop Policy:",
+    subParts: [
+      "• All items are made on order:",
+      "• No cancellations after processing begins:",
+      "• If you receive a damaged or incorrect item, contact us within 24 hours:",
+      "• We ensure safe packaging & fast handling:",
+      "• Custom requests are always welcome:"
+    ]
+  },
+
+  {
+    heading: "💯 Satisfaction Guarantee:",
+    subParts: [
+      "• Customer satisfaction is our top priority:",
+      "• If anything doesn’t meet your expectations, message us immediately:",
+      "• We are always available to resolve your concerns:"
+    ]
+  }
+],
+
+
+
+    tierPrices: { "1 Piece (20 Pack)": 1499, "5 Piece (20 Pack)": 1399, "10 Piece (20 Pack)": 1299, "20 Piece (20 Pack)": 1199 },
+  },
+  // Product 13
+  {
+    id: 13,
+    name: "MashaAllah Acrylic Calligraphy",
+    images: [
+     'https://www.elegancystore.com/cdn/shop/files/b05d8b3ae92b32025551594467a9c6b9_1024x1024.jpg?v=1735900153',
+     'https://luckyarts.org/uploads/images/202506/img_x500_68448af96ebcb5-06720842-66471176.jpeg',
+     'https://luckyarts.org/uploads/images/202506/img_x500_68448b08596983-27632209-90495302.jpeg',
+     'https://luckyarts.org/uploads/images/202506/img_x500_68448afcbc52b2-69947255-65986591.jpeg',
+     'https://luckyarts.org/uploads/images/202506/img_1920x_68448af9987271-04903061-81952165.jpeg',
+    
+    ],
+    rating: "4.7 out of 5",
+    sold: 170,
+    price: "Rs. 1999",
+
+    title : 'MashaAllah Acrylic Calligraphy with Multiple Sizes',
+
+    desc:[
+  {
+    heading: "Mashallah Name Plate – Elegant Islamic Home Decor",
+    subParts: [
+      "✨ Beautify your home with the graceful Mashallah Name Plate — a perfect blend of faith, elegance, and modern craftsmanship.",
+      "• Ideal for home entrances, living rooms, and gift giving:",
+      "• Beautifully designed Mashallah (ما شاء الله) calligraphy:",
+      "• Adds a spiritual and aesthetic touch to any space:",
+      "• Thoughtful Islamic gift for any occasion:"
+    ]
+  },
+
+  {
+    heading: "💡 Design & Visual Appeal:",
+    subParts: [
+      "✔ Mashallah crafted in elegant Arabic calligraphy or modern typeface:",
+      "✔ Option to add personalized names or family titles:",
+      "✔ Optional elements: floral patterns, Islamic motifs, geometric backgrounds:",
+      "✔ Creates a stylish, meaningful focal point in your home:"
+    ]
+  },
+
+  {
+    heading: "🛠 Material & Finish:",
+    subParts: [
+      "• Available in MDF wood, acrylic, stainless steel, or layered materials:",
+      "• Matte, glossy, gold, silver, black, or mixed finishes:",
+      "• Laser-cut or CNC-crafted for clean, precise details:",
+      "• Durable build quality made to last:"
+    ]
+  },
+
+  {
+    heading: "📏 Mounting & Size Options:",
+    subParts: [
+      "• Comes with wall-mounting hardware or strong double-sided tape:",
+      "• Lightweight yet sturdy construction:",
+      "• Sizes suitable for small shelves to large wall display:"
+    ]
+  },
+
+  {
+    heading: "🌿 Spiritual Significance:",
+    subParts: [
+      "• 'Mashallah' expresses gratitude and admiration:",
+      "• A beautiful reminder of faith and divine blessings:",
+      "• Ideal for welcoming guests with barakah:",
+      "• Adds beauty and spiritual grace to any Muslim home:"
+    ]
+  },
+
+  {
+    heading: "🎁 Perfect For:",
+    subParts: [
+      "• Home entrances & living rooms:",
+      "• Kids' rooms or nurseries (with custom names):",
+      "• Housewarming, weddings, or Islamic gifts:",
+      "• Eid, Ramadan, and special occasions:"
+    ]
+  },
+
+  {
+    heading: "📦 What You Will Receive:",
+    subParts: [
+      "• A beautifully crafted Mashallah name plate:",
+      "• Clean and precise finishing:",
+      "• Ready-to-install décor piece:"
+    ]
+  },
+
+  {
+    heading: "📝 Shop Policy:",
+    subParts: [
+      "• All items are custom-made on order:",
+      "• No cancellations once processing begins:",
+      "• If you receive a damaged or incorrect item, contact us within 24 hours:",
+      "• Safe packaging & fast handling guaranteed:",
+      "• Custom design requests are always welcome:"
+    ]
+  },
+
+  {
+    heading: "💯 Satisfaction Guarantee:",
+    subParts: [
+      "• Your satisfaction is our top priority:",
+      "• If anything doesn’t meet your expectations, simply message us:",
+      "• We are here to assist and resolve any concerns promptly:"
+    ]
+  }
+]
+,
+
+
+
+    tierPrices: { "12x6 inches": 1999, "18x12 inches": 3999, "24x12 inches": 5999, "24x18 inches": 8499 },
+  },
+  // Product 14
+  {
+    id: 14,
+    name: "(02) Personalized Mobile Cover",
+    images: [
+      'https://in.sirphire.com/assets/img/jumbotron/mobile-covers-banner.webp',
+      'https://printbebo.in/wp-content/uploads/2022/10/40-Its-Me-Custom-Name-Girlish-Phone-Case-scaled.jpg',
+      'https://printbebo.in/wp-content/uploads/2022/10/43-Hey-Sweetie-Custom-Name-Mobile-Cover-For-Girls-scaled.jpg',
+      'https://designyourown.pk/wp-content/uploads/2019/09/Design-your-own-Picture-Mobile-Cover-600x602.jpeg',
+     'https://designyourown.pk/wp-content/uploads/2019/09/Design-Your-Own-Mobile-Cover-300x300-1.jpg',
+      'https://covers.pk/wp-content/uploads/2017/11/mb000-800x800.jpg.webp',
+        
+    ],
+    rating: "4.7 out of 5",
+    sold: 179,
+    price: "Rs. 999",
+
+    title : 'Personalized Mobile Cases, Customized Mobile Covers, Stylish Mobile Covers, Different Types Cell Phone Covers Design, All Mobile Cases Design That You Love To Use For Your Phone Set Or You Can Customize These Mobile Covers Made With High-Quality Material.',
+
+    desc:[
+  {
+    heading: "Premium Glossy Back Mobile Cover – Stylish Protection for Your Phone 📱✨",
+    subParts: [
+      "✨ Introducing our premium glossy back mobile covers — designed for those who want style, protection, and a luxurious finish all in one.",
+      "• Crafted with high-quality, durable materials for long-lasting use:",
+      "• Adds a sleek, modern look to your phone with a shiny gloss finish:",
+      "• Perfect for daily use while keeping your phone safe and stylish:"
+    ]
+  },
+
+  {
+    heading: "💡 Key Features:",
+    subParts: [
+      "✔ High-resolution printed design for a premium look:",
+      "✔ Custom outer-case printing (pet, name, or any design):",
+      "✔ Protective bumper edges for added durability:",
+      "✔ Made from TPU material — BPA-FREE & eco-friendly:",
+      "✔ Excellent resistance against scratches, bumps & minor drops:",
+      "✔ Slim, lightweight, and comfortable to hold:",
+      "✔ Smooth, glossy surface with a classy shine:",
+      "✔ Precision-cut openings for all ports, speakers & cameras:",
+      "✔ Raised edges for extra screen & camera protection:"
+    ]
+  },
+
+  {
+    heading: "🎨 Design & Customization:",
+    subParts: [
+      "• Available in multiple finishes & colors:",
+      "• Choose any custom artwork or pet photo:",
+      "• Long-lasting, vibrant, fade-resistant print:"
+    ]
+  },
+
+  {
+    heading: "⚠ Important Note:",
+    subParts: [
+      "❌ Phone cover only — *Mobile phone is NOT included:*",
+      "❌ No accessories included with the cover:"
+    ]
+  },
+
+  {
+    heading: "📦 What You Will Receive:",
+    subParts: [
+      "• 1 Premium glossy back mobile cover:",
+      "• High-quality printing with protective TPU edges:",
+      "• Ready-to-use, strong grip, durable phone case:"
+    ]
+  },
+
+  {
+    heading: "🛍 Why You'll Love It:",
+    subParts: [
+      "• Long-lasting print quality:",
+      "• Perfect for personal use or gifting:",
+      "• Adds elegance while ensuring protection:",
+      "• Supports all phone models (on demand):"
+    ]
+  },
+
+  {
+    heading: "📝 Shop Policy:",
+    subParts: [
+      "• All cases are custom-made on order:",
+      "• No cancellation after processing begins:",
+      "• If damaged or wrong item received, contact within 24 hours:",
+      "• Safe packaging & fast delivery guaranteed:"
+    ]
+  },
+
+  {
+    heading: "💯 Satisfaction Guaranteed:",
+    subParts: [
+      "• Your satisfaction is our priority:",
+      "• Message us anytime for custom requests or concerns:",
+      "• We ensure the best quality and service:"
+    ]
+  }
+]
+
+,
+
+
+
+    tierPrices: { "Pack or 02 Covers": 999, "Pack or 03 Covers": 899, "Pack or 05 Covers": 799 , "Pack or 10 Covers": 699 },
+  },
+   // Product 15
+  {
+    id: 15,
+    name: "A4 Wooden Photo Frames",
+    images: [
+      'https://img.alicdn.com/imgextra/i4/2230493877/O1CN01OfMXzI1eViVviLnx8_!!2230493877.jpg',
+      'https://www.wallspace.co.uk/pub/media/catalog/product/cache/c9dea194d7adb529b44fc627fd8b96de/a/4/a4-0008-edit.jpg',
+      'https://www.wallspace.co.uk/pub/media/catalog/product/cache/c7f5606a8805dae9724b014dbba79003/a/4/a4-0009-edit-2.jpg',
+      'https://www.wallspace.co.uk/pub/media/catalog/product/cache/c7f5606a8805dae9724b014dbba79003/a/4/a4-0009-edit.jpg',
+        
+    ],
+    rating: "4.7 out of 5",
+    sold: 179,
+    price: "Rs. 699",
+
+    title : 'Premium A4 Wooden Picture Frame with Elegant Finished Border – Handcrafted Wall Hanging Photo & Art Frame, Durable Build, Perfect for Home and Office Decor',
+
+    desc:[
+  {
+    heading: "✨ Premium A4 Wooden Picture Frame – Elegant, Durable & Perfect for Home Décor 🖼️",
+    subParts: [
+      "• Ideal for photographers, artists, and home decoration lovers:",
+      "• Enhances any artwork, portrait, or photograph beautifully:",
+      "• Elegant traditional gold finish that suits all décor styles:",
+      "• Hand-crafted from solid wood for a premium & timeless look:"
+    ]
+  },
+
+  {
+    heading: "💎 Quality & Craftsmanship:",
+    subParts: [
+      "✔ Made from solid, high-quality wood — NOT plastic or MDF:",
+      "✔ Offers a professional finish with long-lasting durability:",
+      "✔ Fitted with 2mm float glass for excellent clarity & shine:",
+      "✔ Option for Perspex safety glass available upon request:",
+      "✔ Perfect for showcasing your artwork in its best light:"
+    ]
+  },
+
+  {
+    heading: "📐 Size & Fit Details:",
+    subParts: [
+      "• Frame fits A4-size photos or prints: 297mm x 210mm:",
+      "• Suitable for both portrait and landscape wall hanging:",
+      "• Comes with built-in wall-mounting hooks already installed:",
+      "• Please Note: This frame is ONLY available for wall use:",
+      "• No stand included (frame is top-heavy and not suitable for tabletop standing):"
+    ]
+  },
+
+  {
+    heading: "🎨 Customization Option:",
+    subParts: [
+      "• Custom designs, names, text, or artwork can be added:",
+      "• 💰 Customization Fee: Extra Rs. 250 per frame:",
+      "• Share your design or request in chat for customization:"
+    ]
+  },
+
+  {
+    heading: "🛡 Durability & Material Advantage:",
+    subParts: [
+      "• Solid wood + real glass ensures longevity and premium feel:",
+      "• More durable and elegant compared to plastic or MDF frames:",
+      "• Built to last and maintain its quality over years:"
+    ]
+  },
+
+  {
+    heading: "📦 Packaging & Quality Assurance:",
+    subParts: [
+      "• Each frame is inspected carefully before dispatch:",
+      "• Delivered in protective packaging to ensure safe delivery:",
+      "• Every frame is crafted with care and attention to detail:"
+    ]
+  },
+
+  {
+    heading: "💯 Lifetime Guarantee:",
+    subParts: [
+      "• We proudly offer a lifetime quality guarantee:",
+      "• If any issue occurs, contact us and we will assist immediately:",
+      "• Customer satisfaction is our top priority:"
+    ]
+  }
+]
+
+,
+
+
+
+    tierPrices: { "1 Piece": 699, "5 Pieces": 660, "10 Pieces": 599 , "01 Piece (With Pic)": 999 },
   },
 ]
 
