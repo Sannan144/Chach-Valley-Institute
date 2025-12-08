@@ -462,7 +462,7 @@ const products = [
         ]
       }
     ],
-    tierPrices: { "Pack or 02 Covers": 999, "Pack or 03 Covers": 899, "Pack or 05 Covers": 799, "Pack or 10 Covers": 699 },
+    tierPrices: { "Pack of 02 Covers": 999, "Pack of 03 Covers": 1299, "Pack of 05 Covers": 1599, "Pack of 10 Covers": 2499 },
   },
 
   // 6. Priority: Personalized (Vinyl Sticker)
