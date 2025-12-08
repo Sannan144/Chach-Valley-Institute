@@ -4,8 +4,8 @@ export const blogData = [
     title: "The Ultimate MERN Stack Roadmap: Become a Full-Stack Developer in 2025",
     excerpt:
       "A comprehensive guide to mastering MongoDB, Express, React, and Node.js. Learn how to build scalable web applications from scratch.",
-    image:
-      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1633356122102-3fe601e15703?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "Full-stack development is one of the highest-paying domains in the tech industry. Among various technology stacks, the MERN Stack (MongoDB, Express.js, React.js, Node.js) remains the most popular choice for startups and enterprises alike due to its efficiency and use of JavaScript throughout the entire application." },
       { type: "heading", text: "Why Choose MERN Stack?" },
@@ -25,8 +25,8 @@ export const blogData = [
     title: "Freelancing 101: How to Start Earning in Dollars from Home",
     excerpt:
       "Step-by-step guide to starting your freelance career on Upwork, Fiverr, and LinkedIn. Learn to write winning proposals and build a portfolio.",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "The gig economy is booming. Millions of professionals are leaving 9-to-5 jobs to pursue the freedom of freelancing. Whether you are a developer, designer, or writer, the global market is open for you. However, starting without a plan can lead to burnout." },
       { type: "heading", text: "Choosing Your Niche" },
@@ -48,8 +48,8 @@ export const blogData = [
     title: "Data Science with Python: A Beginner's Guide for 2025",
     excerpt:
       "Unlock the power of data. Learn why Python is the king of Data Science and how to start your journey with Pandas, NumPy, and Matplotlib.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "Data is generating at an unprecedented rate. Companies need professionals who can clean, analyze, and visualize this data to drive business decisions. This is where Data Science comes in, and Python is the undisputed language of this field." },
       { type: "heading", text: "Why Python for Data Science?" },
@@ -71,8 +71,8 @@ export const blogData = [
     title: "10 SEO Trends You Cannot Ignore in 2025",
     excerpt:
       "SEO is changing with AI Overviews and Voice Search. Learn how to rank your website on Google's first page in the modern era.",
-    image:
-      "https://images.unsplash.com/photo-1571786256017-aee7a0c009b6?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "Search Engine Optimization (SEO) isn't what it used to be. With Google's constant algorithm updates and the introduction of AI-generated search results (SGE), traditional keyword stuffing is dead. To rank in 2025, you need a user-first approach." },
       { type: "heading", text: "1. Experience, Expertise, Authoritativeness, and Trustworthiness (E-E-A-T)" },
@@ -90,8 +90,8 @@ export const blogData = [
     title: "Cybersecurity Essentials: Protecting Your Digital World",
     excerpt:
       "With cyber attacks on the rise, cybersecurity skills are in high demand. Learn about Ethical Hacking, Network Security, and staying safe online.",
-    image:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "As the world becomes more digitized, the surface area for cyber attacks grows. From ransomware attacks on hospitals to data breaches in major corporations, the need for cybersecurity professionals has never been higher." },
       { type: "heading", text: "Understanding the Threat Landscape" },
@@ -113,8 +113,8 @@ export const blogData = [
     title: "UI/UX Design: Creating Digital Products People Love",
     excerpt:
       "Design is more than just aesthetics. Discover the principles of User Interface and User Experience design and tools like Figma.",
-    image:
-      "https://images.unsplash.com/photo-1586717791821-3f44a5638d48?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1576153192396-4a08225c4ea8?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "Have you ever closed an app because it was too confusing to use? That’s bad UX. In the digital age, a product's success depends on how intuitive and enjoyable it is for the user. UI/UX designers bridge the gap between human needs and technology." },
       { type: "heading", text: "The Difference Between UI and UX" },
@@ -136,8 +136,8 @@ export const blogData = [
     title: "Mastering React Native vs Flutter: What to Choose in 2025?",
     excerpt:
       "A detailed comparison of the two leading mobile app development frameworks. Which one offers better performance and career prospects?",
-    image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "Cross-platform app development allows developers to write code once and deploy it on both iOS and Android. The two heavyweights in this arena are React Native (by Meta) and Flutter (by Google). Choosing between them is a common dilemma for developers." },
       { type: "heading", text: "React Native: The JavaScript Giant" },
@@ -153,8 +153,8 @@ export const blogData = [
     title: "The Rise of Artificial Intelligence Tools for Productivity",
     excerpt:
       "Work smarter, not harder. Explore the top AI tools like ChatGPT, MidJourney, and Notion AI that are revolutionizing workflows.",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1676804591007-71147cb48239?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "AI is not here to replace you; it is here to augment your capabilities. Professionals who adopt AI tools are finishing tasks in hours that used to take days. Integrating these tools into your daily workflow is the ultimate productivity hack." },
       { type: "heading", text: "Top AI Tools to Master" },
@@ -174,8 +174,8 @@ export const blogData = [
     title: "How to Build a Personal Brand on LinkedIn",
     excerpt:
       "Your network is your net worth. Learn strategies to optimize your LinkedIn profile, create engaging content, and attract recruiters.",
-    image:
-      "https://images.unsplash.com/photo-1611944212129-29990966100d?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1616469829581-73993eb86b02?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "LinkedIn is no longer just a digital resume; it is a thriving content platform. Recruiters and clients are constantly scouting for talent. A strong personal brand can bring opportunities directly to your inbox without you applying for a single job." },
       { type: "heading", text: "Profile Optimization Checklist" },
@@ -195,8 +195,8 @@ export const blogData = [
     title: "Video Editing: The Most In-Demand Skill for Content Creators",
     excerpt:
       "With the boom of TikTok and YouTube Shorts, video editors are needed everywhere. Learn Premiere Pro, After Effects, and storytelling.",
-    image:
-      "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "Content is king, but video is the emperor. Short-form content on TikTok, Instagram Reels, and YouTube Shorts has created a massive demand for skilled video editors. Brands are looking for creators who can tell compelling stories in under 60 seconds." },
       { type: "heading", text: "Software to Learn" },
@@ -210,8 +210,8 @@ export const blogData = [
     title: "Cloud Computing with AWS: Infrastructure of the Future",
     excerpt:
       "Move beyond local servers. A deep dive into Amazon Web Services (AWS) and how cloud certifications can boost your salary.",
-    image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "Gone are the days when companies maintained massive physical server rooms. Today, businesses run on the Cloud. Amazon Web Services (AWS) is the market leader, powering a vast portion of the internet. Cloud architects are among the most secure jobs in tech." },
       { type: "heading", text: "Core AWS Services" },
@@ -231,8 +231,8 @@ export const blogData = [
     title: "Soft Skills for Tech Professionals: Why Coding Isn't Enough",
     excerpt:
       "You can code, but can you communicate? Discover why empathy, teamwork, and adaptability are critical for senior roles.",
-    image:
-      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    // New Image Link
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
     content: [
       { type: "paragraph", text: "Many developers hit a career ceiling because they focus solely on technical skills. To move from a Junior Developer to a Team Lead or CTO, you need high Emotional Intelligence (EQ). Tech projects are built by teams, not lone wolves." },
       { type: "heading", text: "Crucial Soft Skills" },
