@@ -1,370 +1,312 @@
 const ServicesData = [
-  // Service 01
+  // ==========================
+  // Service 01: Web Development
+  // ==========================
   {
-  id: 1,
-  slug: "web-development",
-  title: "Professional Web Development Services – Custom, Modern and Fully-Functional Websites for Every Business",
-  image: "https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=400",
-  desc: [
-    
-{
-    description: "Hum aap ko Professional, Modern aur Fully-Functional Websites provide karte hain jo aap ke business ko online kamyabi ki taraf le jaane ke liye tayar ki jati hain. Hamari Web Development services mein har woh cheez shamil hoti hai jiske aap ke business ko zaroorat hoti hai — Domain & Hosting se lekar Design, Development, Content & Launch tak complete solution!",
-    bullets: []
+    id: 1,
+    slug: "web-development",
+    title:
+      "Professional Web Development Services – Custom, Modern and Fully-Functional Websites for Every Business",
+    image:
+      "https://www.innovativesolutions.com.pk/wp-content/uploads/2019/04/Web-Development.jpg",
+    desc: [
+      {
+        description:
+          "Hum aap ko Professional, Modern aur Fully-Functional Websites provide karte hain jo aap ke business ko online kamyabi ki taraf le jaane ke liye tayar ki jati hain.",
+        bullets: []
+      },
+      {
+        description: "🌐 Our Complete Web Solutions:",
+        bullets: [
+          "🛒 **Shopify E-Commerce Stores** (Sales-ready setup)",
+          "💻 **Custom Coding Websites** (MERN Stack / PHP)",
+          "🌐 **WordPress Development** (Elementor / Divi)",
+          "📱 **Responsive Design** (Mobile, Tablet & PC Optimized)",
+          "⚡ **Speed Optimization** (Fast loading pages)",
+          "🔒 **Security Integration** (SSL & Anti-Hacking)",
+          "🎨 **UI/UX Design** (User-friendly interface)",
+          "🔌 **API Integration** (Payment Gateways, Maps, etc.)",
+          "🛠️ **Bug Fixing & Maintenance**",
+          "📈 **Basic SEO Setup** (Google Indexing)"
+        ]
+      },
+      {
+        description: "Why Choose Our Web Services?",
+        bullets: [
+          "🔥 100% Custom & Unique Design",
+          "🚀 High-Performance & Fast Speed",
+          "📱 Mobile & SEO Friendly Structure",
+          "💬 Live WhatsApp Chat Integration",
+          "📝 Easy-to-Manage Admin Panel",
+          "🔄 Social Media Integration",
+          "👨‍💻 30 Days Free Support After Delivery",
+          "💰 Affordable Pricing Packages",
+          "⏱️ On-Time Project Delivery",
+          "✨ Professional & Clean Code"
+        ]
+      },
+      {
+        description: "Final Delivery Includes:",
+        bullets: [
+          "🎉 Fully Functional Live Website",
+          "📂 Source Code & Backup Files",
+          "🎥 Video Tutorial (How to edit website)",
+          "📧 Professional Business Email Setup",
+          "🔐 Admin Login Credentials"
+        ]
+      }
+    ],
+
+    formOptions: [
+      "Restaurant / Cafe Website",
+      "School / Academy Website",
+      "Hotel / Hostel Website",
+      "Real Estate Website",
+      "E-commerce Store (Online Shop)",
+      "Corporate / Business Website",
+      "Portfolio / CV Website",
+      "Blog / News Website",
+      "Landing Page (One Pager)",
+      "Web Application / SaaS"
+    ],
+
+    SecformOptions: [
+      "Standard Delivery (5-7 Days)",
+      "Fast Track (3-4 Days)",
+      "Urgent Launch (24-48 Hours)"
+    ],
+
   },
+
+  // ==========================
+  // Service 02: Shopify Store
+  // ==========================
   {
-    description: "Hum teen tarah ki websites best quality ke sath develop karte hain:",
-    bullets: [
-      "Shopify E-Commerce Stores",
-      "Custom Coding Websites",
-      "WordPress Websites"
+    id: 2,
+    slug: "shopify-store",
+    title:
+      "Premium Shopify E-Commerce Store – Ready-Made Online Store with Graphics, Sliders, Content, Domain & Hosting",
+    image:
+      "https://prosglobalinc.com/wp-content/uploads/2022/03/Shopify-development-services.jpg",
+
+    desc: [
+      {
+        description:
+          "Apna Online Business shuru karein! Hum aap ko Shopify Online Stores complete branding aur automation ke sath deliver karte hain.",
+        bullets: []
+      },
+      {
+        description: "🛍️ Complete Shopify Store Setup:",
+        bullets: [
+          "🎨 **Premium Theme Customization** (High Converting)",
+          "📦 **Winning Product Research** (For Dropshipping)",
+          "🖼️ **Professional Logo & Banner Design**",
+          "📱 **Mobile Responsive Layout**",
+          "💳 **Payment Gateway Setup** (COD / Stripe / PayPal)",
+          "🚚 **Shipping Rates & Zones Setup**",
+          "🛒 **Checkout Process Optimization**",
+          "🔔 **Sales Pop-up & Urgency Apps**",
+          "📢 **Social Media Pixel Integration**",
+          "📝 **Legal Pages** (Privacy Policy, Terms, Refunds)"
+        ]
+      },
+      {
+        description: "✨ Why Our Stores Generate Sales?",
+        bullets: [
+          "🚀 Fast Loading Speed (Under 3 seconds)",
+          "📸 High-Quality Product Images & GIFs",
+          "✍️ SEO Optimized Product Descriptions",
+          "⭐ Customer Reviews Import",
+          "🔄 Automated Order Fulfillment Setup",
+          "💬 Live Chat Support Button",
+          "📧 Email Marketing Setup (Klaviyo)",
+          "🏷️ Discount Codes & Offers Setup",
+          "📊 Google Analytics Integration",
+          "🧠 1-Hour Consultation on How to Run Ads"
+        ]
+      }
+    ],
+
+    formOptions: [
+      "Clothing & Fashion Store",
+      "Cosmetics & Beauty Shop",
+      "Electronics & Gadgets Store",
+      "Home & Furniture Store",
+      "Jewelry & Accessories",
+      "Kids & Toys Store",
+      "Pet Supplies Store",
+      "One Product Store (Dropshipping)",
+      "General Store (Multiple Niches)"
+    ],
+
+    SecformOptions: [
+      "Basic Store (Ready in 4-5 Days)",
+      "Professional Store (Ready in 3 Days)",
+      "Premium Branded Store (Ready in 48 Hours)"
+    ],
+
+  },
+
+  // ==========================
+  // Service 03: MS Office Services
+  // ==========================
+  {
+    id: 3,
+    slug: "microsoft-office-services",
+    title:
+      "Professional Microsoft Office Services – Expert Document Creation, Data Management & Business Presentation",
+    image:
+      "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/323943644/original/14b62fc26091a391129450b83ec53a3120f63207/provide-pro-service-in-ms-office.png",
+
+    desc: [
+      {
+        description:
+          "Professional Documents, Accurate Data Entry aur High-Impact Presentations ke liye humara expert service choose karein.",
+        bullets: []
+      },
+      {
+        description: "📄 MS Word Expert Services:",
+        bullets: [
+          "✍️ Professional Typing (Urdu / English)",
+          "📘 CV / Resume & Cover Letter Design",
+          "📝 Assignment & Thesis Formatting",
+          "📑 Table of Contents & Indexing",
+          "📜 Legal Agreements & Contracts",
+          "🔄 PDF to Word / Word to PDF Conversion",
+          "🖼️ Letterhead & Invoice Designing",
+          "📖 eBook Formatting & Layout",
+          "🔍 Proofreading & Editing",
+          "📨 Mail Merge Setup"
+        ]
+      },
+      {
+        description: "📊 MS Excel Data Solutions:",
+        bullets: [
+          "📥 Fast & Accurate Data Entry",
+          "🔢 Complex Formulas (VLOOKUP, IF, INDEX)",
+          "📊 Dynamic Dashboards & Graphs",
+          "💹 Profit/Loss & Balance Sheets",
+          "📉 Pivot Tables & Charts",
+          "🧾 Inventory Management Sheets",
+          "📅 Salary & Attendance Sheets",
+          "🧹 Data Cleaning & Sorting",
+          "🔗 Google Sheets Integration",
+          "🤖 Macro & VBA Automation"
+        ]
+      },
+      {
+        description: "🎨 MS PowerPoint Presentations:",
+        bullets: [
+          "🚀 Investor Pitch Decks",
+          "🏢 Corporate Company Profiles",
+          "🎓 Educational/University Slides",
+          "🎥 Slide Animations & Transitions",
+          "📊 Infographics & Charts Integration",
+          "🎤 Voice-over Synchronization",
+          "📹 Video Presentation Export",
+          "🎨 Custom Template Design",
+          "📑 Handouts & Notes Preparation",
+          "✨ Modern & Clean Look"
+        ]
+      }
+    ],
+
+    formOptions: [
+      "Word Document Formatting",
+      "Excel Data Analysis/Entry",
+      "PowerPoint Presentation",
+      "CV / Resume Making",
+      "Assignment / Thesis Work",
+      "Convert PDF to Word/Excel"
+    ],
+
+    SecformOptions: [
+      "Standard Delivery (2-3 Days)",
+      "Fast Delivery (24 Hours)",
+      "Urgent / Emergency (Within 6-12 Hours)"
+    ],
+
+    ThirdformOptions: [
+      "English Language",
+      "Urdu (Inpage/Unicode)",
+      "Roman Urdu",
+      "Mathematics/Equations"
     ]
   },
+
+  // ==========================
+  // Service 04: AutoCAD
+  // ==========================
   {
-    description: "Mukammal Shopify Store Setup",
-    bullets: [
-      "Professional Product Pages & Collections",
-      "Payments, Shipping & Apps Integration",
-      "Ready-to-Sell Store (aap ka store launch-ready hota hai)"
-    ]
-  },
-  {
-    description: "HTML, CSS, JavaScript, PHP par Fully Custom Coded Websites",
-    bullets: [
-      "High-Speed, Secure aur Unique Designs",
-      "Har qisam ki functionalities zaroorat ke mutabiq develop ki jati hain"
-    ]
-  },
-  {
-    description: "WordPress par Business Websites, Blogs, E-Commerce Stores",
-    bullets: [
-      "Premium Themes + Advanced Plugins Integration",
-      "Fast Loading, SEO Optimized, User-Friendly Websites"
-    ]
-  },
-  {
-    description: "Hum har type ke business ke liye websites banate hain:",
-    bullets: [
-      "Restaurants & Cafés",
-      "Schools, Colleges & Academies",
-      "Hotels & Hostels",
-      "Real Estate & Property Dealers",
-      "E-Commerce Brands",
-      "Service Providers",
-      "Clinics & Hospitals",
-      "Corporate & Small Businesses",
-      "Aur kisi bhi type ka business — hum sab ke liye website create kar dete hain!"
-    ]
-  },
-  {
-    description: "Aap ko kisi cheez ki fikar karne ki zaroorat nahi — hum aap ko ek Ready-Made, Launch-Ready Website deliver karte hain!",
-    bullets: []
-  },
-  {
-    description: "Website graphics design:",
-    bullets: [
-      "Website banners",
-      "Sliders",
-      "Icons",
-      "Product images",
-      "Branding elements"
-    ]
-  },
-  {
-    description: "Professional content writing:",
-    bullets: [
-      "Home, About, Services, Contact Pages",
-      "SEO-friendly aur engaging content",
-      "Simple & clear wording taake customer aasani se samajh sake"
-    ]
-  },
-  {
-    description: "Domain & Hosting Setup:",
-    bullets: [
-      "Top-level domain selection",
-      "Fast & secure hosting",
-      "SSL certificate installation"
-    ]
-  },
-  {
-    description: "Full Website Configuration:",
-    bullets: [
-      "Pages setup",
-      "Navigation menus",
-      "Forms, maps, chat widgets",
-      "Speed optimization + security setup"
-    ]
-  },
-  {
-    description: "Final Delivery Includes:",
-    bullets: [
-      "A complete, fully designed, fully functional Ready-Made Website",
-      "Mobile responsive",
-      "User-friendly",
-      "SEO optimized",
-      "Secure & fast loading"
-    ]
-  },
-  {
-    description: "Why Choose Our Web Development Services?",
-    bullets: [
-      "100% Customized Website",
-      "Professional & Modern Design",
-      "Affordable Packages",
-      "Fast Delivery",
-      "After-Delivery Support"
+    id: 4,
+    slug: "autocad-drafting",
+    title:
+      "Professional AutoCAD Drafting & 2D/3D Architectural Design Services – Complete House Maps & Engineering Drawings",
+    image:
+      "https://microdra.com/wp-content/uploads/2021/06/CAD-Drafting-Services-3-1024x576.png",
+
+    desc: [
+      {
+        description:
+          "Apne ghar ya plaza ka naksha banwayein! Hum provide karte hain Professional AutoCAD Drafting, 2D/3D Planning, Structural Drawings & Approval Maps.",
+        bullets: []
+      },
+      {
+        description: "🏠 2D Architectural Planning:",
+        bullets: [
+          "📏 Detailed Floor Plans (Ground & First)",
+          "🚪 Door & Window Schedule",
+          "📐 Furniture Layout Planning",
+          "🪟 Ventilation & Sunlight Analysis",
+          "🛁 Kitchen & Bath Detailed Layouts",
+          "🏗️ Foundation & Column Placement",
+          "🚽 Sewerage & Drainage Plan",
+          "⚡ Electrical & Plumbing Drawing",
+          "🚧 Boundary Wall Design",
+          "📋 Submission Drawings (LDA, CDA, DHA Standards)"
+        ]
+      },
+      {
+        description: "🏢 3D Visualization & Modeling:",
+        bullets: [
+          "🏙️ 3D Front Elevation (Modern/Classic)",
+          "🏡 3D Exterior Walkthrough",
+          "🛋️ 3D Interior Rendering (Bedroom/TV Lounge)",
+          "💡 Lighting & Texture Effects",
+          "🎥 360-Degree View Animation",
+          "🌳 Landscape & Garden Design",
+          "🎨 Color Scheme Selection",
+          "🏗️ Isometric Views",
+          "🖼️ High-Quality Rendered Images",
+          "🛠️ Material Details (Tiles, Wood, Glass)"
+        ]
+      }
+    ],
+
+    formOptions: [
+      "2D House Map (Floor Plan)",
+      "3D Front Elevation",
+      "Full Architectural Set (2D + 3D)",
+      "Commercial Plaza Design",
+      "Renovation / Remodeling Plan",
+      "Electric & Plumbing Layout",
+      "Structural Drawings",
+      "Convert PDF/Image to AutoCAD (DWG)"
+    ],
+
+    SecformOptions: [
+      "Standard Timeline (5-7 Days)",
+      "Priority Service (3-4 Days)",
+      "Urgent Submission (24-48 Hours)"
+    ],
+
+    ThirdformOptions: [
+      "Small Plot (3 - 5 Marla)",
+      "Medium Plot (7 - 10 Marla)",
+      "Large Plot (1 Kanal & Above)",
+      "Commercial Area"
     ]
   }
-],
-
-  formOptions: [
-  "Restaurant / Cafe Website",
-  "School / Academy Website",
-  "Hotel / Hostel Website",
-  "Real Estate / Property Dealer Website",
-  "E-commerce / Online Store",
-  "Corporate / Business Website",
-  "Portfolio / Personal Website",
-  "Blog / Content Website",
-  "Landing Page / Campaign Page",
-  "Web Application / SaaS"
-],
-},
-// // Service 02 
-// {
-//     id: 2,
-//      slug: "Shopify E-commerce Store",
-//   title: "Premium Shopify E-Commerce Store – Fully Ready-Made Online Store with Graphics, Sliders, Content, Domain & Hosting",
-
-//     image: "https://plus.unsplash.com/premium_photo-1681488350342-19084ba8e224?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZSUyMGNvbW1lcmNlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=400",
-  
-//   desc: [
-//     {
-//       description:
-//         "Hum aap ko Complete Ready-Made Shopify E-Commerce Store provide karte hain jismein aap ka business professionally online launch ho jata hai. Is service mein sari cheezein shamil hoti hain—design, development, graphics, content writing, domain, hosting, apps, integrations—everything done for you!",
-//       bullets: []
-//     },
-
-//     {
-//       description: "Our Shopify Store Development Includes:",
-//       bullets: [
-//         "Full Shopify Store Creation",
-//         "Premium & Modern Theme Setup",
-//         "Custom Home Page Design",
-//         "Product Pages, Categories & Collections"
-//       ]
-//     },
-
-//     {
-//       description: "Complete Graphics Package Included:",
-//       bullets: [
-//         "High-quality Website Banners",
-//         "Homepage Hero Sliders",
-//         "Product Images Editing",
-//         "Branding Elements",
-//         "Icons & Visual Elements"
-//       ]
-//     },
-
-//     {
-//       description:
-//         "Hum aap ka Shopify Store bilkul professional look ke sath design karte hain jismein graphics, layout, colors, UI sab aap ke brand ke mutabiq hotay hain.",
-//       bullets: []
-//     },
-
-//     {
-//       description: "Advanced Store Features Included:",
-//       bullets: [
-//         "Payment Gateway Integration (Stripe, PayPal, COD)",
-//         "Shipping Zones & Rules Setup",
-//         "Automated Order Notifications",
-//         "Cart & Checkout Optimization",
-//         "Mobile Responsive Layout",
-//         "SEO Friendly Structure"
-//       ]
-//     },
-
-//     {
-//       description: "Product Management System:",
-//       bullets: [
-//         "Product Uploading (Images, Titles, Descriptions)",
-//         "Variants & Options Setup",
-//         "Inventory & Stock Management",
-//         "Smart Collections + Manual Collections"
-//       ]
-//     },
-
-//     {
-//       description: "Important Apps Integrations:",
-//       bullets: [
-//         "Reviews App",
-//         "Upsell & Cross-sell Apps",
-//         "Email Marketing App",
-//         "Trust Badges",
-//         "Currency Converter",
-//         "Chat Widget Integration"
-//       ]
-//     },
-
-//     {
-//       description:
-//         "Aap ko koi tension nahi—hum store ko aise ready bana kar deliver karte hain ke aap turant sales shuru kar sakte hain.",
-//       bullets: []
-//     },
-
-//     {
-//       description: "Domain & Hosting (Shopify) Setup:",
-//       bullets: [
-//         "Top-Level Domain Connection",
-//         "Shopify Hosting Setup",
-//         "SSL Certificate Enabled",
-//         "Store Security Configuration"
-//       ]
-//     },
-
-//     {
-//       description: "Store Optimization:",
-//       bullets: [
-//         "Fast Loading Speed Optimization",
-//         "SEO Settings",
-//         "Meta Titles & Descriptions",
-//         "Mobile-Friendly Optimization"
-//       ]
-//     },
-
-//     {
-//       description: "Final Delivery Includes:",
-//       bullets: [
-//         "A fully ready, launch-ready Shopify Store",
-//         "Professional Design & Custom Layout",
-//         "Fully Functional E-commerce System",
-//         "Complete Graphics Included",
-//         "Mobile Responsive + SEO Friendly",
-//         "Secure, Fast & Professionally Optimized Store"
-//       ]
-//     },
-
-//     {
-//       description: "Why Choose Our Shopify E-commerce Store Service?",
-//       bullets: [
-//         "100% Customized Store",
-//         "Premium Quality Graphics",
-//         "Affordable Price & Fast Delivery",
-//         "Professional Content Included",
-//         "Apps Integration & Full Setup",
-//         "After-Delivery Support Included"
-//       ]
-//     }
-//   ],
-
-//   formOptions: [
-//     "Clothing / Fashion Brand",
-//     "Cosmetics / Beauty Store",
-//     "Electronics & Gadgets Store",
-//     "Furniture & Home Decor",
-//     "Jewelry & Accessories",
-//     "Grocery / Mart Store",
-//     "Fitness / Gym Products",
-//     "Handmade Crafts Store",
-//     "Shoes & Bags Store",
-//     "Kids Products Store",
-//     "Pet Supplies Store",
-//     "Automobile Accessories",
-//     "Custom Niche Store (Any Category)"
-//   ]
-// },
-// // Service 03
-//   {
-//     id: 3,
-//     slug: "Smart Documents, Smarter Workflow — Powered by Microsoft Office ⚡📝",
-//     title: "Professional Microsoft Office Services – Expert Document Creation, Data Management & Business Presentation Solutions",
-//     image: "https://images.unsplash.com/photo-1646215993316-c98f642303ce?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1zJTIwb2ZmaWNlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=400",
-
-//   title : 'description',
-//   subParts : [ "Hum aap ko provide karte hain Microsoft Office ki complete professional services, jismein hum aap ke documents, reports, sheets aur presentations ko expert-level quality ke saath design, format aur optimize karte hain. Chahe aap ko simple composing chahiye ya advanced Excel automation, ya phir pitch-ready presentations, hum aap ke liye sab kuch deliver karte hain — fast, accurate & business-focused! 🚀 Neeche tamam Microsoft Office services detail mein mention ki gayi hain:",
-//   ],
-//   services: {
-//     msWord: [
-//       "📄 Word Document Composing",
-//       "✍️ Urdu / English Typing (Roman Included)",
-//       "🗂️ Professional Document Formatting",
-//       "📑 Table of Contents, Header/Footer Setup",
-//       "📘 CV / Resume Designing & Formatting",
-//       "📝 Letters, Applications & Agreements Drafting",
-//       "📚 Assignments & Reports Creation",
-//       "🔍 Proofreading & Grammar Fixing",
-//       "🔖 PDF to Word / Word to PDF Conversion"
-//     ],
-
-//     msExcel: [
-//       "📥 Accurate Data Entry & Cleanup",
-//       "📈 Advanced Excel Formulas (SUM, VLOOKUP, IF, COUNTIF etc.)",
-//       "🧮 Financial Sheets & Reports",
-//       "📊 Data Analysis & Dashboard Creation",
-//       "🔢 Inventory Management Sheets",
-//       "💹 Sales & Expense Tracking Sheets",
-//       "🔁 Excel Automation using Formulas",
-//       "🔄 Excel to PDF / Excel to Word Conversion"
-//     ],
-
-//     msPowerPoint: [
-//       "🎨 Premium Presentation Designing",
-//       "🖼️ Business Pitch Decks",
-//       "📚 Educational Presentations",
-//       "📊 Infographics & Visual Slides",
-//       "🚀 Animated Slides Transition Setup",
-//       "🌐 Company Profile Presentations",
-//       "⚡ Fast & Professional Layout Designs"
-//     ],
-
-//     additionalServices: [
-//       "🧷 File Formatting & Alignment Fix",
-//       "📦 Bulk File Management",
-//       "🔗 Hyperlinks, References & Index Creation",
-//       "🛠️ Document Correction & Redesign",
-//       "🗂️ Templates Creation (Word/Excel/PowerPoint)",
-//       "📂 Document Merge / Split / Rebuild"
-//     ]
-//   },
-
-//   formOptions: {
-//     serviceType: [
-//       "Word Document Composing",
-//       "Excel Data Entry",
-//       "Excel Reports / Formulas",
-//       "PowerPoint Presentation",
-//       "Resume / CV Formatting",
-//       "Assignment / Report Writing",
-//       "Document Formatting",
-//       "Business Sheets (Sales, Inventory, Finance)",
-//       "Presentation Design",
-//       "File Conversion (PDF/Word/Excel)"
-//     ],
-
-//     documentLanguage: ["English", "Urdu", "Roman Urdu"],
-
-//     outputFormat: ["Word (.docx)", "PDF", "Excel (.xlsx)", "PowerPoint (.pptx)"],
-
-//     urgencyLevel: ["Normal Delivery", "Fast Delivery", "Urgent (24 Hours)"]
-//   }
-// },
-// // Service 04
-//   {
-//     id: 4,
-//     slug: "autocad",
-//     title: "AutoCAD Design",
-//     image: "https://images.unsplash.com/photo-1568137223571-e1581799c268?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXV0b2NhZCUyMG1hcHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=400",
-//     description: "Professional 2D & 3D AutoCAD drawings and plans.",
-//     bullets: [
-//       "2D floor plans & layouts",
-//       "3D modeling & rendering",
-//       "Mechanical & civil drafting",
-//       "Architectural drawings",
-//       "Electrical & plumbing plans",
-//       "Site mapping & measurements",
-//       "Blueprints & revisions"
-//     ],
-//     formOptions: ["2D Drafting", "3D Modeling", "Full Project Design"],
-//   },
 ];
 
 export default ServicesData;

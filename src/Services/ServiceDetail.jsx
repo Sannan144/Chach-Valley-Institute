@@ -167,7 +167,7 @@ const ServiceDetail = () => {
 
               {service.SecformOptions && (
                 <div>
-                  <label className="block mb-1 font-medium tracking-wide">Additional Category</label>
+                  <label className="block mb-1 font-medium tracking-wide">Urgency Level</label>
                   <select
                     value={secCategory}
                     onChange={(e) => setSecCategory(e.target.value)}
@@ -184,7 +184,7 @@ const ServiceDetail = () => {
 
               {service.ThirdformOptions && (
                 <div>
-                  <label className="block mb-1 font-medium tracking-wide">Third Category</label>
+                  <label className="block mb-1 font-medium tracking-wide">Document Options</label>
                   <select
                     value={thirdCategory}
                     onChange={(e) => setThirdCategory(e.target.value)}
