@@ -23,7 +23,7 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
         </div>
 
         {/* Content Sections */}
-        <div className="p-8 grid md:grid-cols-2 gap-6 flex-grow">
+        <div className="p-8 flex gap-5 flex-wrap">
           {/* What You'll Learn */}
           <div className="bg-[#f0fdf4] p-6 rounded-lg shadow-lg">
             <h3 className="font-semibold text-[#265336] text-xl mb-3">What You'll Learn:</h3>
@@ -48,8 +48,10 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
             </ul>
           </div>
 
+           <div className="flex flex-col gap-5 flex-1"> 
+
           {/* Who Can Join */}
-          <div className="bg-[#fefce8] p-6 rounded-lg shadow-lg">
+          <div className="bg-[#fefce8] px-6 py-6 sm:py-10 rounded-lg shadow-lg h-fit">
             <h3 className="font-semibold text-[#b45309] text-xl mb-3">Who Can Join:</h3>
             <ul className="list-disc ml-5 text-gray-700 space-y-1">
               {course.Join.map((item, i) => {
@@ -71,7 +73,7 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
           </div>
 
           {/* Outcomes */}
-          <div className="bg-[#eff6ff] p-6 rounded-lg shadow-lg md:col-span-2">
+          <div className="bg-[#eff6ff] p-6 py-6 sm:py-10 rounded-lg shadow-lg md:col-span-2">
             <h3 className="font-semibold text-[#1e40af] text-xl mb-3">Outcomes:</h3>
             <ul className="list-disc ml-5 text-gray-700 space-y-1">
               {course.Outcome.map((item, i) => {
@@ -93,13 +95,15 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
           </div>
 
           {/* Fee & Extra Info */}
-          <div className="bg-[#fef2f2] p-6 rounded-lg shadow-lg md:col-span-2 flex flex-col gap-3">
+          <div className="bg-[#fef2f2] p-6 py-6 sm:py-10 rounded-lg shadow-lg md:col-span-2 flex flex-col gap-3">
             <p className="text-gray-800 font-medium"><strong>Fee:</strong> Rs. {course.Fee} /-</p>
             <p className="text-gray-600"><strong>Installments:</strong> Available</p>
             <p className="text-gray-600"><strong>Free Demo Class:</strong> 3 Days Free Demo Class for Everyone </p>
           </div>
         </div>
 
+          </div>
+        
         {/* Admission Button */}
         <div className="p-8 bg-gray-50">
           <button

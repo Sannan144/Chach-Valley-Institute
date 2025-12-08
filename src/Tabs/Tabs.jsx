@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Tabs = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const menuItems = ["home", "courses", "products", "services", "blog", "contact-us"];
+  const menuItems = ["home", "courses", "products", "services", "blog", "contact-us",];
 
   return (
     <div className="sm:px-4 md:px-[0px] lg:px-4 py-3 relative">

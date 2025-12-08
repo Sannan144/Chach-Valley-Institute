@@ -43,7 +43,7 @@ const Services = () => {
 
               {/* Content */}
               <div className="p-5 text-center flex flex-col justify-between h-[160px]">
-                <h2 className="text-xl font-bold text-[#255235] mb-2">
+                <h2 className="text-lg font-bold text-[#255235] mb-2">
                   {service.title}
                 </h2>
                 {service?.desc?.[0]?.heading && (

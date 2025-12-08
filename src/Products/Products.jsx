@@ -12,15 +12,15 @@ const Products = () => {
   const [mainIndex, setMainIndex] = useState(0);
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
-  name: "",
-  address: "",
-  city: "",
-  phone: "",
-  whatsapp: "",
-  quantity: 1,
-  length: "",  
-  width: "",   
-});
+    name: "",
+    address: "",
+    city: "",
+    phone: "",
+    whatsapp: "",
+    quantity: 1,
+    length: "",
+    width: "",
+  });
 
   const isDragging = useRef(false);
   const startX = useRef(0);
@@ -85,7 +85,6 @@ const Products = () => {
 📞 *Phone:* ${formData.phone}
 💬 *WhatsApp:* ${formData.whatsapp}`;
 
-
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
@@ -128,9 +127,9 @@ const Products = () => {
                   </p>
                 </div>
                 <p className="text-gray-600 text-xs mt-1">{item.sold} sold</p>
-                {
-                  item.inpVal == "False" ? <></> : <p className="font-bold text-[#265336] mt-2">{item.price}</p>
-                }
+                {item.inpVal === "False" ? null : (
+                  <p className="font-bold text-[#265336] mt-2">{item.price}</p>
+                )}
               </div>
             </div>
           ))}
@@ -138,8 +137,10 @@ const Products = () => {
       </div>
 
       {selectedProduct && (
-        <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 animate-fadeIn p-0">
-          <div className="bg-white w-full h-full p-6 md:p-10 relative overflow-y-auto hide-scrollbar">
+        <div className="fixed inset-0 flex justify-center items-center z-50 p-0">
+          {/* Modal background light green */}
+          <div className="bg-[#fff] w-full h-full p-6 md:p-10 relative overflow-y-auto hide-scrollbar">
+            {/* Cross button */}
             <button
               className="fixed top-5 right-6 text-red-600 font-bold text-3xl hover:text-red-800 transition-transform duration-300 hover:scale-125 cursor-pointer z-50"
               onClick={closeModal}
@@ -149,6 +150,7 @@ const Products = () => {
 
             <div className="flex flex-col gap-8 h-full">
               <div className="flex flex-col md:flex-row gap-4 flex-1 items-center justify-center">
+                {/* Main Image */}
                 <div
                   className="flex-1 flex justify-center items-center relative overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100"
                   onMouseDown={startDrag}
@@ -168,51 +170,47 @@ const Products = () => {
                     }}
                   >
                     {selectedProduct.images.map((img, idx) => (
-                    <div
-                      key={idx}
-                      className="flex-shrink-0 w-full h-96 relative"
-                    >
-                      <img
-                        src={img}
-                        alt={`slide-${idx}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ))}
-
+                      <div key={idx} className="flex-shrink-0 w-full h-96 relative">
+                        <img
+                          src={img}
+                          alt={`slide-${idx}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
 
+                {/* Thumbnails */}
                 <div className="w-full mt-4 md:mt-0">
-                <div className="flex gap-3 overflow-x-auto no-scrollbar py-2 px-1" >
-                  {selectedProduct.images.map((img, idx) => (
-                    <div
-                      key={idx}
-                      className={`w-[80px] h-[80px] rounded-lg overflow-hidden flex-shrink-0 border-2 overflow-hidden cursor-pointer transition-all duration-300 hover:scale-110 ${
-                        idx === mainIndex ? "border-[#265336]" : "border-gray-300"
-                      }`}
-                      onClick={() => setMainIndex(idx)}
-                    >
-                      <img
-                        src={img}
-                        alt={`thumb-${idx}`}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  ))}
+                  <div className="flex gap-3 overflow-x-auto no-scrollbar py-2 px-1">
+                    {selectedProduct.images.map((img, idx) => (
+                      <div
+                        key={idx}
+                        className={`w-[80px] h-[80px] rounded-lg flex-shrink-0 border-2 cursor-pointer transition-all duration-300 hover:scale-110 ${
+                          idx === mainIndex ? "border-[#265336]" : "border-gray-300"
+                        }`}
+                        onClick={() => setMainIndex(idx)}
+                      >
+                        <img
+                          src={img}
+                          alt={`thumb-${idx}`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
 
-              </div>
-
-              <div className="flex-1 pb-4 md:pb-0 flex flex-col justify-center text-center md:text-left">
+              {/* Product Info */}
+              <div className="flex-1 flex flex-col justify-center text-center md:text-left">
                 <h2 className="text-lg sm:text-2xl md:text-3xl font-extrabold text-[#265336] mb-4">
                   {selectedProduct.name}
                 </h2>
 
-                {
-                  selectedProduct.inpVal == "False" ?
-                  <form>
+                {selectedProduct.inpVal === "False" ? (
+                  <form className="flex flex-col items-center gap-3">
                     <div className="flex items-center justify-center gap-2">
                       <label className="font-bold text-lg bg-[#265336] text-white px-3 rounded-full">
                         Length
@@ -223,7 +221,7 @@ const Products = () => {
                         name="length"
                         value={formData.length}
                         onChange={handleFormChange}
-                        className="border text-center w-[50px]"
+                        className="border text-center w-[50px] rounded-md"
                       />
                     </div>
 
@@ -237,7 +235,7 @@ const Products = () => {
                         name="width"
                         value={formData.width}
                         onChange={handleFormChange}
-                        className="border text-center w-[50px]"
+                        className="border text-center w-[50px] rounded-md"
                       />
                     </div>
 
@@ -250,31 +248,25 @@ const Products = () => {
                         name="quantity"
                         value={formData.quantity}
                         onChange={handleFormChange}
-                        className="border text-center w-[50px]"
+                        className="border text-center w-[50px] rounded-md"
                       />
                     </div>
                   </form>
- 
-                  :
+                ) : (
                   <QuantityTabs tierPrices={selectedProduct.tierPrices} />
-                }
+                )}
 
                 <div className="flex justify-center md:justify-start items-center gap-2 mb-4">
                   <FaStar className="text-[#facc15]" />
-                  <span className="text-[#facc15] font-semibold">
-                    {selectedProduct.rating}
-                  </span>
-                  <span className="text-gray-500 text-sm ml-2">
-                    ({selectedProduct.sold} sold)
-                  </span>
+                  <span className="text-[#facc15] font-semibold">{selectedProduct.rating}</span>
+                  <span className="text-gray-500 text-sm ml-2">({selectedProduct.sold} sold)</span>
                 </div>
 
                 <button
                   onClick={handleBuyNow}
-                  className="flex justify-center items-center gap-2 bg-[#265336] text-white px-6 py-3 rounded-full hover:bg-[#1f4229] hover:scale-105 transition-all duration-300 cursor-pointer font-semibold mx-auto md:mx-0"
+                  className="flex justify-center items-center gap-2 bg-[#265336] text-white px-6 py-3 rounded-full hover:bg-[#1f4229] hover:scale-105 transition-all duration-300 cursor-pointer font-semibold mx-auto md:mx-0 mb-4"
                 >
-                  <FaShoppingCart />
-                  Buy Now
+                  <FaShoppingCart /> Buy Now
                 </button>
 
                 {showForm && (
@@ -306,7 +298,6 @@ const Products = () => {
                           required
                           className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
                         />
-
                         <textarea
                           name="address"
                           placeholder="Full Address"
@@ -314,7 +305,6 @@ const Products = () => {
                           required
                           className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
                         />
-
                         <input
                           type="text"
                           name="city"
@@ -323,7 +313,6 @@ const Products = () => {
                           required
                           className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
                         />
-
                         <input
                           type="text"
                           name="phone"
@@ -332,7 +321,6 @@ const Products = () => {
                           required
                           className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
                         />
-
                         <input
                           type="text"
                           name="whatsapp"
@@ -341,7 +329,6 @@ const Products = () => {
                           required
                           className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
                         />
-
                         <input
                           type="number"
                           name="quantity"
@@ -352,7 +339,6 @@ const Products = () => {
                           required
                           className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
                         />
-
                         <button
                           type="submit"
                           className="bg-[#265336] text-white py-2 rounded-full hover:bg-[#265339] transition-all font-semibold cursor-pointer"
@@ -363,27 +349,27 @@ const Products = () => {
                     </div>
                   </div>
                 )}
-                  <h1 className="text-medium sm:text-lg font-bold my-2 md:text-xl text-left text-[#265336]">{selectedProduct.title}</h1>
+
+                {/* Description with white background */}
+                <div className="bg-[#e6f4ea] rounded-2xl p-6 shadow-lg mt-6">
+                  <h1 className="text-medium sm:text-lg font-bold my-2 md:text-xl text-left text-[#265336]">
+                    {selectedProduct.title}
+                  </h1>
                   <div className="text-left">
-                    {selectedProduct.desc.map((val)=>{
-                      return(
-                        <>
-                        <h2 className="font-bold">{val.heading}</h2>
-                        {
-                          val.subParts.map((item)=>{
-                            return(
-                              <p>{item}<br/></p>
-                            )
-                          })
-                        }
-                        </>
-                      )
-                    })}
+                    {selectedProduct.desc.map((val, idx) => (
+                      <div key={idx} className="mb-3">
+                        <h2 className="font-bold text-[#265336]">{val.heading}</h2>
+                        {val.subParts.map((item, i) => (
+                          <p key={i} className="text-gray-700 leading-relaxed">
+                            {item}<br />
+                          </p>
+                        ))}
+                      </div>
+                    ))}
                   </div>
-              <div className="h-20 bg-[#265339] w-[calc(100%+3rem)] -mx-6"></div>
+                </div>
 
-
-
+                <div className="h-20 w-full mt-6 rounded-b-xl"></div>
               </div>
             </div>
           </div>
