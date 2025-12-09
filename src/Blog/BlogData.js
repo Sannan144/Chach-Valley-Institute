@@ -5,7 +5,7 @@ export const blogData = [
     excerpt:
       "A comprehensive guide to mastering MongoDB, Express, React, and Node.js. Learn how to build scalable web applications from scratch.",
     // New Image Link
-    image: "https://images.unsplash.com/photo-1633356122102-3fe601e15703?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1511376777868-611b54f68947?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
     content: [
       { type: "paragraph", text: "Full-stack development is one of the highest-paying domains in the tech industry. Among various technology stacks, the MERN Stack (MongoDB, Express.js, React.js, Node.js) remains the most popular choice for startups and enterprises alike due to its efficiency and use of JavaScript throughout the entire application." },
       { type: "heading", text: "Why Choose MERN Stack?" },
@@ -114,7 +114,7 @@ export const blogData = [
     excerpt:
       "Design is more than just aesthetics. Discover the principles of User Interface and User Experience design and tools like Figma.",
     // New Image Link
-    image: "https://images.unsplash.com/photo-1576153192396-4a08225c4ea8?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    image: "https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8VWklMjBVeCUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D",
     content: [
       { type: "paragraph", text: "Have you ever closed an app because it was too confusing to use? That’s bad UX. In the digital age, a product's success depends on how intuitive and enjoyable it is for the user. UI/UX designers bridge the gap between human needs and technology." },
       { type: "heading", text: "The Difference Between UI and UX" },
@@ -154,7 +154,7 @@ export const blogData = [
     excerpt:
       "Work smarter, not harder. Explore the top AI tools like ChatGPT, MidJourney, and Notion AI that are revolutionizing workflows.",
     // New Image Link
-    image: "https://images.unsplash.com/photo-1676804591007-71147cb48239?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1000",
+    image: "https://media.istockphoto.com/id/1825320595/photo/artificial-intelligence-ai-text-icon-symbol-illustration-business-metaphor.webp?a=1&b=1&s=612x612&w=0&k=20&c=qGz2eYDj9qpYdRsvjmyEDcDOBdCJ0ktQFci0Psf-sVg=",
     content: [
       { type: "paragraph", text: "AI is not here to replace you; it is here to augment your capabilities. Professionals who adopt AI tools are finishing tasks in hours that used to take days. Integrating these tools into your daily workflow is the ultimate productivity hack." },
       { type: "heading", text: "Top AI Tools to Master" },

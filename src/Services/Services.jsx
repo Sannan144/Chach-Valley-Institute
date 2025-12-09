@@ -29,7 +29,7 @@ const Services = () => {
           {ServicesData.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group cursor-pointer"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group cursor-pointer min-h-[450px]"
               onClick={() => navigate(`/services/${service.slug}`)} // Card click
             >
               {/* Image */}

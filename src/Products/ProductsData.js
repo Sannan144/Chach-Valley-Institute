@@ -550,7 +550,7 @@ const products = [
       'https://i.etsystatic.com/10420830/r/il/d11e2f/700851107/il_794xN.700851107_f0iz.jpg',
     ],
     rating: "4.4 out of 5",
-    sold: 95,
+    sold: 595,
     price: "Rs. 19",
     title: 'PERSONALISED VINYL STICKERS - 4x2 INCHS - Name Tags Multipack Guest List Place Cards Hen Bride Birthday Decal Wedding Favours Permanent',
     desc: [
@@ -711,7 +711,7 @@ const products = [
       'https://i.etsystatic.com/35780424/r/il/f12158/7309703786/il_794xN.7309703786_li5w.jpg',
     ],
     rating: "4.7 out of 5",
-    sold: 170,
+    sold: 184,
     price: "Rs. 1299",
     title: 'Name plate for home , Office , Factory | Home Name Plate',
     desc: [
@@ -766,7 +766,7 @@ const products = [
       'https://luckyarts.org/uploads/images/202506/img_1920x_68448af9987271-04903061-81952165.jpeg',
     ],
     rating: "4.7 out of 5",
-    sold: 170,
+    sold: 153,
     price: "Rs. 1999",
     title: 'MashaAllah Acrylic Calligraphy with Multiple Sizes',
     desc: [
@@ -864,7 +864,7 @@ const products = [
       'https://www.islamichabitat.com/cdn/shop/files/IMG_6487.jpg?v=1723184914',
     ],
     rating: "4.7 out of 5",
-    sold: 170,
+    sold: 470,
     price: "Rs. 999",
     title: 'Dua Stickers – Elevate Your Daily Spiritual Practice 3x2 inches pack of 10',
     desc: [
@@ -961,7 +961,7 @@ const products = [
       'https://www.islamichabitat.com/cdn/shop/files/IMG_6487.jpg?v=1723184914',
     ],
     rating: "4.7 out of 5",
-    sold: 170,
+    sold: 470,
     price: "Rs. 1499",
     title: 'Dua Stickers – Elevate Your Daily Spiritual Practice 3x2 inches pack of 20',
     desc: [
@@ -1069,7 +1069,7 @@ const products = [
       'https://www.wallspace.co.uk/pub/media/catalog/product/cache/c7f5606a8805dae9724b014dbba79003/a/4/a4-0009-edit.jpg',
     ],
     rating: "4.7 out of 5",
-    sold: 179,
+    sold: 279,
     price: "Rs. 699",
     title: 'Premium A4 Wooden Picture Frame with Elegant Finished Border – Handcrafted Wall Hanging Photo & Art Frame, Durable Build, Perfect for Home and Office Decor',
     desc: [
@@ -1155,7 +1155,7 @@ const products = [
       'https://i.etsystatic.com/9524724/r/il/60f72c/5012160219/il_794xN.5012160219_rh2r.jpg',
     ],
     rating: "4.6 out of 5",
-    sold: 150,
+    sold: 350,
     title: "Design Creative Office Modern Wall Art Sticker(Multi Colour)",
     desc: [
       {
@@ -1228,7 +1228,7 @@ const products = [
       'https://i.etsystatic.com/17955691/r/il/5d42e1/6586319484/il_794xN.6586319484_mlrc.jpg',
     ],
     rating: "4.7 out of 5",
-    sold: 170,
+    sold: 270,
     price: "Rs. 999",
     title: 'Custom Success Sign Office Quote Sticker Vinyl Sticker Office Decor Wall Art 20 x 10 inches',
     desc: [

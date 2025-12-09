@@ -3,6 +3,7 @@ import { blogData } from "./BlogData";
 import Footer from "../Footer/Footer";
 import Tabs from "../Tabs/Tabs";
 import Logo from "../Logo/Logo";
+import { useNavigate } from "react-router-dom";
 
 const Blog = () => {
   const [selectedPost, setSelectedPost] = useState(null);
@@ -16,6 +17,8 @@ const Blog = () => {
     setSelectedPost(null);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const navig = useNavigate()
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 font-poppins">
@@ -68,9 +71,9 @@ const Blog = () => {
         <div className="container mx-auto px-4 py-8 max-w-4xl">
           <button
             onClick={handleBack}
-            className="flex items-center text-blue-600 hover:text-blue-800 font-medium mb-6 transition-colors"
+            className="flex items-center text-blue-600 hover:text-blue-800 font-medium mb-6 transition-colors fixed text-2xl text-red-600 right-10 top-35"
           >
-            <span className="text-2xl mr-2">←</span> Back to All Posts
+            ✕
           </button>
 
           <article className="bg-white p-6 md:p-10 rounded-2xl shadow-sm border border-gray-100">
@@ -128,7 +131,7 @@ const Blog = () => {
                 <h3 className="text-2xl font-bold mb-3">Want to learn these skills?</h3>
                 <p className="mb-6 text-gray-300">Join our premium courses and start your journey today.</p>
                 <button 
-                    onClick={() => window.location.href = '/courses'} // Assuming you have a courses route
+                    onClick={() => navig('/courses')} // Assuming you have a courses route
                     className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg"
                 >
                     Explore Courses
