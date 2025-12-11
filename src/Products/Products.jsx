@@ -71,7 +71,7 @@ const Products = () => {
   };
 
   const sendToWhatsApp = () => {
-    const phoneNumber = "923120574560";
+    const phoneNumber = "923191942002";
     const text = `🛒 *New Order Request*
 
 📦 *Product:* ${selectedProduct.name}
@@ -152,7 +152,7 @@ const Products = () => {
               <div className="flex flex-col gap-4 flex-1 items-center justify-center">
                 {/* Main Image */}
                 <div
-                  className="flex-1 flex justify-center items-center relative overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100"
+                  className="flex-1 flex justify-center items-center relative overflow-hidden rounded-xl"
                   onMouseDown={startDrag}
                   onMouseMove={onDrag}
                   onMouseUp={endDrag}
@@ -174,7 +174,7 @@ const Products = () => {
                         <img
                           src={img}
                           alt={`slide-${idx}`}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full sm:w-[500px] sm:h-[500px] object-cover"
                         />
                       </div>
                     ))}

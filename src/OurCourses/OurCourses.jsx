@@ -32,7 +32,7 @@ const OurCourses = () => {
 🎓 *Education:* ${education}`;
 
     window.open(
-      `https://wa.me/03120574560?text=${encodeURIComponent(message)}`,
+      `https://wa.me/03191942002?text=${encodeURIComponent(message)}`,
       "_blank"
     );
   };

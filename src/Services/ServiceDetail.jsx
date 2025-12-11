@@ -17,7 +17,7 @@ const ServiceDetail = () => {
   const [secCategory, setSecCategory] = useState(service?.SecformOptions?.[0] || "");
   const [thirdCategory, setThirdCategory] = useState(service?.ThirdformOptions?.[0] || "");
 
-  const whatsappNumber = "03120574560";
+  const whatsappNumber = "03191942002";
 
   const handleSubmit = (e) => {
     e.preventDefault();
