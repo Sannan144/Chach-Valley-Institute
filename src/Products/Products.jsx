@@ -149,7 +149,7 @@ const Products = () => {
             </button>
 
             <div className="flex flex-col gap-8 h-full">
-              <div className="flex flex-col md:flex-row gap-4 flex-1 items-center justify-center">
+              <div className="flex flex-col gap-4 flex-1 items-center justify-center">
                 {/* Main Image */}
                 <div
                   className="flex-1 flex justify-center items-center relative overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-gray-100"

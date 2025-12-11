@@ -11,7 +11,6 @@ const OurCourses = () => {
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
     address: "",
     education: ""
   });
@@ -22,14 +21,13 @@ const OurCourses = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, phone, address, education } = formData;
+    const { name, address, education } = formData;
 
     const message = `📚 *Admission Request*
 
 🎓 *Course:* ${selectedCourse.title}
 
 🪪 *Name:* ${name}
-📞 *Phone:* ${phone}
 🏠 *Address:* ${address}
 🎓 *Education:* ${education}`;
 
@@ -40,7 +38,7 @@ const OurCourses = () => {
   };
 
   const resetForm = () =>
-    setFormData({ name: "", phone: "", address: "", education: "" });
+    setFormData({ name: "", address: "", education: "" });
 
   return (
     <>
