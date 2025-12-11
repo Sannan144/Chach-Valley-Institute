@@ -15,8 +15,6 @@ const Products = () => {
     name: "",
     address: "",
     city: "",
-    phone: "",
-    whatsapp: "",
     quantity: 1,
     length: "",
     width: "",
@@ -81,9 +79,7 @@ const Products = () => {
 
 👤 *Name:* ${formData.name}
 🏠 *Address:* ${formData.address}
-🏙️ *City:* ${formData.city}
-📞 *Phone:* ${formData.phone}
-💬 *WhatsApp:* ${formData.whatsapp}`;
+🏙️ *City:* ${formData.city}`;
 
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
@@ -152,7 +148,7 @@ const Products = () => {
               <div className="flex flex-col gap-4 flex-1 items-center justify-center">
                 {/* Main Image */}
                 <div
-                  className="flex-1 flex justify-center items-center relative overflow-hidden rounded-xl"
+                  className="flex-1 flex justify-center items-center relative overflow-hidden rounded-xl w-full"
                   onMouseDown={startDrag}
                   onMouseMove={onDrag}
                   onMouseUp={endDrag}
@@ -170,12 +166,17 @@ const Products = () => {
                     }}
                   >
                     {selectedProduct.images.map((img, idx) => (
-                      <div key={idx} className="flex-shrink-0 w-full h-96 relative">
+                      <div
+                        key={idx}
+                        className="flex-shrink-0 w-full h-96 relative flex justify-center items-center"
+                      >
+                        {/* --- CHANGED SECTION START --- */}
                         <img
                           src={img}
                           alt={`slide-${idx}`}
-                          className="w-full h-full sm:w-[500px] sm:h-[500px] object-cover"
+                          className="w-full h-full object-contain rounded-xl"
                         />
+                        {/* --- CHANGED SECTION END --- */}
                       </div>
                     ))}
                   </div>
@@ -183,19 +184,21 @@ const Products = () => {
 
                 {/* Thumbnails */}
                 <div className="w-full mt-4 md:mt-0">
-                  <div className="flex gap-3 overflow-x-auto no-scrollbar py-2 px-1">
+                  <div className="flex gap-3 overflow-x-auto no-scrollbar py-2 px-1 justify-center">
                     {selectedProduct.images.map((img, idx) => (
                       <div
                         key={idx}
                         className={`w-[80px] h-[80px] rounded-lg flex-shrink-0 border-2 cursor-pointer transition-all duration-300 hover:scale-110 ${
-                          idx === mainIndex ? "border-[#265336]" : "border-gray-300"
+                          idx === mainIndex
+                            ? "border-[#265336]"
+                            : "border-gray-300"
                         }`}
                         onClick={() => setMainIndex(idx)}
                       >
                         <img
                           src={img}
                           alt={`thumb-${idx}`}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-cover rounded-md"
                         />
                       </div>
                     ))}
@@ -258,8 +261,12 @@ const Products = () => {
 
                 <div className="flex justify-center md:justify-start items-center gap-2 mb-4">
                   <FaStar className="text-[#facc15]" />
-                  <span className="text-[#facc15] font-semibold">{selectedProduct.rating}</span>
-                  <span className="text-gray-500 text-sm ml-2">({selectedProduct.sold} sold)</span>
+                  <span className="text-[#facc15] font-semibold">
+                    {selectedProduct.rating}
+                  </span>
+                  <span className="text-gray-500 text-sm ml-2">
+                    ({selectedProduct.sold} sold)
+                  </span>
                 </div>
 
                 <button
@@ -312,22 +319,22 @@ const Products = () => {
                           onChange={handleFormChange}
                           required
                           className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
-                        />
-                        <input
-                          type="text"
-                          name="phone"
-                          placeholder="Active Phone Number"
-                          onChange={handleFormChange}
-                          required
-                          className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
-                        />
-                        <input
-                          type="text"
-                          name="whatsapp"
-                          placeholder="WhatsApp Number"
-                          onChange={handleFormChange}
-                          required
-                          className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
+                        // />
+                        // <input
+                        //   type="text"
+                        //   name="phone"
+                        //   placeholder="Active Phone Number"
+                        //   onChange={handleFormChange}
+                        //   required
+                        //   className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
+                        // />
+                        // <input
+                        //   type="text"
+                        //   name="whatsapp"
+                        //   placeholder="WhatsApp Number"
+                        //   onChange={handleFormChange}
+                        //   required
+                        //   className="border rounded-lg p-2 focus:ring-2 focus:ring-[#265336]"
                         />
                         <input
                           type="number"
@@ -358,10 +365,13 @@ const Products = () => {
                   <div className="text-left">
                     {selectedProduct.desc.map((val, idx) => (
                       <div key={idx} className="mb-3">
-                        <h2 className="font-bold text-[#265336]">{val.heading}</h2>
+                        <h2 className="font-bold text-[#265336]">
+                          {val.heading}
+                        </h2>
                         {val.subParts.map((item, i) => (
                           <p key={i} className="text-gray-700 leading-relaxed">
-                            {item}<br />
+                            {item}
+                            <br />
                           </p>
                         ))}
                       </div>

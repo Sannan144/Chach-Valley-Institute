@@ -125,17 +125,7 @@ const ServiceDetail = () => {
                 />
               </div>
 
-              <div>
-                <label className="block mb-1 font-medium tracking-wide">Email</label>
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full p-3 border rounded-lg shadow-sm focus:ring-2 focus:ring-green-600 outline-none"
-                />
-              </div>
-
+              
               <div>
                 <label className="block mb-1 font-medium tracking-wide">Budget</label>
                 <input
