@@ -25,16 +25,21 @@ const Services = () => {
 
       {/* Services Section */}
       <div className="bg-[#f3f4f6] py-12 px-6 sm:px-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        {/* --- CHANGES HERE --- */}
+        {/* 1. Added 'max-w-6xl mx-auto' to center the grid nicely */}
+        {/* 2. Changed 'lg:grid-cols-4' to 'md:grid-cols-2' -> Now showing 2 cards per row on big screens */}
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          
           {ServicesData.map((service) => (
             <div
               key={service.id}
               className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group cursor-pointer min-h-[450px] flex flex-col h-full"
-              onClick={() => navigate(`/services/${service.slug}`)} // Card click
+              onClick={() => navigate(`/services/${service.slug}`)} 
             >
-              {/* Image Section - UPDATED HERE */}
-              {/* 'aspect-video' keeps it rectangular on mobile. 'sm:h-64' keeps it fixed on desktop */}
-              <div className="w-full aspect-video sm:aspect-auto sm:h-64 overflow-hidden shrink-0">
+              {/* Image Section */}
+              <div className="w-full aspect-video sm:aspect-auto sm:h-72 overflow-hidden shrink-0">
+                 {/* Note: Maine height thori barha kar 'h-72' kar di hy ta k card bara hony par image choti na lagy */}
                 <img
                   src={service.image}
                   alt={service.title}
@@ -43,27 +48,27 @@ const Services = () => {
               </div>
 
               {/* Content Section */}
-              <div className="p-5 text-center flex flex-col flex-1">
+              <div className="p-6 text-center flex flex-col flex-1">
                 
-                {/* Text Wrapper (Title & Description) */}
+                {/* Text Wrapper */}
                 <div className="mb-4">
-                  <h2 className="text-lg font-bold text-[#255235] mb-2 leading-tight">
+                  <h2 className="text-2xl font-bold text-[#255235] mb-3 leading-tight">
                     {service.title}
                   </h2>
                   {service?.desc?.[0]?.heading && (
-                    <p className="text-gray-600 mb-2 line-clamp-3">
+                    <p className="text-gray-600 text-lg mb-2 line-clamp-3">
                       {service.desc[0].heading}
                     </p>
                   )}
                 </div>
 
-                {/* Navigate button */}
+                {/* Navigate button (Text k foran neechay) */}
                 <button
                   onClick={(e) => {
-                    e.stopPropagation(); // Prevent card click
+                    e.stopPropagation(); 
                     navigate(`/services/${service.slug}`);
                   }}
-                  className="mt-auto bg-[#255235] cursor-pointer text-white px-4 py-2 rounded-full font-medium hover:bg-[#1f3f27] transition-all duration-300"
+                  className="bg-[#255235] cursor-pointer text-white px-6 py-3 rounded-full font-medium hover:bg-[#1f3f27] transition-all duration-300 self-center"
                 >
                   Learn More
                 </button>
