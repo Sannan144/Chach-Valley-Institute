@@ -29,11 +29,12 @@ const Services = () => {
           {ServicesData.map((service) => (
             <div
               key={service.id}
-              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group cursor-pointer min-h-[450px]"
+              className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group cursor-pointer min-h-[450px] flex flex-col h-full"
               onClick={() => navigate(`/services/${service.slug}`)} // Card click
             >
-              {/* Image */}
-              <div className="h-64 overflow-hidden">
+              {/* Image Section - UPDATED HERE */}
+              {/* 'aspect-video' keeps it rectangular on mobile. 'sm:h-64' keeps it fixed on desktop */}
+              <div className="w-full aspect-video sm:aspect-auto sm:h-64 overflow-hidden shrink-0">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -41,17 +42,20 @@ const Services = () => {
                 />
               </div>
 
-              {/* Content */}
-              <div className="p-5 text-center flex flex-col justify-between h-[160px]">
-                <h2 className="text-lg font-bold text-[#255235] mb-2">
-                  {service.title}
-                </h2>
-                {service?.desc?.[0]?.heading && (
-                  <p className="text-gray-600 mb-2">
-                    {service.desc[0].heading}
-                  </p>
-                )}
-
+              {/* Content Section */}
+              <div className="p-5 text-center flex flex-col flex-1">
+                
+                {/* Text Wrapper (Title & Description) */}
+                <div className="mb-4">
+                  <h2 className="text-lg font-bold text-[#255235] mb-2 leading-tight">
+                    {service.title}
+                  </h2>
+                  {service?.desc?.[0]?.heading && (
+                    <p className="text-gray-600 mb-2 line-clamp-3">
+                      {service.desc[0].heading}
+                    </p>
+                  )}
+                </div>
 
                 {/* Navigate button */}
                 <button
@@ -59,7 +63,7 @@ const Services = () => {
                     e.stopPropagation(); // Prevent card click
                     navigate(`/services/${service.slug}`);
                   }}
-                  className="bg-[#255235] cursor-pointer text-white px-4 py-2 rounded-full font-medium hover:bg-[#1f3f27] transition-all duration-300 mb-10"
+                  className="mt-auto bg-[#255235] cursor-pointer text-white px-4 py-2 rounded-full font-medium hover:bg-[#1f3f27] transition-all duration-300"
                 >
                   Learn More
                 </button>
