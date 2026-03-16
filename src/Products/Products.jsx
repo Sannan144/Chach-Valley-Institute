@@ -417,9 +417,9 @@ const Products = () => {
           </div>
       )}
 
-      {/* --- FULL SCREEN PRODUCT MODAL (CHANGE APPLIED HERE) --- */}
+      {/* --- FULL SCREEN PRODUCT MODAL --- */}
       {selectedProduct && (
-        <div className="fixed inset-0 z-[100] bg-white overflow-y-auto">
+        <div id="product-modal" className="fixed inset-0 z-[100] bg-white overflow-y-auto scroll-smooth">
            
            {/* Close Button - Sticky at top right */}
            <button className="fixed top-4 right-4 bg-gray-50 border border-gray-200 hover:bg-red-50 hover:border-red-500 hover:text-red-500 p-3 rounded-full text-gray-500 font-bold z-[110] transition-all shadow-sm" onClick={closeModal}>
@@ -510,11 +510,14 @@ const Products = () => {
                               <FaShoppingCart /> Buy Now
                            </button>
                         </div>
-                        <div className="w-full p-2.5 bg-gray-50 border border-dashed border-gray-300 rounded-xl text-center">
-                           <p dir="rtl" className="text-xl text-gray-600 font-medium" style={{ fontFamily: 'Jameel Noori Nastaleeq, "Noto Nastaliq Urdu", serif' }}>
+                        
+                        {/* URDU TEXT HIGHLIGHTED SECTION (CHANGE APPLIED HERE) */}
+                        <div className="w-full p-3 md:p-4 bg-[#fff8e1] border-2 border-dashed border-[#ffb300] rounded-xl text-center shadow-sm">
+                           <p dir="rtl" className="text-2xl text-[#d84315] font-black tracking-wide drop-shadow-sm" style={{ fontFamily: 'Jameel Noori Nastaleeq, "Noto Nastaliq Urdu", serif' }}>
                              آرڈر دینے کے لیے بٹن پر کلک کریں
                            </p>
                         </div>
+
                      </div>
                   </div>
                </div>
@@ -570,6 +573,47 @@ const Products = () => {
                         </div>
                      )}
                   </div>
+                  
+                  {/* RELATED PRODUCTS SECTION (CHANGE APPLIED HERE) */}
+                  <div className="mt-20 pt-16 border-t border-gray-100">
+                     <div className="flex flex-col items-center mb-10">
+                        <h3 className="text-2xl md:text-4xl font-black text-gray-800 mb-2">🛍️ You May Also Like</h3>
+                        <div className="w-20 h-1.5 bg-[#265336] rounded-full"></div>
+                     </div>
+                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-5">
+                        {products.filter(p => p.id !== selectedProduct.id).slice(0, 5).map((item) => {
+                           const numericPrice = extractPrice(item.price);
+                           return (
+                              <div key={item.id} onClick={() => { setMainIndex(0); openModal(item); document.getElementById('product-modal').scrollTo({top: 0, behavior: 'smooth'}); }} className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#265336]/50 cursor-pointer group flex flex-col h-full overflow-hidden relative">
+                                 
+                                 <div className="relative aspect-square overflow-hidden bg-gray-50 flex items-center justify-center p-2">
+                                    <img src={item.images[0]} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl" alt={item.name} />
+                                    <div className="absolute top-3 left-0 bg-orange-500 text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-r-full shadow-sm z-10">
+                                       Free Shipping
+                                    </div>
+                                    {numericPrice >= 1000 && (
+                                       <div className="absolute top-3 right-0 bg-[#265336] text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-l-full shadow-sm z-10">
+                                          Best Seller
+                                       </div>
+                                    )}
+                                 </div>
+                                 <div className="p-3 md:p-4 flex flex-col gap-2 flex-grow">
+                                    <h3 className="text-sm md:text-base font-bold text-gray-800 line-clamp-2 leading-snug group-hover:text-[#265336] transition-colors">{item.name}</h3>
+                                    
+                                    <div className="mt-auto pt-2 border-t border-gray-50">
+                                       <span className="text-[#265336] font-black text-lg md:text-xl">{item.price}</span>
+                                       <div className="flex items-center justify-between mt-1">
+                                          <span className="text-[12px]">{renderStars(item.rating || 5)}</span>
+                                          <span className="text-[10px] md:text-xs text-gray-500 font-medium">({item.sold} sold)</span>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           );
+                        })}
+                     </div>
+                  </div>
+
                </div>
            </div>
         </div>

@@ -3,6 +3,9 @@ const products = [
   {
     id: 'Product Sticker Label',
     name: "Product Sticker Label (Custom)",
+    badge: "Best Seller 🔥",
+    isNew: false,
+    seoKeywords: ["custom sticker labels", "waterproof packaging stickers", "matte brand labels", "custom business decals", "premium jar labels"],
     images: [
       "https://hazken.com/assets/images/bg/Square-Sticker-Design.jpg",
       "https://www.yucai-printing.com/Content/uploads/2022884172/20220331154316a88b29640c0743479de5ba6479904902.jpg",
@@ -19,67 +22,50 @@ const products = [
     ],
     rating: "4.7 out of 5",
     sold: 241,
-    title: 'Premium Quality Sticker Label Rectangle Self-Adhesive Paper Labels for Packaging, Jar, Bottle, Gift Box, Crafts, Branding & Office Use Easy Peel & Strong Stick Matte Finish',
+    title: 'Premium Custom Sticker Labels | Waterproof Matte Finish for Flawless Packaging & Branding',
     desc: [
       {
-        heading: '💡 Solution:',
+        heading: '💡 The Ultimate Branding Solution:',
         subParts: [
-          '✅ Get our Premium Waterproof Sticker Labels with Matte Lamination — long-lasting, strong adhesive, and perfect for any business or product packaging.'
+          '✅ Elevate your packaging with our Premium Waterproof Sticker Labels. Featuring a luxurious Matte Lamination, these labels offer strong adhesion and a long-lasting, smudge-proof impression for any business.'
         ]
       },
       {
-        heading: '✨ Product Features:',
+        heading: '✨ High-End Product Features:',
         subParts: [
-          '💧 Waterproof Material (safe from water & moisture):',
-          '🌫️ Matte Lamination (clean, smooth, premium look):',
-          '🛡️ Scratch-Resistant Surface:',
-          '💪 Strong Adhesive — sticks firmly:',
-          '🏷️ Easy Peel Design — quick application:',
-          '🖊️ Works with pen, marker & printing:',
-          '📦 Lightweight & easy to store:',
-          '🏆 Professional finishing for branded look:'
+          '💧 100% Waterproof & Moisture-Resistant:',
+          '🌫️ Elegant Matte Lamination (Smooth, glare-free premium look):',
+          '🛡️ Scratch & Tear Resistant Surface:',
+          '💪 Industrial-Strength Adhesive (Sticks firmly to glass, plastic, and paper):',
+          '🏷️ Easy-Peel Technology for rapid application:',
+          '🖊️ Writable Surface (Works seamlessly with pens & markers):',
+          '🏆 Professional die-cut finishing for a top-tier branded look:'
         ]
       },
       {
-        heading: '🎯 Best Uses:',
+        heading: '🎯 Perfect Applications:',
         subParts: [
-          '🌶️ Spice jars & kitchen containers:',
-          '💄 Cosmetic bottles & jars:',
-          '🥡 Food packaging & bakery boxes:',
-          '🎁 Gift boxes, envelopes & craft use:',
-          '📂 Office organizing & school labeling:',
-          '🏷️ Branding, inventory & product labels:'
+          '🌶️ Spice jars, kitchen organizers & pantry containers:',
+          '💄 Cosmetic bottles, serums & beauty jars:',
+          '🥡 Food packaging, bakery boxes & takeout bags:',
+          '🎁 Luxury gift boxes, envelopes & artisan crafts:',
+          '🏷️ E-commerce inventory, barcode & product labeling:'
         ]
       },
       {
-        heading: '📐 Custom Sizes Available:',
+        heading: '📐 Fully Customizable Sizes:',
         subParts: [
-          '📏 All sizes are fully customizable according to your product requirement:',
-          '✂️ Share your required size, shape, or dimensions — we will make it exactly as you need:'
+          '📏 Tailored to your exact product dimensions:',
+          '✂️ Share your desired size or shape, and we will laser-cut it to absolute perfection:'
         ]
       },
       {
-        heading: '🧵 Material & Quality:',
+        heading: '❤️ Why Brands Love It:',
         subParts: [
-          '🌟 Premium quality sticker paper:',
-          '🛡️ Matte lamination — waterproof & scratch-resistant:',
-          '⏳ Long-lasting adhesive:',
-          '🧼 Smooth, clean finishing:'
+          '💎 Instantly upgrades your product’s perceived value:',
+          '⏱️ Saves operational time with effortless peeling and sticking:',
+          '✨ Leaves zero messy residue — just clean, professional results:'
         ]
-      },
-      {
-        heading: '❤️ Why You Will Love It:',
-        subParts: [
-          '💎 Your product looks more premium & branded:',
-          '⏱️ Saves time and keeps everything organized:',
-          '🏪 Best for shopkeepers, online sellers & offices:',
-          '✨ No mess — easy to apply, clean results:',
-          '🏠 Perfect for home, business, school & packaging:'
-        ]
-      },
-      {
-        heading: '🌟 Upgrade Your Branding — Make Your Product Look Professional! 🌟',
-        subParts: []
       }
     ],
     inpVal: 'False',
@@ -90,6 +76,9 @@ const products = [
     id: 5,
     inpVal: 'False',
     name: "Custom Acrylic Signboard",
+    badge: "Premium Choice 💎",
+    isNew: true,
+    seoKeywords: ["acrylic business sign", "custom logo signboard", "office wall sign", "premium acrylic signage", "door logo sign"],
     images: [
       'https://i.etsystatic.com/53378504/r/il/7e21e6/6612008390/il_794xN.6612008390_gdfk.jpg',
       'https://i.etsystatic.com/53378504/r/il/03b414/6660101673/il_794xN.6660101673_ebcs.jpg',
@@ -103,77 +92,44 @@ const products = [
     ],
     rating: "4.5 out of 5",
     sold: 108,
-    title: 'Custom Acrylic Rectangular Business Logo Signs, Unique Wall and Door Office Sign, Acrylic Lettering Signs for Your Brand',
+    title: 'Premium Custom Acrylic Business Logo Sign | High-Gloss Rectangular Wall & Door Signage for Modern Brands',
     desc: [
       {
-        heading: '✨ Custom Acrylic Business Logo Sign — Premium Rectangle Sign Board',
+        heading: '✨ Establish Authority with a Premium Acrylic Sign',
         subParts: [
-          '🏢 Perfect for Offices | Storefronts | Doors | Walls | Reception Areas',
-          '📏 Fully customizable in any size you need — all sizes available on request'
+          '🏢 The ultimate branding upgrade for Corporate Offices, Modern Storefronts, Reception Desks, and Studio Walls.',
+          '📏 Precision-cut to your exact dimensions for a flawless fit.'
         ]
       },
       {
-        heading: '📌 Product Overview:',
+        heading: '📌 Superior Craftsmanship:',
         subParts: [
-          '🖨️ Personalized acrylic business sign made with high-quality UV printing:',
-          '💼 Clean, modern, professional look for branding and decoration:',
-          '🎨 Custom logo, text, colors, and fonts available as per your requirement:'
+          '🖨️ High-fidelity UV printing on crystal-clear, shatter-resistant acrylic:',
+          '💼 Delivers a sleek, minimalist, and ultra-professional aesthetic:',
+          '🎨 100% bespoke: Your colors, your typography, your logo:'
         ]
       },
       {
-        heading: '📐 Custom Sizes:',
+        heading: '🛠 Complete Installation Kit Included:',
         subParts: [
-          '✂️ All sizes are fully customizable — simply share your required dimensions:',
-          '💰 Discounts available for bulk orders (5+ pieces):'
+          '🔳 1x Heavy-Duty Personalized Acrylic Rectangle Sign:',
+          '🔩 Pre-drilled laser holes for perfect alignment:',
+          '🔗 4x Premium Stainless Steel Standoffs for that modern "floating" look:'
         ]
       },
       {
-        heading: '🛠 What’s Included:',
+        heading: '🧾 Seamless Ordering Process:',
         subParts: [
-          '🔳 Personalized Acrylic Rectangle Sign:',
-          '🔩 Drill holes for installation:',
-          '🔗 Set of metal standoffs (4 pieces):'
+          '🎨 Select your acrylic base (Clear, Frosted, Matte Black, or Gloss White):',
+          '📤 Upload your high-res logo or provide your custom text:',
+          '⏱️ Receive a digital design proof within 6 hours for your approval:'
         ]
       },
       {
-        heading: '🧾 How to Order:',
+        heading: '🌟 Why Your Business Needs This:',
         subParts: [
-          '🎨 Choose your acrylic background color:',
-          '📤 Send your text, logo or personalization details:',
-          '🔡 Mention your preferred font (you can send your own as well):',
-          '🤝 Stay connected for the design draft approval:'
-        ]
-      },
-      {
-        heading: '📝 Draft & Approval Process:',
-        subParts: [
-          '⏱️ A design draft will be shared within 6 hours after your order:',
-          '✅ Production begins only after your approval:',
-          '❌ You may cancel the order before the draft is approved:'
-        ]
-      },
-      {
-        heading: '⚠ Shop Policy:',
-        subParts: [
-          '🔒 Since the product is customized, cancellations are not accepted after production starts:',
-          '👀 Please double-check text, spelling, color, size before approval:',
-          '🌈 Color differences may occur due to screen variations or provided logo quality:'
-        ]
-      },
-      {
-        heading: '🚚 Processing & Shipping:',
-        subParts: [
-          '🏭 Production Time: 1–3 business days after draft approval:',
-          '🚛 Shipping Time: 2–4 business days (may vary slightly):',
-          '📦 All packages are packed securely and insured for loss or damage:'
-        ]
-      },
-      {
-        heading: '🌟 Why You’ll Love This Sign:',
-        subParts: [
-          '🏢 Gives your business a premium, professional identity:',
-          '💎 Durable acrylic — long-lasting and elegant:',
-          '👁️ Perfect for branding, décor, and business visibility:'
+          '🏢 Transforms a blank wall into a powerful brand statement:',
+          '💎 Weather-resistant and highly durable for both indoor and outdoor elegance:'
         ]
       }
     ],
@@ -190,6 +146,9 @@ const products = [
     id: 2,
     inpVal: 'False',
     name: "Custom Business Logo Sign (Acrylic)",
+    badge: "Trending 🚀",
+    isNew: false,
+    seoKeywords: ["3d acrylic logo", "custom brand sign", "luxury business logo", "salon name board", "cafe sign acrylic"],
     images: [
       "https://i.etsystatic.com/48493458/r/il/cd09f7/6770623099/il_794xN.6770623099_tjs8.jpg",
       "https://i.etsystatic.com/48493458/r/il/fb5041/6770622967/il_1140xN.6770622967_ip8u.jpg",
@@ -201,65 +160,43 @@ const products = [
     ],
     rating: "4.5 out of 5",
     sold: 120,
-    title: "Personalized Acrylic Brand Logo Board for Business Identity — Modern, Durable & Ideal for Shops, Offices, Home Studios and Commercial Spaces",
+    title: "Luxury 3D Acrylic Brand Logo Board | Elegant Custom Business Signage for Salons, Studios & Commercial Spaces",
     desc: [
       {
-        heading: "⭐ Premium Acrylic Brand Logo Board — Modern & Elegant ⭐",
+        heading: "⭐ The Hallmark of Luxury Branding ⭐",
         subParts: [
-          "🏢 Perfect for Shops | Salons | Cafés | Studios | Boutiques | Home Décor"
+          "🏢 Make an unforgettable first impression at your Shop, Boutique, Salon, or Corporate Reception."
         ]
       },
       {
-        heading: "✨ Product Description:",
+        heading: "✨ Stunning Visual Impact:",
         subParts: [
-          "💎 Modern and luxurious acrylic logo board designed to enhance your brand image.",
-          "✨ Crafted with high-quality acrylic for a premium and professional look.",
-          "🏷️ Perfect for displaying brand name, shop name, or logo with clean finishing."
+          "💎 A sophisticated, multi-dimensional acrylic logo board designed to exude opulence.",
+          "🏆 Featuring brilliant Golden/Mirror Letter Patches that catch the light beautifully.",
+          "🏷️ Flawless laser-cut precision ensuring your brand's typography is represented perfectly."
         ]
       },
       {
-        heading: "💡 Why Choose Our Acrylic Logo Board? (Features)",
+        heading: "💡 Elite Material Features:",
         subParts: [
-          "🔍 Premium acrylic sheet with smooth finishing:",
-          "🏆 Golden Letter Patch for a luxury look:",
-          "🧱 Strong & long-lasting material:",
-          "🛡️ Scratch-resistant surface for durability:",
-          "🔨 Easy to install – ready-to-hang design:"
+          "🔍 High-density, crystal-clear acrylic base:",
+          "🧱 Industrial-grade durability with a scratch-resistant top coat:",
+          "🔨 Zero-hassle installation with a ready-to-hang rear mounting system:"
         ]
       },
       {
-        heading: "🏪 Best For (Where to Use?)",
+        heading: "🏪 Perfect Environments:",
         subParts: [
-          "💇‍♀️ Beauty Salons & Nail Bars:",
-          "👗 Clothing Boutiques & Fashion Stores:",
-          "☕ Restaurants, Cafés & Studios:",
-          "🏠 Home Decoration Walls:",
-          "🛎️ Office Name Boards & Reception Areas:"
+          "💇‍♀️ High-end Beauty Salons & Spas:",
+          "👗 Fashion Boutiques & Retail Stores:",
+          "☕ Premium Cafés & Creative Studios:"
         ]
       },
       {
-        heading: "📌 Custom Options Available:",
+        heading: "📌 Total Customization:",
         subParts: [
-          "📏 Any size can be made:",
-          "✍️ Any font or logo can be added:",
-          "✨ Material: Clear Acrylic with Golden Patch Letters:",
-          "🧱 Wall-mounted design ready to install:"
-        ]
-      },
-      {
-        heading: "⚙ Specifications:",
-        subParts: [
-          "🚫 No LED lights included:",
-          "🔳 Acrylic logo board only:",
-          "🌟 Premium finishing & premium durability:",
-          "🏢 Long-lasting and clean professional look:"
-        ]
-      },
-      {
-        heading: "🚚 Nationwide Delivery Available:",
-        subParts: [
-          "💵 Cash on Delivery across Pakistan:",
-          "📦 Safe packaging for secure delivery:"
+          "📏 Manufactured to your exact dimensions:",
+          "✨ Choose between Gold, Rose Gold, or Silver mirror accents:"
         ]
       }
     ],
@@ -270,6 +207,9 @@ const products = [
     id: 3,
     inpVal: 'False',
     name: "Custom Acrylic 3D Letters",
+    badge: "Top Rated 🌟",
+    isNew: false,
+    seoKeywords: ["3d letters for wall", "laser cut acrylic letters", "custom 3d sign", "office reception letters", "mirror finish logo"],
     images: [
       'https://img.drz.lazcdn.com/g/kf/S1bbc4255c5be4fb38b2d44e2a58f80b4K.jpg_720x720q80.jpg',
       'https://res.cloudinary.com/woodland/image/upload/ar_1,c_crop/f_auto,h_800,q_auto,w_800/d_ni.png/v1/advanced_media/media/catalog/product/r/s/rs28750_f7ce7f8045704d9ece0728794ee226cc5083985f.jpeg',
@@ -283,90 +223,35 @@ const products = [
     rating: "4.7 out of 5",
     sold: 210,
     price: "Rs. 5,500",
-    title: "Laser cut Logo Sign, Spa Sign, Custom Business Sign, Reception Logo Sign, Mirror Sign, Lobby Sign, Company Sign, Office Sign, Acrylic Letters",
+    title: "Custom 3D Acrylic Letters | Laser Cut Wall Logo Signs for Receptions, Spas & Corporate Offices",
     desc: [
       {
-        heading: "✨ Premium 3D Acrylic Word Cut Logo Signs — Modern, Elegant & Professional",
+        heading: "✨ Architectural Grade 3D Acrylic Lettering",
         subParts: [
-          "🏢 Perfect for Offices | Lobby Walls | Salons | Spas | Hotels | Restaurants | Corporate Branding"
+          "🏢 Command attention in any Lobby, Reception, or Corporate Hallway with standalone 3D lettering."
         ]
       },
       {
-        heading: "🌟 Product Overview:",
+        heading: "🌟 Unmatched Laser Precision:",
         subParts: [
-          "✅ High-quality Custom 3D Acrylic Logo Signs designed to enhance brand identity:",
-          "✨ Perfect laser-cut finishing for a premium and modern look:",
-          "✍️ Create your company name, logo, or custom text in a beautiful 3D format:",
-          "🖼️ Elegant wall signs suitable for reception areas, offices, showrooms & studios:"
+          "✅ Flawless edge-finishing utilizing state-of-the-art laser technology:",
+          "✨ Deep, rich gloss and mirror finishes that simulate high-end metal or glass:",
+          "🖼️ Transforms standard drywall into a premium architectural feature:"
         ]
       },
       {
-        heading: "🔧 Features (Why Choose This?):",
+        heading: "🔧 Premium Specifications:",
         subParts: [
-          "• Precision Laser Cut — sharp, clean & professional edges:",
-          "• Durable Acrylic Material — long-lasting & fade-resistant:",
-          "• Awesome Finishing — world-class quality craftsmanship:",
-          "• Thickness Options:",
-          "  - 📏 3mm",
-          "  - 📏 4mm",
-          "  - 📏 5mm",
-          "  - 📏 8mm",
-          "• Easy Installation — hardware included for hassle-free setup:",
-          "• Customizable — sizes, fonts & logo designs can all be modified:"
+          "• Fade-resistant, UV-coated acrylic polymers:",
+          "• Variable thickness for desired drop-shadow effect (3mm, 4mm, 5mm, up to 8mm):",
+          "• Includes a precise installation template for perfect spacing and alignment:"
         ]
       },
       {
-        heading: "📐 Available Sizes:",
+        heading: "🚀 The Branding ROI:",
         subParts: [
-          "📏 Fully Custom Sizes also available as per customer request:"
-        ]
-      },
-      {
-        heading: "💡 Ideal For (Where to Install?):",
-        subParts: [
-          "• Office reception walls & meeting rooms:",
-          "• Spa & salon branding:",
-          "• Boutiques & showrooms:",
-          "• Restaurants, cafés & hotels:",
-          "• Studio, clinic or corporate office walls:",
-          "• Any business wanting premium wall branding:"
-        ]
-      },
-      {
-        heading: "🛠 Installation & Build Quality:",
-        subParts: [
-          "• Lightweight & strong acrylic body:",
-          "• Easy to mount with wall hardware:",
-          "• Smooth edges, premium polish & scratch-resistant surface:",
-          "• Designed to look elegant & high-end in any environment:"
-        ]
-      },
-      {
-        heading: "🚀 Benefits (Why You Need This?):",
-        subParts: [
-          "• Boosts brand recognition instantly:",
-          "• Creates a premium business image:",
-          "• Clients get a strong first impression:",
-          "• Perfect for professional décor:",
-          "• Customizable for any industry or business type:"
-        ]
-      },
-      {
-        heading: "🎨 Customization Options:",
-        subParts: [
-          "• Custom Logo Cutting:",
-          "• Any font or shape possible:",
-          "• Finish Options:",
-          "  - Matte",
-          "  - Glossy",
-          "  - Mirror Acrylic",
-          "• Multiple color choices available:"
-        ]
-      },
-      {
-        heading: "🌟 Upgrade Your Wall Branding Today!",
-        subParts: [
-          "🏆 Premium 3D acrylic logos that give your brand a luxury identity:"
+          "• Subconsciously communicates trust, stability, and premium quality to your clients:",
+          "• Creates the perfect backdrop for social media photos and PR events:"
         ]
       }
     ],
@@ -376,6 +261,9 @@ const products = [
   {
     id: 14,
     name: "(02) Personalized Mobile Cover",
+    badge: "Hot Selling 🔥",
+    isNew: false,
+    seoKeywords: ["custom mobile cover", "personalized phone case", "custom picture phone case", "glossy custom cover", "phone case printing"],
     images: [
       'https://in.sirphire.com/assets/img/jumbotron/mobile-covers-banner.webp',
       'https://printbebo.in/wp-content/uploads/2022/10/40-Its-Me-Custom-Name-Girlish-Phone-Case-scaled.jpg',
@@ -387,78 +275,36 @@ const products = [
     rating: "4.7 out of 5",
     sold: 179,
     price: "Rs. 999",
-    title: 'Personalized Mobile Cases, Customized Mobile Covers, Stylish Mobile Covers, Different Types Cell Phone Covers Design, All Mobile Cases Design That You Love To Use For Your Phone Set Or You Can Customize These Mobile Covers Made With High-Quality Material.',
+    title: 'Personalized High-Gloss Mobile Cases | Custom Photo & Name Covers with Shockproof Bumper',
     desc: [
       {
-        heading: "Premium Glossy Back Mobile Cover – Stylish Protection for Your Phone 📱✨",
+        heading: "Your Style, Your Protection 📱✨",
         subParts: [
-          "✨ Introducing our premium glossy back mobile covers — designed for those who want style, protection, and a luxurious finish all in one.",
-          "🛡️ Crafted with high-quality, durable materials for long-lasting use:",
-          "🔮 Adds a sleek, modern look to your phone with a shiny gloss finish:",
-          "🔒 Perfect for daily use while keeping your phone safe and stylish:"
+          "✨ Turn your favorite memory, artwork, or name into a premium everyday carry with our ultra-glossy personalized mobile covers.",
+          "🛡️ Engineered with a shock-absorbent TPU bumper to survive daily drops while looking flawless."
         ]
       },
       {
-        heading: "💡 Key Features:",
+        heading: "💡 Advanced Case Technology:",
         subParts: [
-          "✔ High-resolution printed design for a premium look:",
-          "✔ Custom outer-case printing (pet, name, or any design):",
-          "✔ Protective bumper edges for added durability:",
-          "✔ Made from TPU material — BPA-FREE & eco-friendly:",
-          "✔ Excellent resistance against scratches, bumps & minor drops:",
-          "✔ Slim, lightweight, and comfortable to hold:",
-          "✔ Smooth, glossy surface with a classy shine:",
-          "✔ Precision-cut openings for all ports, speakers & cameras:",
-          "✔ Raised edges for extra screen & camera protection:"
+          "✔ Ultra-HD Sublimation Printing (Vibrant, scratch-proof, and fade-resistant):",
+          "✔ Raised Bezel Protection (Keeps your screen and camera lenses off flat surfaces):",
+          "✔ Eco-Friendly BPA-Free TPU material that won't yellow over time:",
+          "✔ Tactile buttons and precision-cut ports for zero usability compromise:"
         ]
       },
       {
-        heading: "🎨 Design & Customization:",
+        heading: "🎨 Boundless Customization:",
         subParts: [
-          "• Available in multiple finishes & colors:",
-          "• Choose any custom artwork or pet photo:",
-          "• Long-lasting, vibrant, fade-resistant print:"
+          "• Upload any high-res photo, digital art, or custom typography:",
+          "• Edge-to-edge glossy finish that makes colors pop dramatically:"
         ]
       },
       {
-        heading: "⚠ Important Note:",
+        heading: "🛍 The Perfect Gift:",
         subParts: [
-          "❌ Phone cover only — *Mobile phone is NOT included:*",
-          "❌ No accessories included with the cover:"
-        ]
-      },
-      {
-        heading: "📦 What You Will Receive:",
-        subParts: [
-          "• 1 Premium glossy back mobile cover:",
-          "• High-quality printing with protective TPU edges:",
-          "• Ready-to-use, strong grip, durable phone case:"
-        ]
-      },
-      {
-        heading: "🛍 Why You'll Love It:",
-        subParts: [
-          "• Long-lasting print quality:",
-          "• Perfect for personal use or gifting:",
-          "• Adds elegance while ensuring protection:",
-          "• Supports all phone models (on demand):"
-        ]
-      },
-      {
-        heading: "📝 Shop Policy:",
-        subParts: [
-          "• All cases are custom-made on order:",
-          "• No cancellation after processing begins:",
-          "• If damaged or wrong item received, contact within 24 hours:",
-          "• Safe packaging & fast delivery guaranteed:"
-        ]
-      },
-      {
-        heading: "💯 Satisfaction Guaranteed:",
-        subParts: [
-          "• Your satisfaction is our priority:",
-          "• Message us anytime for custom requests or concerns:",
-          "• We ensure the best quality and service:"
+          "• A deeply personal, thoughtful gift for birthdays, anniversaries, or treating yourself:",
+          "• Available for 99% of modern smartphone models (Just mention your model at checkout):"
         ]
       }
     ],
@@ -470,6 +316,9 @@ const products = [
     id: 4,
     inpVal: 'False',
     name: "Custom Vinyl Sticker",
+    badge: "Limited Stock ⏳",
+    isNew: true,
+    seoKeywords: ["custom vinyl lettering", "calligraphy stickers", "personalized decals", "glass name stickers", "gift box decor"],
     images: [
       'https://i.etsystatic.com/34380410/r/il/8ca239/6892053892/il_794xN.6892053892_bbkr.jpg',
       'https://i.etsystatic.com/52221413/r/il/ea1889/5996517752/il_794xN.5996517752_oegj.jpg',
@@ -482,62 +331,47 @@ const products = [
     rating: "4.6 out of 5",
     sold: 150,
     price: "Rs. 999",
-    title: "Customize Handwritten Vinyl Lettering, Calligraphy Stickers, Personalized Decals, Name Tags, Glass Names, Gift Box Decor, Custom Text Labels",
+    title: "Elegant Custom Handwritten Vinyl Lettering | Personalized Calligraphy Decals for Glass, Gifts & Event Decor",
     desc: [
       {
-        heading: "✨ Personalised Vinyl Sticker Labels — Perfect for Any Smooth Surface",
+        heading: "✨ Flawless Personalization for Any Surface",
         subParts: [
-          "🔍 Ideal for glass, plastic, acrylic, cardboard, mirrors & glossy surfaces:",
-          "🍷 Perfect for bottles, gift boxes, wine glasses, pantry jars & décor items:"
+          "🔍 Elevate plain items into bespoke keepsakes. Perfect for glass, acrylic, mirrors, laptops, and luxury gift boxes."
         ]
       },
       {
-        heading: "🌟 Product Overview:",
+        heading: "🌟 Premium Vinyl Quality:",
         subParts: [
-          "✂️ Custom vinyl lettering crafted with premium adhesive material:",
-          "🏷️ Perfect for names, tags, gift boxes & personalized décor:",
-          "🖋️ Smooth finishing with clean calligraphy style for elegant look:"
+          "✂️ Machine-cut from commercial-grade adhesive vinyl for a painted-on look:",
+          "🖋️ Beautiful flowing calligraphy aesthetics without the mess of real paint:",
+          "🌦️ Weather-resistant and highly durable once cured:"
         ]
       },
       {
-        heading: "📦 Application Instructions:",
+        heading: "📦 Pro Application Tips:",
         subParts: [
-          "🧼 Ensure the surface is clean before applying:",
-          "👇 Press gently to avoid air bubbles:",
-          "⏳ Let the sticker settle for 2–3 days before washing:",
-          "🖐️ Hand wash only to prevent peeling:"
+          "🧼 Wipe surface with alcohol and let dry completely before application:",
+          "👇 Use a squeegee or credit card to press out micro-bubbles:",
+          "⏳ Allow 72 hours for the adhesive to fully bond before light hand-washing:"
         ]
       },
       {
-        heading: "⚠ Shop Policy:",
+        heading: "🎁 Event Ready:",
         subParts: [
-          "🚫 Custom items are non-refundable after cutting:",
-          "📝 Check spelling, font, size & color before placing order:",
-          "🧬 Vinyl is permanent but may vary on unusual surfaces:"
-        ]
-      },
-      {
-        heading: "🚚 Processing & Shipping:",
-        subParts: [
-          "⏳ Made to order — usually ready in 2–3 days:",
-          "🚛 Standard shipping may not include tracking:",
-          "📡 Tracking option available at checkout:"
-        ]
-      },
-      {
-        heading: "🎁 Perfect For:",
-        subParts: [
-          "🎉 Gift boxes | Wedding décor | Glass names | Pantry labels | Personalized gifts | Car windows | Party favors:"
+          "🎉 The secret weapon for DIY Brides, Event Planners, and luxury gifting:"
         ]
       }
     ],
-    tierPrices: { "12x6 inches": 999, "12x12 inches": 11500, "11-20 pieces": 11000, "20+ pieces": 10500 },
+    tierPrices: { "12x6 inches": 999, "12x12 inches": 1150, "11-20 pieces": 1100, "20+ pieces": 1050 },
   },
 
   // 7. Priority: Personalized (Small Name Tags)
   {
     id: 6,
     name: "PERSONALISED VINYL STICKERS",
+    badge: "Best Value 💰",
+    isNew: false,
+    seoKeywords: ["vinyl name tags", "custom name stickers", "wedding place cards", "birthday decals", "gift bag names"],
     images: [
       'https://i.etsystatic.com/51524498/r/il/f260e9/6140908128/il_794xN.6140908128_ezc3.jpg',
       'https://i.etsystatic.com/51524498/r/il/7b23e3/6074395338/il_794xN.6074395338_6nqa.jpg',
@@ -552,74 +386,33 @@ const products = [
     rating: "4.4 out of 5",
     sold: 595,
     price: "Rs. 19",
-    title: 'PERSONALISED VINYL STICKERS - 4x2 INCHS - Name Tags Multipack Guest List Place Cards Hen Bride Birthday Decal Wedding Favours Permanent',
+    title: 'Custom Vinyl Name Tags (4x2") | Personalized Multipack Decals for Weddings, Events & Favors',
     desc: [
       {
-        heading: '✨ Custom Vinyl Sticker — Personalized Name Labels (4x2 Inches)',
+        heading: '✨ Instantly Personalize Your Event (4x2 Inches)',
         subParts: [
-          '💍 Perfect for Weddings | Birthdays | Gift Bags | Boxes | Event Décor',
-          '📝 Made only in one line — for multiple lines, order each line separately'
+          '💍 The most cost-effective way to add a luxury touch to Wedding Favors, Bridesmaid Boxes, and Seating Charts.'
         ]
       },
       {
-        heading: '📌 Product Details:',
+        heading: '📌 Smart Sizing Technology:',
         subParts: [
-          '📏 Each sticker is made in a fixed size of 4x2 inches:',
-          '🔡 Longest name will fit within 4 inches width — font adjusts accordingly:',
-          '↔️ All remaining names will scale proportionally (same font style, size adjusts based on length):',
-          '↕️ Stickers are made to **length**, not height — but you can request a height limit:'
+          '📏 Precision-scaled: The longest name sets the maximum 4-inch width:',
+          '↔️ All other names in your batch are scaled proportionally so the font size remains beautifully consistent across your entire event:'
         ]
       },
       {
-        heading: '📐 Size & Length Information:',
+        heading: '🎨 Full Creative Control:',
         subParts: [
-          '📏 Maximum length: 4 inches:',
-          '📏 Maximum height: 2 inches:',
-          '⚠️ These are NOT equal-length stickers — each name varies unless you request fixed length:',
-          '📷 If unsure about size, contact us for a mockup design before ordering:'
+          '✍️ You dictate the capitalization, punctuation, and exact spelling:',
+          '🥃 Bonds permanently to acrylic seating charts, wine glasses, and gift bags:'
         ]
       },
       {
-        heading: '🎨 Customization Options:',
+        heading: '🚚 Rapid Event Fulfillment:',
         subParts: [
-          '✍️ Choose any text, name, or short phrase:',
-          '🔠 Capitalization preference (e.g., SAM / Sam / sam):',
-          '📝 Add notes for exact grammar, symbols, or punctuation you want:'
-        ]
-      },
-      {
-        heading: '📦 Material & Usage:',
-        subParts: [
-          '🌟 Premium vinyl — suitable for smooth surfaces:',
-          '🥃 Works on glass, acrylic, plastic, wood, card, paper:',
-          '🚫 ❌ Not suitable for fabric:',
-          '🧼 ❌ Not dishwasher safe — hand wash only:',
-          '🔥 Avoid heat & soaking in water:'
-        ]
-      },
-      {
-        heading: '🚚 Processing & Delivery:',
-        subParts: [
-          '⏱️ Orders dispatch in 1–3 business days:',
-          '🚀 Express delivery available for urgent orders:',
-          '🌍 International delivery can take up to 14 days depending on customs:',
-          '📦 Standard international shipping is untracked — upgrade for tracking:',
-          '📅 If you need delivery by a specific date, mention it at checkout:'
-        ]
-      },
-      {
-        heading: '⚠ Shop Policy:',
-        subParts: [
-          '🔒 Custom items are non-refundable after cutting:',
-          '👀 Please ensure spelling, capital letters, punctuation, and special characters are correct before placing the order:',
-          '🌈 Color may vary slightly due to screen differences:'
-        ]
-      },
-      {
-        heading: '💬 Need Help?',
-        subParts: [
-          '📞 Feel free to contact us for size guidance, custom requests, or mockup designs:',
-          '🤝 We are always here to help and provide the best experience:'
+          '⏱️ Fast-tracked 1-3 day dispatch for tight event deadlines:',
+          '🚀 Express delivery upgrades available at checkout:'
         ]
       }
     ],
@@ -630,6 +423,9 @@ const products = [
   {
     id: 7,
     name: "Kitchen Storage Jar Labels",
+    badge: "Must Have 🍳",
+    isNew: false,
+    seoKeywords: ["kitchen jar labels", "spice rack stickers", "pantry organization labels", "waterproof jar decals", "custom kitchen vinyl"],
     images: [
       'https://i.etsystatic.com/13756666/r/il/31ca12/2372139811/il_794xN.2372139811_4gvk.jpg',
       'https://i.etsystatic.com/13756666/r/il/669a21/2979627911/il_794xN.2979627911_mwk7.jpg',
@@ -643,54 +439,27 @@ const products = [
     rating: "4.6 out of 5",
     sold: 130,
     price: "Rs. 25",
-    Title: 'CUSTOMIZE Kitchen Storage Jar Labels Stickers 3x2 inches | Spice Sticker Kitchen Label Waterproof | Storage Organizer Bottles Jars Vinyl Stickers',
+    title: 'Aesthetic Kitchen Storage Jar Labels | Waterproof Vinyl Spice & Pantry Organizer Stickers',
     desc: [
       {
-        heading: '✨ Custom Kitchen Storage Jar Labels — Vinyl Stickers (3x2 Inches)',
+        heading: '✨ Transform Your Pantry into a Masterpiece',
         subParts: [
-          '🌶️ Perfect for organizing spice jars, pantry containers, and kitchen bottles',
-          '🏷️ Personalized labels for easy identification and stylish kitchen décor'
+          '🌶️ Say goodbye to messy cabinets. Achieve that Pinterest-perfect organized kitchen with our minimalist custom jar labels.'
         ]
       },
       {
-        heading: '📌 Product Overview:',
+        heading: '📌 Built for the Kitchen:',
         subParts: [
-          '💧 High-quality vinyl stickers — waterproof and durable:',
-          '✍️ Custom text for your storage jars, canisters, and containers:',
-          '🎨 Available in multiple colors: Black, White, Golden (send us your choice in chat):',
-          '📦 Pack includes stickers only (jars not included):'
+          '💧 100% Waterproof & Oil-Resistant vinyl — stands up to greasy fingers and spills:',
+          '🎨 Available in elegant Black, Crisp White, or Luxury Gold:',
+          '✍️ Fully custom: Label everything from "Himalayan Salt" to "Gluten-Free Flour":'
         ]
       },
       {
-        heading: '🎨 Customization Options:',
+        heading: '📦 Foolproof Application:',
         subParts: [
-          '💬 Share the names or text you want to appear on your jars via chat:',
-          '⚙️ Stickers will be made according to your specifications:',
-          '👀 Ensure the correct spelling and text format before approval:'
-        ]
-      },
-      {
-        heading: '📦 How to Apply:',
-        subParts: [
-          '🧽 Clean the jar surface before application:',
-          '👇 Press the vinyl sticker gently to avoid air bubbles:',
-          '📹 Detailed application video is provided in the product images:',
-          '📞 For extra help, you can contact us via chat anytime:'
-        ]
-      },
-      {
-        heading: '⚠ Shop Policy:',
-        subParts: [
-          '🚫 Custom items are non-refundable after cutting:',
-          '📝 Double-check spelling, text, and color before ordering:',
-          '📏 Vinyl stickers are made to length — size may vary depending on your text:'
-        ]
-      },
-      {
-        heading: '💬 Need Assistance?',
-        subParts: [
-          '🙋 Contact us in chat for any help with customization or application:',
-          '🖼️ We are happy to provide mockups and guidance for your kitchen stickers:'
+          '🧽 Simply wipe down your glass or plastic jar, peel, and press:',
+          '📹 Scan the QR code in your package for a quick video tutorial:'
         ]
       }
     ],
@@ -701,6 +470,9 @@ const products = [
   {
     id: 8,
     name: "Custom Name Plate",
+    badge: "Trending Decor 🏡",
+    isNew: true,
+    seoKeywords: ["custom name plate", "family name canvas", "housewarming gift", "home entrance sign", "islamic home decor"],
     images: [
       'https://i.etsystatic.com/39520707/r/il/c1032c/5221351690/il_794xN.5221351690_1bkc.jpg',
       'https://i.etsystatic.com/39520707/r/il/2b94e1/6041230029/il_794xN.6041230029_5qj2.jpg',
@@ -713,41 +485,27 @@ const products = [
     rating: "4.7 out of 5",
     sold: 184,
     price: "Rs. 1299",
-    title: 'Name plate for home , Office , Factory | Home Name Plate',
+    title: 'Elegant Custom Family Name Canvas | Premium Entrance Name Plate for Home & Office',
     desc: [
       {
-        heading: '✨ Custom Family Name Matte Canvas — Elegant Home & Office Decor',
+        heading: '✨ A Warm Welcome Starts Here',
         subParts: [
-          '🏡 Transform your space into a warm and welcoming environment:',
-          '👨‍👩‍👧‍👦 Add your family name for a unique, personalized touch:',
-          '🌙 Option available with Bismillah design for a spiritual accent:',
-          '🛋️ Perfect for living rooms, meditation spaces, offices, and cozy corners:'
+          '🏡 Anchor your home’s aesthetic with a personalized Family Name Canvas that radiates warmth and modern elegance.',
+          '🌙 Optional custom Bismillah calligraphy available for a beautiful spiritual touch.'
         ]
       },
       {
-        heading: '🌟 Product Features:',
+        heading: '🌟 Museum-Quality Fabrication:',
         subParts: [
-          '🎨 Unique coating for vibrant images using UL-certified inks:',
-          '🌲 Sustainable canvas stretched on eco-friendly pine:',
-          '🧪 Non-toxic latex inks — safe for home or office:',
-          '📍 Rubber dots for stability when hung:',
-          '🧱 Durable cotton and polyester composite for long-lasting display:'
+          '🎨 Printed with UL-certified, non-toxic latex inks for breathtaking color vibrancy:',
+          '🌲 Hand-stretched over sustainable, eco-friendly pine wood frames:',
+          '🧱 Durable cotton-polyester composite canvas that resists sagging over time:'
         ]
       },
       {
-        heading: '🧹 Care Instructions:',
+        heading: '🎁 The Ultimate Housewarming Gift:',
         subParts: [
-          '🧼 If canvas gathers dust, wipe gently with a clean, damp cloth:',
-          '🚫 Avoid harsh chemicals or abrasive materials:'
-        ]
-      },
-      {
-        heading: '🎁 Perfect For:',
-        subParts: [
-          '🔑 Housewarming gifts:',
-          '🕌 Eid celebrations and festive gatherings:',
-          '🖼️ Thoughtful and elegant home décor:',
-          '🎨 Lovers of art, culture, and personalized touches:'
+          '🔑 The perfect, highly thoughtful present for newlyweds, new homeowners, or Eid celebrations:'
         ]
       }
     ],
@@ -758,6 +516,9 @@ const products = [
   {
     id: 13,
     name: "MashaAllah Acrylic Calligraphy",
+    badge: "Spiritual Pick 🌙",
+    isNew: false,
+    seoKeywords: ["mashallah calligraphy wall art", "islamic home decor acrylic", "arabic calligraphy decor", "muslim housewarming gift", "mashallah name plate"],
     images: [
       'https://www.elegancystore.com/cdn/shop/files/b05d8b3ae92b32025551594467a9c6b9_1024x1024.jpg?v=1735900153',
       'https://luckyarts.org/uploads/images/202506/img_x500_68448af96ebcb5-06720842-66471176.jpeg',
@@ -768,86 +529,28 @@ const products = [
     rating: "4.7 out of 5",
     sold: 153,
     price: "Rs. 1999",
-    title: 'MashaAllah Acrylic Calligraphy with Multiple Sizes',
+    title: 'Premium MashaAllah Acrylic Calligraphy | 3D Islamic Wall Art & Entrance Decor',
     desc: [
       {
-        heading: "Mashallah Name Plate – Elegant Islamic Home Decor",
+        heading: "Radiate Blessings & Elegance ✨",
         subParts: [
-          "✨ Beautify your home with the graceful Mashallah Name Plate — a perfect blend of faith, elegance, and modern craftsmanship.",
-          "🏠 Ideal for home entrances, living rooms, and gift giving:",
-          "🌙 Beautifully designed Mashallah (ما شاء الله) calligraphy:",
-          "💖 Adds a spiritual and aesthetic touch to any space:",
-          "🎁 Thoughtful Islamic gift for any occasion:"
+          "✨ Protect and beautify your home with our breathtaking 3D Mashallah (ما شاء الله) calligraphy art piece.",
+          "🏠 Designed to be the spiritual centerpiece of your living room, hallway, or entrance."
         ]
       },
       {
-        heading: "💡 Design & Visual Appeal:",
+        heading: "💡 Masterful Craftsmanship:",
         subParts: [
-          "✔ Mashallah crafted in elegant Arabic calligraphy or modern typeface:",
-          "✔ Option to add personalized names or family titles:",
-          "✔ Optional elements: floral patterns, Islamic motifs, geometric backgrounds:",
-          "✔ Creates a stylish, meaningful focal point in your home:"
+          "✔ Intricately CNC-laser cut for flawless Arabic typographic curves:",
+          "✔ Available in stunning Gold/Silver mirror acrylic overlays on premium MDF:",
+          "✔ Creates dynamic shadows on your wall for a true 3D effect:"
         ]
       },
       {
-        heading: "🛠 Material & Finish:",
+        heading: "🌿 Deep Spiritual Significance:",
         subParts: [
-          "🧱 Available in MDF wood, acrylic, stainless steel, or layered materials:",
-          "🎨 Matte, glossy, gold, silver, black, or mixed finishes:",
-          "✂️ Laser-cut or CNC-crafted for clean, precise details:",
-          "🏗️ Durable build quality made to last:"
-        ]
-      },
-      {
-        heading: "📏 Mounting & Size Options:",
-        subParts: [
-          "🛠 Comes with wall-mounting hardware or strong double-sided tape:",
-          "⚖️ Lightweight yet sturdy construction:",
-          "🖼️ Sizes suitable for small shelves to large wall display:"
-        ]
-      },
-      {
-        heading: "🌿 Spiritual Significance:",
-        subParts: [
-          "🤲 'Mashallah' expresses gratitude and admiration:",
-          "✨ A beautiful reminder of faith and divine blessings:",
-          "🚪 Ideal for welcoming guests with barakah:",
-          "🕌 Adds beauty and spiritual grace to any Muslim home:"
-        ]
-      },
-      {
-        heading: "🎁 Perfect For:",
-        subParts: [
-          "🏠 Home entrances & living rooms:",
-          "👶 Kids' rooms or nurseries (with custom names):",
-          "🎉 Housewarming, weddings, or Islamic gifts:",
-          "🌙 Eid, Ramadan, and special occasions:"
-        ]
-      },
-      {
-        heading: "📦 What You Will Receive:",
-        subParts: [
-          "🖼️ A beautifully crafted Mashallah name plate:",
-          "✨ Clean and precise finishing:",
-          "✅ Ready-to-install décor piece:"
-        ]
-      },
-      {
-        heading: "📝 Shop Policy:",
-        subParts: [
-          "🔨 All items are custom-made on order:",
-          "🚫 No cancellations once processing begins:",
-          "📦 If you receive a damaged or incorrect item, contact us within 24 hours:",
-          "🛡️ Safe packaging & fast handling guaranteed:",
-          "🎨 Custom design requests are always welcome:"
-        ]
-      },
-      {
-        heading: "💯 Satisfaction Guarantee:",
-        subParts: [
-          "😊 Your satisfaction is our top priority:",
-          "📩 If anything doesn’t meet your expectations, simply message us:",
-          "🤝 We are here to assist and resolve any concerns promptly:"
+          "🤲 A constant, beautiful visual reminder to express gratitude and seek Barakah:",
+          "🕌 Deflects the evil eye and welcomes guests with divine grace:"
         ]
       }
     ],
@@ -858,6 +561,9 @@ const products = [
   {
     id: 11,
     name: "Masnoon Dua stickers Pack of 10",
+    badge: "Daily Essential 📿",
+    isNew: false,
+    seoKeywords: ["masnoon dua stickers", "islamic daily prayers", "waterproof dua decals", "muslim kids learning", "islamic reminders pack"],
     images: [
       'https://www.islamichabitat.com/cdn/shop/files/IMG_6488.jpg?v=1723184915',
       'https://www.islamichabitat.com/cdn/shop/files/IMG_6476.jpg?v=1723184914',
@@ -866,85 +572,27 @@ const products = [
     rating: "4.7 out of 5",
     sold: 470,
     price: "Rs. 999",
-    title: 'Dua Stickers – Elevate Your Daily Spiritual Practice 3x2 inches pack of 10',
+    title: 'Masnoon Dua Stickers (Pack of 10) | Waterproof Daily Islamic Prayer Reminders',
     desc: [
       {
-        heading: "Dua Stickers – Essential Daily Prayers (Waterproof & Durable)",
+        heading: "Weave Faith Into Your Daily Routine ✨",
         subParts: [
-          "✨ Transform your daily routine with Dua Stickers – a simple yet powerful way to keep essential prayers at your fingertips.",
-          "🌙 Beautifully designed stickers that act as gentle reminders of important duas:",
-          "💧 Premium-quality, waterproof & long-lasting material:",
-          "🚪 Suitable for mirrors, doors, fridges, notebooks & more:",
-          "🤲 Helps you stay spiritually connected throughout the day:"
+          "🌙 Effortlessly memorize and recite the Sunnah with our beautifully aesthetic Masnoon Dua stickers.",
+          "🚪 Strategically place them on mirrors, doors, and light switches as gentle spiritual nudges."
         ]
       },
       {
-        heading: "💡 Why You'll Love Them:",
+        heading: "💡 Premium Utility:",
         subParts: [
-          "✔ High-Quality & Long-Lasting – Premium waterproof vinyl:",
-          "✔ Easy to Apply & Remove – No residue left:",
-          "✔ Clear Arabic & English text – Aesthetic & easy to read:",
-          "✔ Perfect for home, office & travel:",
-          "✔ Great for kids & adults to memorize duas effortlessly:"
+          "✔ Crisp, highly legible Arabic font accompanied by clear English translations:",
+          "✔ 100% Waterproof vinyl — safe for bathroom mirrors and kitchen tiles:",
+          "✔ Residue-free adhesive allows you to reposition them easily:"
         ]
       },
       {
-        heading: "📜 Includes 10 Essential Duas:",
+        heading: "📜 10 Essential Duas Included:",
         subParts: [
-          "1.📌 Dua When Entering the House",
-          "2.📌 Dua When Leaving the House",
-          "3.📌 Dua Before Eating",
-          "4.📌 Dua After Eating",
-          "5.📌 Dua for Entering the Toilet",
-          "6.📌 Dua for Leaving the Toilet",
-          "7.📌 Dua for Looking in the Mirror",
-          "8.📌 Dua for Wearing Clothes",
-          "9.📌 Dua Before Sleeping",
-          "10.📌 Dua Upon Waking Up",
-        ]
-      },
-      {
-        heading: "📏 Product Details:",
-        subParts: [
-          "• Size: 3x2 inches:",
-          "• Quantity: 10 Stickers:",
-          "• Printed on durable, waterproof material:",
-          "• Strong adhesion yet easy to remove:"
-        ]
-      },
-      {
-        heading: "🛍 Price Options:",
-        subParts: [
-          '💰 "1 Pieces (10 Pack)": 999 ',
-          '💰 "5 Pieces (10 Pack)": 949 ',
-          '💰 "10 Pieces (10 Pack)": 899 ',
-          '💰 "20 Pieces (10 Pack)": 799 '
-        ]
-      },
-      {
-        heading: "📦 What You Will Receive:",
-        subParts: [
-          "• Pack of high-quality dua stickers:",
-          "• Clean and clear printing:",
-          "• Ready-to-use adhesive stickers:"
-        ]
-      },
-      {
-        heading: "📝 Shop Policy:",
-        subParts: [
-          "• All items are made on order:",
-          "• No cancellations after processing begins:",
-          "• If you receive a damaged or incorrect item, contact us within 24 hours:",
-          "• We ensure safe packaging & fast handling:",
-          "• Custom requests are always welcome:"
-        ]
-      },
-      {
-        heading: "💯 Satisfaction Guarantee:",
-        subParts: [
-          "• Customer satisfaction is our top priority:",
-          "• If anything doesn’t meet your expectations, message us immediately:",
-          "• We are always available to resolve your concerns:"
+          "Includes core daily prayers: Waking up, Sleeping, Eating, Mirror, Leaving House, and more."
         ]
       }
     ],
@@ -955,6 +603,9 @@ const products = [
   {
     id: 12,
     name: "Masnoon Dua Stickers Pack of 20",
+    badge: "Super Saver Pack 📦",
+    isNew: true,
+    seoKeywords: ["masnoon dua 20 pack", "comprehensive dua stickers", "islamic wall stickers", "daily sunnah reminders", "muslim home decor"],
     images: [
       'https://www.islamichabitat.com/cdn/shop/files/IMG_6488.jpg?v=1723184915',
       'https://www.islamichabitat.com/cdn/shop/files/IMG_6476.jpg?v=1723184914',
@@ -963,95 +614,27 @@ const products = [
     rating: "4.7 out of 5",
     sold: 470,
     price: "Rs. 1499",
-    title: 'Dua Stickers – Elevate Your Daily Spiritual Practice 3x2 inches pack of 20',
+    title: 'Complete Masnoon Dua Stickers (Pack of 20) | Elevate Your Spiritual Practice',
     desc: [
       {
-        heading: "Dua Stickers – Essential Daily Prayers (Waterproof & Durable)",
+        heading: "The Complete Daily Spiritual Companion ✨",
         subParts: [
-          "✨ Transform your daily routine with Dua Stickers – a simple yet powerful way to keep essential prayers at your fingertips.",
-          "🌙 Beautifully designed stickers that act as gentle reminders of important duas:",
-          "💧 Premium-quality, waterproof & long-lasting material:",
-          "🚪 Suitable for mirrors, doors, fridges, notebooks & more:",
-          "🤲 Helps you stay spiritually connected throughout the day:"
+          "🌙 Upgrade your household's spiritual atmosphere with our comprehensive 20-Pack Masnoon Dua set.",
+          "🤲 The ultimate tool for teaching children and keeping yourself spiritually grounded all day."
         ]
       },
       {
-        heading: "💡 Why You'll Love Them:",
+        heading: "💡 Why Families Love This:",
         subParts: [
-          "✔ High-Quality & Long-Lasting – Premium waterproof vinyl:",
-          "✔ Easy to Apply & Remove – No residue left:",
-          "✔ Clear Arabic & English text – Aesthetic & easy to read:",
-          "✔ Perfect for home, office & travel:",
-          "✔ Great for kids & adults to memorize duas effortlessly:"
+          "✔ Modern, minimalist aesthetic that blends perfectly with modern home decor:",
+          "✔ High-durability waterproof coating ensures they survive busy family life:",
+          "✔ Clear, readable typography designed for quick glances:"
         ]
       },
       {
-        heading: "📜 Includes 20 Essential Duas:",
+        heading: "📜 20 Life-Enriching Duas Included:",
         subParts: [
-          "1.📌 Dua When Entering the House",
-          "2.📌 Dua When Leaving the House",
-          "3.📌 Dua Before Eating",
-          "4.📌 Dua After Eating",
-          "5.📌 Dua for Entering the Toilet",
-          "6.📌 Dua for Leaving the Toilet",
-          "7.📌 Dua for Looking in the Mirror",
-          "8.📌 Dua for Wearing Clothes",
-          "9.📌 Dua Before Sleeping",
-          "10.📌 Dua Upon Waking Up",
-          "11.📌 Dua When Entering the Masjid",
-          "12.📌 Dua When Leaving the Masjid",
-          "13.📌 Dua for Traveling",
-          "14.📌 Dua for Protection",
-          "15.📌 Dua for Seeking Knowledge",
-          "16.📌 Dua When Sneezing",
-          "17.📌 Dua for Visiting the Sick",
-          "18.📌 Dua for Rain",
-          "19.📌 Dua for Stress & Worry",
-          "20.📌 Dua for Parents"
-        ]
-      },
-      {
-        heading: "📏 Product Details:",
-        subParts: [
-          "• Size: 3x2 inches:",
-          "• Quantity: 20 Stickers:",
-          "• Printed on durable, waterproof material:",
-          "• Strong adhesion yet easy to remove:"
-        ]
-      },
-      {
-        heading: "🛍 Price Options:",
-        subParts: [
-          '💰 "1 Piece (20 Pack)": 1499 ',
-          '💰 "5 Pieces (20 Pack)": 1399 ',
-          '💰 "10 Pieces (20 Pack)": 1299 ',
-          '💰 "20 Pieces (20 Pack)": 1199 '
-        ]
-      },
-      {
-        heading: "📦 What You Will Receive:",
-        subParts: [
-          "• Pack of high-quality dua stickers:",
-          "• Clean and clear printing:",
-          "• Ready-to-use adhesive stickers:"
-        ]
-      },
-      {
-        heading: "📝 Shop Policy:",
-        subParts: [
-          "• All items are made on order:",
-          "• No cancellations after processing begins:",
-          "• If you receive a damaged or incorrect item, contact us within 24 hours:",
-          "• We ensure safe packaging & fast handling:",
-          "• Custom requests are always welcome:"
-        ]
-      },
-      {
-        heading: "💯 Satisfaction Guarantee:",
-        subParts: [
-          "• Customer satisfaction is our top priority:",
-          "• If anything doesn’t meet your expectations, message us immediately:",
-          "• We are always available to resolve your concerns:"
+          "Covers everything from daily habits to specific situations: Traveling, Rain, Sneezing, Parents, Protection, and Knowledge."
         ]
       }
     ],
@@ -1062,6 +645,9 @@ const products = [
   {
     id: 15,
     name: "A4 Wooden Photo Frames",
+    badge: "Classic Choice 🖼️",
+    isNew: false,
+    seoKeywords: ["a4 wooden photo frame", "premium wall frame", "certificate frame a4", "solid wood picture frame", "home gallery decor"],
     images: [
       'https://img.alicdn.com/imgextra/i4/2230493877/O1CN01OfMXzI1eViVviLnx8_!!2230493877.jpg',
       'https://www.wallspace.co.uk/pub/media/catalog/product/cache/c9dea194d7adb529b44fc627fd8b96de/a/4/a4-0008-edit.jpg',
@@ -1071,67 +657,27 @@ const products = [
     rating: "4.7 out of 5",
     sold: 279,
     price: "Rs. 699",
-    title: 'Premium A4 Wooden Picture Frame with Elegant Finished Border – Handcrafted Wall Hanging Photo & Art Frame, Durable Build, Perfect for Home and Office Decor',
+    title: 'Premium A4 Solid Wood Picture Frame | Elegant Gallery-Style Wall Hanging for Photos & Certificates',
     desc: [
       {
-        heading: "✨ Premium A4 Wooden Picture Frame – Elegant, Durable & Perfect for Home Décor 🖼️",
+        heading: "✨ Frame Your Memories in Solid Wood 🖼️",
         subParts: [
-          "📸 Ideal for photographers, artists, and home decoration lovers:",
-          "🎨 Enhances any artwork, portrait, or photograph beautifully:",
-          "🏆 Elegant traditional gold finish that suits all décor styles:",
-          "🪵 Hand-crafted from solid wood for a premium & timeless look:"
+          "📸 Elevate your diplomas, artwork, and cherished family portraits with authentic, hand-finished wooden frames.",
+          "🏆 Ditch the cheap plastic—invest in a traditional gold-accented frame that brings gallery-level luxury to your walls."
         ]
       },
       {
-        heading: "💎 Quality & Craftsmanship:",
+        heading: "💎 Built for Legacy:",
         subParts: [
-          "✔ Made from solid, high-quality wood — NOT plastic or MDF:",
-          "✔ Offers a professional finish with long-lasting durability:",
-          "✔ Fitted with 2mm float glass for excellent clarity & shine:",
-          "✔ Option for Perspex safety glass available upon request:",
-          "✔ Perfect for showcasing your artwork in its best light:"
+          "✔ Masterfully crafted from 100% solid wood (No MDF or flimsy plastics):",
+          "✔ Protected by pristine 2mm float glass for unmatched optical clarity:",
+          "✔ Secure, heavy-duty wall-mounting brackets pre-installed for horizontal or vertical hanging:"
         ]
       },
       {
-        heading: "📐 Size & Fit Details:",
+        heading: "🎨 Personalize Your Art:",
         subParts: [
-          "🖼️ Frame fits A4-size photos or prints: 297mm x 210mm:",
-          "↔️ Suitable for both portrait and landscape wall hanging:",
-          "🔩 Comes with built-in wall-mounting hooks already installed:",
-          "⚠️ Please Note: This frame is ONLY available for wall use:",
-          "🚫 No stand included (frame is top-heavy and not suitable for tabletop standing):"
-        ]
-      },
-      {
-        heading: "🎨 Customization Option:",
-        subParts: [
-          "✍️ Custom designs, names, text, or artwork can be added:",
-          "💰 Customization Fee: Extra Rs. 250 per frame:",
-          "💬 Share your design or request in chat for customization:"
-        ]
-      },
-      {
-        heading: "🛡 Durability & Material Advantage:",
-        subParts: [
-          "🪵 Solid wood + real glass ensures longevity and premium feel:",
-          "🏆 More durable and elegant compared to plastic or MDF frames:",
-          "⏳ Built to last and maintain its quality over years:"
-        ]
-      },
-      {
-        heading: "📦 Packaging & Quality Assurance:",
-        subParts: [
-          "🕵️‍♂️ Each frame is inspected carefully before dispatch:",
-          "📦 Delivered in protective packaging to ensure safe delivery:",
-          "❤️ Every frame is crafted with care and attention to detail:"
-        ]
-      },
-      {
-        heading: "💯 Lifetime Guarantee:",
-        subParts: [
-          "🏅 We proudly offer a lifetime quality guarantee:",
-          "📞 If any issue occurs, contact us and we will assist immediately:",
-          "😊 Customer satisfaction is our top priority:"
+          "✍️ Want to add a name, date, or custom quote inside? We offer custom insert design for just Rs. 250."
         ]
       }
     ],
@@ -1143,6 +689,9 @@ const products = [
     id: 9,
     inpVal: 'False',
     name: "Office Wall Art Sticker",
+    badge: "Corporate Favorite 🏢",
+    isNew: false,
+    seoKeywords: ["office wall decal", "company logo sticker", "modern office decor", "motivational wall art", "business branding decal"],
     images: [
       'https://i.etsystatic.com/23233579/r/il/dd1ae6/5058089536/il_794xN.5058089536_tee4.jpg',
       'https://i.etsystatic.com/23233579/r/il/52b35d/3125359866/il_794xN.3125359866_ddwl.jpg',
@@ -1156,60 +705,27 @@ const products = [
     ],
     rating: "4.6 out of 5",
     sold: 350,
-    title: "Design Creative Office Modern Wall Art Sticker(Multi Colour)",
+    title: "Modern Office Brand Wall Art | Custom Vinyl Company Logo & Statement Decal",
     desc: [
       {
-        heading: '✨ Custom Company Name Wall Decor — Premium Office Branding',
+        heading: '✨ Transform Boring Walls into Brand Assets',
         subParts: [
-          '🏢 Perfect for offices, meeting rooms, lobbies & workspaces:',
-          '💡 Add your company name, values, quotes, or motivational lines:',
-          '🏆 Professional look that enhances workplace environment:'
+          '🏢 Inject energy and identity into your corporate lobbies, meeting rooms, and collaborative workspaces.',
+          '💡 Seamlessly display your core values, mission statement, or striking company logo in minutes.'
         ]
       },
       {
-        heading: '🌟 About Our Decals:',
+        heading: '🌟 Premium Vinyl Engineering:',
         subParts: [
-          '🎞️ Made with high-quality self-adhesive vinyl film:',
-          '👶 Safe for children & indoor spaces:',
-          '✂️ Easy to apply and remove without residue:',
-          '🚫 Not reusable (single-use vinyl):',
-          '🧱 Best for smooth, clean, and untextured walls:',
-          '⚠️ Not recommended for fresh paint or highly textured walls:',
-          '🧩 Quote/name decals come as one complete piece — no separate letter installation needed:'
+          '🎞️ Precision-cut from ultra-thin matte vinyl that looks like an expensive custom paint job:',
+          '✂️ Pre-spaced on transfer tape—no frustrating individual letter alignment required:',
+          '🧱 Removes cleanly without ripping drywall paper or leaving sticky residue:'
         ]
       },
       {
-        heading: '📦 What You Will Receive:',
+        heading: '🎨 100% Bespoke Design Service:',
         subParts: [
-          '🎞️ Custom vinyl wall decal:',
-          '📄 Step-by-step application instructions:',
-          '📹 Video tutorial link for easy installation:'
-        ]
-      },
-      {
-        heading: '🎨 Custom Orders:',
-        subParts: [
-          '✍️ Any design, quote, or font can be customized:',
-          '💰 No additional charges for custom work:',
-          '💬 Share your company name or text in chat for your draft:',
-          '🤝 We are always available to assist with design options:'
-        ]
-      },
-      {
-        heading: '🚚 Processing & Shipping:',
-        subParts: [
-          '🎨 Each decal is made after your order with your selected color:',
-          '⏱️ Processing time: usually within 1–3 business days:',
-          '📡 Tracking provided for all orders:',
-          '🌍 Worldwide shipping available:'
-        ]
-      },
-      {
-        heading: '💯 Satisfaction Guarantee:',
-        subParts: [
-          '😊 Customer satisfaction is our top priority:',
-          '📩 If anything doesn’t meet your expectations, message us first:',
-          '🤝 We are always here to help resolve any concerns:'
+          '✍️ We don’t just print; we consult. Share your ideas and we will craft a digital proof for free:'
         ]
       }
     ],
@@ -1219,6 +735,9 @@ const products = [
   {
     id: 10,
     name: "Custom Quote 20x10 inches",
+    badge: "Inspirational 💡",
+    isNew: false,
+    seoKeywords: ["custom quote wall sticker", "motivational office decal", "vinyl lettering quote", "success sign office", "custom text wall art"],
     images: [
       'https://i.etsystatic.com/18058682/r/il/1802cb/1638892589/il_794xN.1638892589_a39g.jpg',
       'https://i.etsystatic.com/23233579/r/il/0e407c/2411921587/il_794xN.2411921587_5tz4.jpg',
@@ -1230,60 +749,27 @@ const products = [
     rating: "4.7 out of 5",
     sold: 270,
     price: "Rs. 999",
-    title: 'Custom Success Sign Office Quote Sticker Vinyl Sticker Office Decor Wall Art 20 x 10 inches',
+    title: 'Custom Success Quote Vinyl Sticker | 20x10" Motivational Wall Art for Office & Gym',
     desc: [
       {
-        heading: '✨ Custom Quote Decor — Premium Office Branding',
+        heading: '✨ Fuel Your Grind with Impactful Words',
         subParts: [
-          '🏢 Perfect for offices, meeting rooms, lobbies & workspaces:',
-          '💡 Add your company name, values, quotes, or motivational lines:',
-          '🏆 Professional look that enhances workplace environment:'
+          '🏢 Create a high-performance environment. Perfect for home offices, commercial gyms, or student study zones.',
+          '💡 Turn your favorite quote, mantra, or lyric into stunning typographic wall art.'
         ]
       },
       {
-        heading: '🌟 About Our Decals:',
+        heading: '🌟 Pro-Grade Decal Specs:',
         subParts: [
-          '🎞️ Made with high-quality self-adhesive vinyl film:',
-          '👶 Safe for children & indoor spaces:',
-          '✂️ Easy to apply and remove without residue:',
-          '🚫 Not reusable (single-use vinyl):',
-          '🧱 Best for smooth, clean, and untextured walls:',
-          '⚠️ Not recommended for fresh paint or highly textured walls:',
-          '🧩 Quote/name decals come as one complete piece — no separate letter installation needed:'
+          '🎞️ Zero-glare matte finish that looks professionally hand-painted:',
+          '✂️ Delivered as one ready-to-apply sheet with easy-peel transfer tape:',
+          '🧱 Adheres perfectly to glass, metal, and smooth painted walls:'
         ]
       },
       {
-        heading: '📦 What You Will Receive:',
+        heading: '📦 Quick & Easy Setup:',
         subParts: [
-          '🎞️ Custom vinyl wall decal:',
-          '📄 Step-by-step application instructions:',
-          '📹 Video tutorial link for easy installation:'
-        ]
-      },
-      {
-        heading: '🎨 Custom Orders:',
-        subParts: [
-          '✍️ Any design, quote, or font can be customized:',
-          '💰 No additional charges for custom work:',
-          '💬 Share your company name or text in chat for your draft:',
-          '🤝 We are always available to assist with design options:'
-        ]
-      },
-      {
-        heading: '🚚 Processing & Shipping:',
-        subParts: [
-          '🎨 Each decal is made after your order with your selected color:',
-          '⏱️ Processing time: usually within 1–3 business days:',
-          '📡 Tracking provided for all orders:',
-          '🌍 Worldwide shipping available:'
-        ]
-      },
-      {
-        heading: '💯 Satisfaction Guarantee:',
-        subParts: [
-          '😊 Customer satisfaction is our top priority:',
-          '📩 If anything doesn’t meet your expectations, message us first:',
-          '🤝 We are always here to help resolve any concerns:'
+          '📄 Comes with a foolproof step-by-step instruction guide and a QR code to our video tutorial:'
         ]
       }
     ],
