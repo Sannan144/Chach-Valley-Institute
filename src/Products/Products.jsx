@@ -248,7 +248,8 @@ const Products = () => {
   return (
     <div className="bg-gray-50 min-h-screen font-sans pb-24 relative selection:bg-[#265336] selection:text-white text-gray-800">
       
-      <div className="relative z-10 bg-white shadow-sm"><Logo /></div>
+      {/* Yahan Logo div ka z-index 10 se 99 kar diya gaya hai */}
+      <div className="relative z-[99] bg-white shadow-sm"><Logo /></div>
 
       {/* --- TOAST NOTIFICATION --- */}
       {toastMessage && (
@@ -514,7 +515,7 @@ const Products = () => {
                         {/* URDU TEXT HIGHLIGHTED SECTION (CHANGE APPLIED HERE) */}
                         <div className="w-full p-3 md:p-4 bg-[#fff8e1] border-2 border-dashed border-[#ffb300] rounded-xl text-center shadow-sm">
                            <p dir="rtl" className="text-2xl text-[#d84315] font-black tracking-wide drop-shadow-sm" style={{ fontFamily: 'Jameel Noori Nastaleeq, "Noto Nastaliq Urdu", serif' }}>
-                             آرڈر دینے کے لیے بٹن پر کلک کریں
+                              آرڈر دینے کے لیے بٹن پر کلک کریں
                            </p>
                         </div>
 
