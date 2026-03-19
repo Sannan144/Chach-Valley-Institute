@@ -10,7 +10,7 @@ const Services = () => {
 
   return (
     <div className="bg-[#f4f7f5] min-h-screen font-sans selection:bg-[#265336] selection:text-white">
-      <Logo />
+      {/* <Logo /> */}
 
       {/* --- HERO SECTION (Logo Themed Gradient) --- */}
       <div className="relative bg-gradient-to-tr from-[#0d1f14] via-[#265336] to-[#3e8558] pt-20 pb-36 px-4 overflow-hidden border-b-4 border-[#10B981]/20">

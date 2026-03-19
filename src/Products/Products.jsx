@@ -249,7 +249,7 @@ const Products = () => {
     <div className="bg-gray-50 min-h-screen font-sans pb-24 relative selection:bg-[#265336] selection:text-white text-gray-800">
       
       {/* Yahan Logo div ka z-index 10 se 99 kar diya gaya hai */}
-      <div className="relative z-[99] bg-white shadow-sm"><Logo /></div>
+      {/* <div className="relative z-[99] bg-white shadow-sm"><Logo /></div> */}
 
       {/* --- TOAST NOTIFICATION --- */}
       {toastMessage && (
