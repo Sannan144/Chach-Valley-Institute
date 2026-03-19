@@ -327,7 +327,7 @@ const Products = () => {
                     <img src={item.images[0]} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl" alt={item.name} />
                     
                     <div className="absolute top-3 left-0 bg-orange-500 text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-r-full shadow-sm z-10">
-                       Free Shipping
+                        Free Shipping
                     </div>
                     {numericPrice >= 1000 && (
                        <div className="absolute top-3 right-0 bg-[#265336] text-white text-[10px] md:text-xs font-bold px-3 py-1 rounded-l-full shadow-sm z-10">
@@ -362,7 +362,7 @@ const Products = () => {
       {isCartOpen && (
           <div className="fixed inset-0 z-[250] flex justify-start"> 
             <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => setIsCartOpen(false)}></div>
-            <div className="relative w-full max-w-md bg-white h-full shadow-2xl flex flex-col animate-slide-in-left border-r border-gray-200">
+            <div className="relative w-full max-w-md bg-white h-screen shadow-2xl flex flex-col animate-slide-in-left border-r border-gray-200">
                <div className="p-5 border-b border-gray-100 flex justify-between items-center bg-gray-50">
                   <h2 className="text-2xl font-black text-[#265336] flex items-center gap-2">
                      <FaShoppingCart /> Your Cart ({cart.length})
@@ -370,7 +370,8 @@ const Products = () => {
                   <button onClick={() => setIsCartOpen(false)} className="text-gray-400 hover:text-red-500 transition-all p-2 bg-white rounded-full shadow-sm"><FaTimes size={20} /></button>
                </div>
                
-               <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-4 no-scrollbar">
+               {/* FIX: added min-h-0 and ensured proper flex-1 for scrolling */}
+               <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-4 min-h-0">
                   {cart.length === 0 ? (
                      <div className="flex flex-col items-center justify-center h-full text-gray-400 gap-4">
                         <div className="bg-gray-50 p-6 rounded-full">
@@ -401,7 +402,7 @@ const Products = () => {
                </div>
 
                {cart.length > 0 && (
-                  <div className="p-5 bg-gray-50 border-t border-gray-200">
+                  <div className="p-5 bg-gray-50 border-t border-gray-200 mt-auto shadow-[0_-5px_15px_rgba(0,0,0,0.05)]">
                      <div className="flex justify-between items-center mb-4">
                         <span className="text-gray-500 font-bold text-base">Subtotal:</span>
                         <span className="text-2xl font-black text-[#265336]">Rs. {cartTotal.toLocaleString()}</span>
@@ -512,10 +513,10 @@ const Products = () => {
                            </button>
                         </div>
                         
-                        {/* URDU TEXT HIGHLIGHTED SECTION (CHANGE APPLIED HERE) */}
+                        {/* URDU TEXT HIGHLIGHTED SECTION */}
                         <div className="w-full p-3 md:p-4 bg-[#fff8e1] border-2 border-dashed border-[#ffb300] rounded-xl text-center shadow-sm">
                            <p dir="rtl" className="text-2xl text-[#d84315] font-black tracking-wide drop-shadow-sm" style={{ fontFamily: 'Jameel Noori Nastaleeq, "Noto Nastaliq Urdu", serif' }}>
-                              آرڈر دینے کے لیے بٹن پر کلک کریں
+                             آرڈر دینے کے لیے بٹن پر کلک کریں
                            </p>
                         </div>
 
@@ -569,13 +570,13 @@ const Products = () => {
                      {!showAllReviews && currentReviews.length > 2 && (
                         <div className="flex justify-center mt-10">
                            <button onClick={() => setShowAllReviews(true)} className="bg-white border-2 border-[#265336] text-[#265336] px-10 py-3 rounded-full font-bold hover:bg-[#265336] hover:text-white transition-all">
-                              Read All {currentReviews.length} Reviews
+                             Read All {currentReviews.length} Reviews
                            </button>
                         </div>
                      )}
                   </div>
                   
-                  {/* RELATED PRODUCTS SECTION (CHANGE APPLIED HERE) */}
+                  {/* RELATED PRODUCTS SECTION */}
                   <div className="mt-20 pt-16 border-t border-gray-100">
                      <div className="flex flex-col items-center mb-10">
                         <h3 className="text-2xl md:text-4xl font-black text-gray-800 mb-2">🛍️ You May Also Like</h3>
@@ -616,7 +617,7 @@ const Products = () => {
                   </div>
 
                </div>
-           </div>
+            </div>
         </div>
       )}
 
@@ -627,7 +628,7 @@ const Products = () => {
             <button onClick={() => setShowForm(false)} className="absolute top-4 right-4 text-gray-400 hover:text-red-500 bg-gray-50 p-2 rounded-full transition-all"><FaTimes/></button>
             
             <h2 className="text-2xl font-black text-center text-[#265336] mb-4 flex flex-col items-center gap-1">
-               <FaLock className="text-gray-400 text-lg" /> Secure Checkout
+                <FaLock className="text-gray-400 text-lg" /> Secure Checkout
             </h2>
             
             <div className="bg-orange-50 border border-orange-100 p-3 rounded-xl mb-6">
