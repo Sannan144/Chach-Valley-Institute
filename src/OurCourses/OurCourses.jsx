@@ -149,7 +149,7 @@ const OurCourses = () => {
         />
       )}
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -3,7 +3,7 @@ import {
   FaStar, FaStarHalfAlt, FaRegStar, FaShoppingCart, FaChevronLeft, 
   FaChevronRight, FaFileInvoiceDollar, FaTruckMoving, FaSearch, 
   FaShieldAlt, FaUndo, FaCheckCircle, FaWhatsapp, FaUserCircle,
-  FaTimes, FaTrashAlt, FaFilter, FaMagic, FaLock
+  FaTimes, FaTrashAlt, FaFilter, FaMagic, FaLock, FaThumbsUp, FaCommentDots
 } from "react-icons/fa";
 import { useParams, useNavigate } from "react-router-dom";
 import products from "./ProductsData";
@@ -12,33 +12,33 @@ import Logo from "../Logo/Logo";
 import "./Products.css";
 import Footer from "../Footer/Footer";
 
-// --- 25+ PROFESSIONAL REVIEWS DATABASE ---
+// --- 25+ PROFESSIONAL REVIEWS DATABASE (Updated Names, Colors, Likes & Replies) ---
 const allReviewsData = [
-  { name: "Ali Raza", time: "2 days ago", text: "Amazing quality! Completely satisfied with the purchase. Delivery was fast.", rating: 5 },
-  { name: "Sara Ahmed", time: "1 week ago", text: "Product is exactly as shown in the picture. Highly recommended store!", rating: 5 },
-  { name: "Muhammad Usman", time: "2 weeks ago", text: "Good experience overall. Packaging was secure and customer service is responsive.", rating: 4.5 },
-  { name: "Ayesha Khan", time: "3 days ago", text: "Quality is premium. Will definitely order again from here.", rating: 5 },
-  { name: "Zainab Tariq", time: "1 month ago", text: "Value for money. Best product in this price range.", rating: 4 },
-  { name: "Bilal Hussain", time: "5 days ago", text: "Delivery took an extra day, but the product is flawless. Satisfied.", rating: 4.5 },
-  { name: "Fatima Noor", time: "2 days ago", text: "100% authentic product. Thank you for the free delivery!", rating: 5 },
-  { name: "Hassan Ali", time: "4 weeks ago", text: "Very useful item for daily use. Working perfectly.", rating: 5 },
-  { name: "Khadija Bibi", time: "1 week ago", text: "I bought this for my mother and she loved it. Great quality.", rating: 5 },
-  { name: "Omer Farooq", time: "3 weeks ago", text: "Customer support guided me very well. Very happy with my parcel.", rating: 4.5 },
-  { name: "Nida Shoaib", time: "2 days ago", text: "Just received it today. Looks elegant and premium.", rating: 5 },
-  { name: "Kamran Akmal", time: "1 month ago", text: "I highly recommend this store. Trusted seller.", rating: 5 },
-  { name: "Sana Javed", time: "6 days ago", text: "Material is very good. No extra delivery charges is a big plus.", rating: 4.5 },
-  { name: "Fahad Mustafa", time: "2 weeks ago", text: "Exactly what I was looking for. Perfect size and shape.", rating: 5 },
-  { name: "Sadia Imran", time: "3 days ago", text: "Beautiful packing and top-notch quality.", rating: 5 },
-  { name: "Tariq Jameel", time: "1 week ago", text: "I am a regular customer now. Best online shopping experience.", rating: 5 },
-  { name: "Madiha Shah", time: "4 days ago", text: "Works great! The price is very reasonable compared to the market.", rating: 4 },
-  { name: "Awais Qarni", time: "1 month ago", text: "Superb quality. I have recommended it to all my friends.", rating: 5 },
-  { name: "Rabia Anum", time: "2 weeks ago", text: "Loved the fast delivery and the product is amazing.", rating: 5 },
-  { name: "Salman Butt", time: "5 days ago", text: "Original product received. Thanks seller!", rating: 4.5 },
-  { name: "Hira Mani", time: "3 weeks ago", text: "It's my 3rd order from this website. Never disappointed.", rating: 5 },
-  { name: "Danish Taimoor", time: "2 days ago", text: "Five stars for the quality and fast WhatsApp support.", rating: 5 },
-  { name: "Amanullah", time: "1 week ago", text: "Very nice product. Highly satisfied.", rating: 4 },
-  { name: "Nabeel Qureshi", time: "4 weeks ago", text: "Perfect condition. Everything is as described.", rating: 5 },
-  { name: "Zoya Nasir", time: "3 days ago", text: "Beautifully designed and very practical. Thumbs up!", rating: 5 }
+  { name: "Ali Raza", time: "2 days ago", text: "Amazing quality! Completely satisfied with the purchase. Delivery was fast.", rating: 5, color: "#ef4444", likes: 14, replies: ["Thank you Ali! We are glad you liked it."] },
+  { name: "Sara Ahmed", time: "1 week ago", text: "Product is exactly as shown in the picture. Highly recommended store!", rating: 5, color: "#3b82f6", likes: 8, replies: [] },
+  { name: "Muhammad Usman", time: "2 weeks ago", text: "Good experience overall. Packaging was secure and customer service is responsive.", rating: 4.5, color: "#10b981", likes: 22, replies: ["Thanks for your feedback Usman!"] },
+  { name: "Ayesha Khan", time: "3 days ago", text: "Quality is premium. Will definitely order again from here.", rating: 5, color: "#f59e0b", likes: 5, replies: ["Looking forward to your next order!"] },
+  { name: "Zainab Tariq", time: "1 month ago", text: "Value for money. Best product in this price range.", rating: 4, color: "#8b5cf6", likes: 11, replies: [] },
+  { name: "Bilal Hussain", time: "5 days ago", text: "Delivery took an extra day, but the product is flawless. Satisfied.", rating: 4.5, color: "#ec4899", likes: 3, replies: ["Apologies for the delay. Enjoy the product!"] },
+  { name: "Fatima Noor", time: "2 days ago", text: "100% authentic product. Thank you for the free delivery!", rating: 5, color: "#14b8a6", likes: 19, replies: [] },
+  { name: "Hassan Ali", time: "4 weeks ago", text: "Very useful item for daily use. Working perfectly.", rating: 5, color: "#f97316", likes: 7, replies: [] },
+  { name: "Khadija Bibi", time: "1 week ago", text: "I bought this for my mother and she loved it. Great quality.", rating: 5, color: "#6366f1", likes: 31, replies: ["So happy to hear that your mother liked it!"] },
+  { name: "Omer Farooq", time: "3 weeks ago", text: "Customer support guided me very well. Very happy with my parcel.", rating: 4.5, color: "#84cc16", likes: 4, replies: [] },
+  { name: "Nida Shoaib", time: "2 days ago", text: "Just received it today. Looks elegant and premium.", rating: 5, color: "#06b6d4", likes: 16, replies: [] },
+  { name: "Hamza Sheikh", time: "1 month ago", text: "I highly recommend this store. Trusted seller.", rating: 5, color: "#d946ef", likes: 25, replies: ["Thank you for recommending us!"] },
+  { name: "Maira Khan", time: "6 days ago", text: "Material is very good. No extra delivery charges is a big plus.", rating: 4.5, color: "#f43f5e", likes: 10, replies: [] },
+  { name: "Saad Mahmood", time: "2 weeks ago", text: "Exactly what I was looking for. Perfect size and shape.", rating: 5, color: "#0ea5e9", likes: 28, replies: [] },
+  { name: "Sadia Imran", time: "3 days ago", text: "Beautiful packing and top-notch quality.", rating: 5, color: "#10b981", likes: 12, replies: ["Thanks Sadia!"] },
+  { name: "Abdullah Javed", time: "1 week ago", text: "I am a regular customer now. Best online shopping experience.", rating: 5, color: "#eab308", likes: 42, replies: ["Always a pleasure to serve you, Abdullah!"] },
+  { name: "Madiha Shah", time: "4 days ago", text: "Works great! The price is very reasonable compared to the market.", rating: 4, color: "#a855f7", likes: 6, replies: [] },
+  { name: "Kashif Rehman", time: "1 month ago", text: "Superb quality. I have recommended it to all my friends.", rating: 5, color: "#ef4444", likes: 17, replies: [] },
+  { name: "Rabia Anum", time: "2 weeks ago", text: "Loved the fast delivery and the product is amazing.", rating: 5, color: "#3b82f6", likes: 21, replies: [] },
+  { name: "Waqas Ali", time: "5 days ago", text: "Original product received. Thanks seller!", rating: 4.5, color: "#14b8a6", likes: 9, replies: ["You are welcome Waqas!"] },
+  { name: "Hafsa Malik", time: "3 weeks ago", text: "It's my 3rd order from this website. Never disappointed.", rating: 5, color: "#f97316", likes: 35, replies: ["Thank you for trusting us again!"] },
+  { name: "Junaid Iqbal", time: "2 days ago", text: "Five stars for the quality and fast WhatsApp support.", rating: 5, color: "#8b5cf6", likes: 18, replies: [] },
+  { name: "Amanullah", time: "1 week ago", text: "Very nice product. Highly satisfied.", rating: 4, color: "#ec4899", likes: 5, replies: [] },
+  { name: "Taha Yaseen", time: "4 weeks ago", text: "Perfect condition. Everything is as described.", rating: 5, color: "#6366f1", likes: 13, replies: [] },
+  { name: "Kiran Shahzadi", time: "3 days ago", text: "Beautifully designed and very practical. Thumbs up!", rating: 5, color: "#06b6d4", likes: 27, replies: ["Thanks Kiran! We appreciate your review."] }
 ];
 
 const Products = () => {
@@ -100,6 +100,8 @@ const Products = () => {
         setCurrentPrice(product.price); 
         setMainIndex(0);
         setShowAllReviews(false); 
+        // Reset quantity when new product opens
+        setFormData(prev => ({ ...prev, quantity: 1, length: "", width: "" }));
       }
     } else {
       setSelectedProduct(null);
@@ -116,6 +118,14 @@ const Products = () => {
   const closeModal = () => { navigate("/products"); setShowForm(false); };
 
   const handleFormChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
+  
+  // --- CUSTOM QUANTITY CONTROLLER ---
+  const handleQuantityChange = (amount) => {
+    setFormData(prev => ({
+      ...prev,
+      quantity: Math.max(1, (parseInt(prev.quantity) || 1) + amount)
+    }));
+  };
   
   const handleBuyNow = () => {
     setFormData({...formData, isCartCheckout: false});
@@ -245,12 +255,17 @@ const Products = () => {
 
   const isCustomProduct = selectedProduct?.inpVal === "False";
 
+  // Name Initials Generator
+  const getInitials = (name) => {
+      let parts = name.split(' ');
+      let initials = parts[0][0];
+      if(parts.length > 1) initials += parts[1][0];
+      return initials.toUpperCase();
+  };
+
   return (
     <div className="bg-gray-50 min-h-screen font-sans pb-24 relative selection:bg-[#265336] selection:text-white text-gray-800">
       
-      {/* Yahan Logo div ka z-index 10 se 99 kar diya gaya hai */}
-      {/* <div className="relative z-[99] bg-white shadow-sm"><Logo /></div> */}
-
       {/* --- TOAST NOTIFICATION --- */}
       {toastMessage && (
           <div className="fixed top-5 left-1/2 -translate-x-1/2 bg-[#265336] text-white px-8 py-4 rounded-full shadow-2xl z-[300] font-bold animate-fade-in-down flex items-center gap-3">
@@ -370,7 +385,6 @@ const Products = () => {
                   <button onClick={() => setIsCartOpen(false)} className="text-gray-400 hover:text-red-500 transition-all p-2 bg-white rounded-full shadow-sm"><FaTimes size={20} /></button>
                </div>
                
-               {/* FIX: added min-h-0 and ensured proper flex-1 for scrolling */}
                <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-4 min-h-0">
                   {cart.length === 0 ? (
                      <div className="flex flex-col items-center justify-center h-full text-gray-400 gap-4">
@@ -423,17 +437,15 @@ const Products = () => {
       {selectedProduct && (
         <div id="product-modal" className="fixed inset-0 z-[100] bg-white overflow-y-auto scroll-smooth">
            
-           {/* Close Button - Sticky at top right */}
            <button className="fixed top-4 right-4 bg-gray-50 border border-gray-200 hover:bg-red-50 hover:border-red-500 hover:text-red-500 p-3 rounded-full text-gray-500 font-bold z-[110] transition-all shadow-sm" onClick={closeModal}>
               <FaTimes size={24} />
            </button>
 
-           <div className="w-full max-w-[1300px] mx-auto px-4 py-10">
-               {/* Main Product Layout */}
-               <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 pt-10">
+           <div className="w-full max-w-[1300px] mx-auto px-4 py-6">
+               <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 pt-10">
                   
                   {/* IMAGES SECTION */}
-                  <div className="w-full lg:w-[50%] flex flex-col">
+                  <div className="w-full lg:w-[45%] flex flex-col">
                      <div className="relative aspect-square bg-gray-50 rounded-3xl overflow-hidden border border-gray-100 flex items-center justify-center">
                         <div className="flex h-full w-full transition-transform duration-500 ease-out" style={{ transform: `translateX(-${mainIndex * 100}%)`, width: `${selectedProduct.images.length * 100}%` }}>
                            {selectedProduct.images.map((img, idx) => (
@@ -456,13 +468,14 @@ const Products = () => {
                   </div>
 
                   {/* DETAILS SECTION */}
-                  <div className="w-full lg:w-[50%] flex flex-col justify-center">
+                  <div className="w-full lg:w-[55%] flex flex-col justify-center">
                      <div className="inline-block bg-emerald-50 text-[#265336] border border-emerald-100 px-3 py-1 rounded-full text-sm font-bold w-max mb-3">
                         Premium Collection
                      </div>
-                     <h2 className="text-3xl md:text-5xl font-black text-gray-800 leading-tight mb-4">{selectedProduct.name}</h2>
+                     {/* Reduced Text Size for Title */}
+                     <h2 className="text-2xl md:text-3xl font-black text-gray-800 leading-tight mb-3">{selectedProduct.name}</h2>
                      
-                     <div className="flex items-center gap-6 border-b border-gray-100 pb-5">
+                     <div className="flex items-center gap-6 border-b border-gray-100 pb-4">
                         <div className="flex items-center gap-2">
                            {renderStars(selectedProduct.rating || 5)} 
                            <span className="text-gray-800 font-bold ml-1">{selectedProduct.rating || 5.0}</span>
@@ -471,52 +484,70 @@ const Products = () => {
                         <span className="text-gray-500 font-medium flex items-center gap-1.5"><FaCheckCircle className="text-emerald-500"/> {selectedProduct.sold} Orders Verified</span>
                      </div>
 
-                     <div className="mt-6 bg-gray-50 border border-gray-100 p-6 rounded-2xl">
+                     <div className="mt-5 bg-gray-50 border border-gray-100 p-5 rounded-2xl">
                         {isCustomProduct ? (
                            <div className="flex flex-col gap-4">
-                              <div className="text-4xl font-black text-[#265336] mb-2">{currentPrice}</div>
-                              {['length', 'width', 'quantity'].map((field) => (
+                              {/* Reduced Text Size for Price */}
+                              <div className="text-2xl md:text-3xl font-black text-[#265336] mb-1">{currentPrice}</div>
+                              
+                              {['length', 'width'].map((field) => (
                                 <div key={field} className="flex items-center justify-between bg-white p-3 rounded-xl border border-gray-200">
                                    <label className="font-bold text-gray-600 capitalize">
-                                      {field} {field !== 'quantity' && <span className="text-xs font-medium text-gray-400">(in inches)</span>}:
+                                      {field} <span className="text-xs font-medium text-gray-400">(in inches)</span>:
                                    </label>
-                                   <input type="number" name={field} value={formData[field]} onChange={handleFormChange} className="bg-gray-50 border border-gray-200 rounded-lg p-2 w-24 text-center font-bold" />
+                                   <input type="number" name={field} value={formData[field]} onChange={handleFormChange} className="bg-gray-50 border border-gray-200 rounded-lg p-2 w-24 text-center font-bold outline-none focus:border-[#265336]" />
                                 </div>
                               ))}
+
+                              {/* Custom Quantity Controller */}
+                              <div className="flex items-center justify-between bg-white p-3 rounded-xl border border-gray-200">
+                                 <label className="font-bold text-gray-600 capitalize">Quantity:</label>
+                                 <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-lg p-1">
+                                    <button type="button" onClick={() => handleQuantityChange(-1)} className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-[#265336] font-bold text-lg transition-colors">-</button>
+                                    <span className="w-6 text-center font-bold text-gray-800">{formData.quantity}</span>
+                                    <button type="button" onClick={() => handleQuantityChange(1)} className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-[#265336] font-bold text-lg transition-colors">+</button>
+                                 </div>
+                              </div>
                            </div>
                         ) : (
                            <div className="flex flex-col gap-4">
-                              <div className="text-4xl font-black text-[#265336] mb-2">{currentPrice}</div>
+                              {/* Reduced Text Size for Price */}
+                              <div className="text-2xl md:text-3xl font-black text-[#265336] mb-1">{currentPrice}</div>
+                              
+                              {/* Custom Quantity Controller */}
                               <div className="flex items-center justify-between bg-white p-3 rounded-xl border border-gray-200">
                                  <label className="font-bold text-gray-600 capitalize">Quantity:</label>
-                                 <input type="number" name="quantity" min="1" value={formData.quantity} onChange={handleFormChange} className="bg-gray-50 border border-gray-200 rounded-lg p-2 w-24 text-center font-bold" />
+                                 <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-lg p-1">
+                                    <button type="button" onClick={() => handleQuantityChange(-1)} className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-[#265336] font-bold text-lg transition-colors">-</button>
+                                    <span className="w-6 text-center font-bold text-gray-800">{formData.quantity}</span>
+                                    <button type="button" onClick={() => handleQuantityChange(1)} className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-[#265336] font-bold text-lg transition-colors">+</button>
+                                 </div>
                               </div>
                            </div>
                         )}
 
-                        <div className="mt-6 bg-orange-50 border border-orange-100 rounded-xl p-4 flex items-center gap-4">
-                           <FaTruckMoving size={24} className="text-orange-500 animate-bounce" />
+                        <div className="mt-5 bg-orange-50 border border-orange-100 rounded-xl p-3 flex items-center gap-3">
+                           <FaTruckMoving size={20} className="text-orange-500 animate-bounce" />
                            <div className="flex flex-col">
-                              <span className="text-gray-800 text-lg font-black uppercase">Free Delivery</span>
-                              <span className="text-orange-600 font-semibold text-sm">Across Pakistan - Zero Extra Fees</span>
+                              <span className="text-gray-800 text-base font-black uppercase">Free Delivery</span>
+                              <span className="text-orange-600 font-semibold text-xs">Across Pakistan - Zero Extra Fees</span>
                            </div>
                         </div>
                      </div>
 
-                     <div className="flex flex-col gap-3 mt-6">
+                     <div className="flex flex-col gap-3 mt-5">
                         <div className="flex flex-col md:flex-row gap-3">
-                           <button onClick={handleAddToCart} className="w-full md:w-1/2 bg-white text-[#265336] border-2 border-[#265336] py-4 rounded-xl font-black hover:bg-emerald-50 transition-all uppercase tracking-wide">
+                           <button onClick={handleAddToCart} className="w-full md:w-1/2 bg-white text-[#265336] border-2 border-[#265336] py-3 rounded-xl font-black hover:bg-emerald-50 transition-all uppercase tracking-wide">
                               Add to Cart
                            </button>
-                           <button onClick={handleBuyNow} className="w-full md:w-1/2 bg-[#265336] text-white py-4 rounded-xl shadow-md font-black hover:bg-[#1a3a26] transition-all flex justify-center items-center gap-2 uppercase tracking-wide">
+                           <button onClick={handleBuyNow} className="w-full md:w-1/2 bg-[#265336] text-white py-3 rounded-xl shadow-md font-black hover:bg-[#1a3a26] transition-all flex justify-center items-center gap-2 uppercase tracking-wide">
                               <FaShoppingCart /> Buy Now
                            </button>
                         </div>
                         
-                        {/* URDU TEXT HIGHLIGHTED SECTION */}
-                        <div className="w-full p-3 md:p-4 bg-[#fff8e1] border-2 border-dashed border-[#ffb300] rounded-xl text-center shadow-sm">
-                           <p dir="rtl" className="text-2xl text-[#d84315] font-black tracking-wide drop-shadow-sm" style={{ fontFamily: 'Jameel Noori Nastaleeq, "Noto Nastaliq Urdu", serif' }}>
-                             آرڈر دینے کے لیے بٹن پر کلک کریں
+                        <div className="w-full p-3 bg-[#fff8e1] border-2 border-dashed border-[#ffb300] rounded-xl text-center shadow-sm">
+                           <p dir="rtl" className="text-xl md:text-2xl text-[#d84315] font-black tracking-wide drop-shadow-sm" style={{ fontFamily: 'Jameel Noori Nastaleeq, "Noto Nastaliq Urdu", serif' }}>
+                              آرڈر دینے کے لیے بٹن پر کلک کریں
                            </p>
                         </div>
 
@@ -524,63 +555,96 @@ const Products = () => {
                   </div>
                </div>
 
-               {/* Specs & Reviews (Full Width) */}
-               <div className="mt-16 bg-white border-t border-gray-100 pt-16">
-                  <div className="flex flex-col items-center mb-10">
-                     <h3 className="text-2xl md:text-4xl font-black text-gray-800 mb-2">📋 Product Specifications</h3>
-                     <div className="w-20 h-1.5 bg-[#265336] rounded-full"></div>
+               {/* Specs & Reviews */}
+               <div className="mt-12 bg-white border-t border-gray-100 pt-12">
+                  <div className="flex flex-col items-center mb-8">
+                     <h3 className="text-2xl md:text-3xl font-black text-gray-800 mb-2">📋 Product Specifications</h3>
+                     <div className="w-16 h-1.5 bg-[#265336] rounded-full"></div>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                      {selectedProduct.desc.map((val, idx) => (
-                        <div key={idx} className="group bg-gray-50 p-6 rounded-2xl">
-                           <h2 className="text-lg font-black text-gray-800 border-l-4 border-[#265336] pl-4 mb-4">{val.heading}</h2>
-                           <div className="text-gray-600 leading-relaxed space-y-2 ml-5">
-                              {val.subParts.map((item, i) => <p key={i} className="flex items-start gap-2"><span className="text-[#265336] mt-1">•</span>{item}</p>)}
+                        <div key={idx} className="group bg-gray-50 p-5 rounded-2xl">
+                           <h2 className="text-base font-black text-gray-800 border-l-4 border-[#265336] pl-3 mb-3">{val.heading}</h2>
+                           <div className="text-gray-600 leading-relaxed text-sm space-y-2 ml-4">
+                              {val.subParts.map((item, i) => <p key={i} className="flex items-start gap-2"><span className="text-[#265336] mt-0.5">•</span>{item}</p>)}
                            </div>
                         </div>
                      ))}
                   </div>
 
-                  {/* CUSTOMER REVIEWS */}
-                  <div className="mt-20">
-                     <div className="flex justify-between items-end mb-8">
-                        <h3 className="text-2xl font-black text-gray-800">⭐ Verified Reviews</h3>
-                        <span className="text-[#265336] font-bold bg-emerald-50 px-4 py-1 rounded-full border border-emerald-100">{currentReviews.length} Ratings</span>
+                  {/* CUSTOMER REVIEWS (Updated with Initials, Colors, Likes & Replies) */}
+                  <div className="mt-16">
+                     <div className="flex justify-between items-end mb-6">
+                        <h3 className="text-xl md:text-2xl font-black text-gray-800">⭐ Verified Reviews</h3>
+                        <span className="text-[#265336] text-sm font-bold bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">{currentReviews.length} Ratings</span>
                      </div>
                      
-                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         {displayedReviews.map((review, i) => (
-                           <div key={i} className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                              <div className="flex items-center gap-3 mb-4">
-                                 <FaUserCircle className="text-4xl text-gray-300" />
+                           <div key={i} className="bg-white p-5 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                              <div className="flex items-center gap-3 mb-3">
+                                 {/* Custom Initial Avatar */}
+                                 <div 
+                                     className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-inner"
+                                     style={{ backgroundColor: review.color }}
+                                 >
+                                     {getInitials(review.name)}
+                                 </div>
                                  <div>
-                                    <h4 className="font-bold text-gray-700">{review.name}</h4>
+                                    <h4 className="font-bold text-gray-800">{review.name}</h4>
                                     <div className="flex items-center gap-2">
                                        {renderStars(review.rating)}
-                                       <span className="text-xs text-gray-400">{review.time}</span>
+                                       <span className="text-xs font-medium text-gray-400">{review.time}</span>
                                     </div>
                                  </div>
                               </div>
-                              <p className="text-gray-600 italic">"{review.text}"</p>
+                              <p className="text-gray-600 text-sm mb-3">"{review.text}"</p>
+                              
+                              {/* Likes and Reply Section */}
+                              <div className="flex flex-col gap-3 pt-3 border-t border-gray-50">
+                                 <div className="flex items-center gap-4 text-xs font-bold text-gray-500">
+                                    <button className="flex items-center gap-1.5 hover:text-blue-600 transition-colors">
+                                       <FaThumbsUp className="text-sm" /> {review.likes} Helpful
+                                    </button>
+                                    <button className="flex items-center gap-1.5 hover:text-[#265336] transition-colors">
+                                       <FaCommentDots className="text-sm" /> {review.replies.length} Reply
+                                    </button>
+                                 </div>
+
+                                 {/* Replies from Store */}
+                                 {review.replies && review.replies.length > 0 && (
+                                    <div className="mt-1 pl-4 border-l-2 border-[#265336]/30 space-y-2">
+                                       {review.replies.map((reply, idx) => (
+                                          <div key={idx} className="bg-gray-50 p-2.5 rounded-lg text-sm text-gray-700 border border-gray-100">
+                                             <span className="font-black text-[#265336] flex items-center gap-1 text-xs mb-1">
+                                                <FaShieldAlt /> Store Owner
+                                             </span>
+                                             {reply}
+                                          </div>
+                                       ))}
+                                    </div>
+                                 )}
+                              </div>
+
                            </div>
                         ))}
                      </div>
                      
                      {!showAllReviews && currentReviews.length > 2 && (
-                        <div className="flex justify-center mt-10">
-                           <button onClick={() => setShowAllReviews(true)} className="bg-white border-2 border-[#265336] text-[#265336] px-10 py-3 rounded-full font-bold hover:bg-[#265336] hover:text-white transition-all">
-                             Read All {currentReviews.length} Reviews
+                        <div className="flex justify-center mt-8">
+                           <button onClick={() => setShowAllReviews(true)} className="bg-white border-2 border-[#265336] text-[#265336] px-8 py-2.5 rounded-full font-bold hover:bg-[#265336] hover:text-white transition-all text-sm">
+                              Read All {currentReviews.length} Reviews
                            </button>
                         </div>
                      )}
                   </div>
                   
                   {/* RELATED PRODUCTS SECTION */}
-                  <div className="mt-20 pt-16 border-t border-gray-100">
-                     <div className="flex flex-col items-center mb-10">
-                        <h3 className="text-2xl md:text-4xl font-black text-gray-800 mb-2">🛍️ You May Also Like</h3>
-                        <div className="w-20 h-1.5 bg-[#265336] rounded-full"></div>
+                  <div className="mt-16 pt-12 border-t border-gray-100">
+                     <div className="flex flex-col items-center mb-8">
+                        <h3 className="text-2xl md:text-3xl font-black text-gray-800 mb-2">🛍️ You May Also Like</h3>
+                        <div className="w-16 h-1.5 bg-[#265336] rounded-full"></div>
                      </div>
                      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-5">
                         {products.filter(p => p.id !== selectedProduct.id).slice(0, 5).map((item) => {
@@ -617,7 +681,7 @@ const Products = () => {
                   </div>
 
                </div>
-            </div>
+           </div>
         </div>
       )}
 
