@@ -3,246 +3,137 @@ const courses = [
   // ===== COURSE 1 =====
   {
     id: 1,
-    img:'https://i.ibb.co/srHRbYV/e-commerce-1.png',
-    title: 'E-commerce Course',
-    duration: '12 Weeks | 5 classes per Week',
-    Mode: 'On-Campus / Online / One-to-One Classes',
-    learn: [
-      {
-        heading: "1. Introduction to E-Commerce",
-        subParts: [
-          '💡 What E-Commerce is and how it generates real income from home or office',
-          '📦 Different types of online business models and which fits you best',
-          '💰 Case studies: real people making thousands online',
-          '🌍 Local vs International E-Commerce – advantages, challenges, and strategies',
-          '🛠️ How to start with minimal investment and scale fast',
-          '🧰 Platforms to master in 2025 for maximum profit',
-          '🧠 Understand buyer psychology to increase conversion rates'
-        ]
-      },
-      {
-        heading: "2. Product Hunting / Product Research",
-        subParts: [
-          '🔍 Identify trending products that actually sell',
-          '📈 Research customer demand and buying patterns',
-          '🕵️ Competitor research with hidden tools for insider knowledge',
-          '✅ Validate products before spending money to minimize risk',
-          '💵 Price your product for maximum profit and customer appeal',
-          '🛠️ Use advanced research tools to save time and increase accuracy',
-          '🧠 Learn psychological triggers that make buyers click "Buy Now"'
-        ]
-      },
-      {
-        heading: "3. Product Sourcing",
-        subParts: [
-          '🛒 Buy products from verified suppliers without risking money',
-          '✅ How to choose the best vendor for your business',
-          '🏪 Differences between wholesale, local, and international sourcing',
-          '🚚 Shipping, packaging, and delivery processes explained simply',
-          '🤝 Learn negotiation skills that save money and improve supplier relationships',
-          '🧠 Understand supplier psychology to avoid scams and delays'
-        ]
-      },
-      {
-        heading: "4. Graphic Designing for E-Commerce",
-        subParts: [
-          '🎨 Create attractive product images that convert viewers into buyers',
-          '🖌️ Edit and enhance photos using Canva, Photoshop, and AI tools',
-          '🖼️ Design banners, ads, and thumbnails that grab attention',
-          '🛠️ Apply design principles that build trust and increase sales',
-          '💎 Make your store visually professional to stand out from competitors'
-        ]
-      },
-      {
-        heading: "5. Shopify Store Creation",
-        subParts: [
-          '🛍️ Build Shopify stores from scratch to advanced level',
-          '🌐 Easy-to-follow domain & hosting setup',
-          '🎨 Select the best theme and customize for branding',
-          '📦 Upload products, manage pricing, and inventory effectively',
-          '💳 Set up payment gateways securely and correctly',
-          '⚡ Must-have apps to boost sales and automate tasks'
-        ]
-      },
-      {
-        heading: "6. Marketing & Advertising",
-        subParts: [
-          '📢 Branding and viral content creation strategies',
-          '📱 Facebook & Instagram ads step-by-step practical training',
-          '💬 WhatsApp marketing & automation for high conversions',
-          '🌱 Free and paid marketing explained for beginners',
-          '💸 Turn visitors into paying customers',
-          '🔄 Retargeting, upselling & cross-selling techniques for higher revenue'
-        ]
-      },
-      {
-        heading: "7. Freelancing with E-Commerce Skills",
-        subParts: [
-          '💻 Sell your e-commerce skills online as a freelancer',
-          '🚀 High-demand services like product research, store setup, and ads management',
-          '🌐 Work on Fiverr, Upwork, and local Pakistani clients',
-          '💡 Earn without running your own store',
-          '📝 Build a portfolio that attracts clients easily'
-        ]
-      },
-      {
-        heading: "After Course Students will be fully able to:",
-        subParts: [
-          '🚀 Launch profitable e-commerce business from scratch',
-          '🏪 Build and manage Shopify or other online stores confidently',
-          '📈 Run marketing campaigns that convert consistently',
-          '🔍 Research suppliers and trending products efficiently',
-          '💻 Offer freelancing services worldwide using e-commerce skills',
-          '🧠 Make data-driven decisions for long-term business growth',
-          '🌍 Create multiple income streams through online platforms'
-        ]
-      }
-    ],
-    Join: [
-      {
-        heading: "This course is perfect for:",
-        subParts: [
-          '🌱 Beginners with zero experience but desire to earn online',
-          '🎓 Students seeking financial independence and skills',
-          '💼 Job holders who want side income or career growth',
-          '🏢 Business owners entering the online market for expansion',
-          '🖥️ Freelancers aiming to offer high-demand services',
-          '📦 Amazon, Daraz, and Shopify sellers looking for proven strategies',
-          '💰 Anyone seeking financial freedom, flexible income, and growth'
-        ]
-      }
-    ],
-    Outcome: [
-      {
-        heading: "By the end of this course, you will be able to:",
-        subParts: [
-          '🚀 Launch professional online stores with confidence',
-          '🔍 Find winning products fast using research techniques',
-          '🛒 Source products efficiently at low cost',
-          '🎨 Design compelling product ads and creative visuals',
-          '📢 Run Facebook and Instagram ad campaigns that convert',
-          '📦 Manage orders, delivery, and customer service effectively',
-          '🌍 Build sustainable long-term online business and income'
-        ]
-      }
-    ],
-    // Fee: '25000'
-  },
+img: 'https://i.ibb.co/srHRbYV/web-development.png',
+title: 'Web Development Course',
+duration: '16 Weeks | 5 Classes per Week',
+Mode: 'On-Campus / Online / One-to-One Classes',
 
-  // ===== COURSE 2 =====
+learn: [
   {
-    id: 2,
-    img:'https://i.ibb.co/93mfqszZ/web-1.png',
-    title: 'Web Development',
-    duration: '24 Weeks | 5 classes per Week',
-    Mode: 'On-Campus / Online / One-to-One Classes',
-    learn: [
-      {
-        heading: '1. Introduction to Web Development',
-        subParts: [
-          '💻 How websites work in the real world',
-          '🔄 Difference between front-end and back-end development',
-          '🛠️ Essential tools and software every developer needs',
-          '🌐 Domain, hosting, and server concepts explained clearly',
-          '⚡ How websites load and function behind the scenes',
-          '🧠 Understand user experience psychology for better design'
-        ]
-      },
-      {
-        heading: '2. HTML',
-        subParts: [
-          '📄 Structure of web pages and semantic HTML',
-          '🏷️ Tags, elements, attributes, and their correct usage',
-          '🖼️ Add images, videos, and links effectively',
-          '📋 Build forms, tables, lists, and navigation menus',
-          '🌐 Multi-page websites and proper linking techniques',
-          '🧠 SEO basics integrated with HTML for higher visibility'
-        ]
-      },
-      {
-        heading: '3. CSS',
-        subParts: [
-          '🎨 Style layouts beautifully using modern CSS',
-          '🌈 Manage colors, fonts, spacing, and typography',
-          '📱 Make websites fully mobile-responsive',
-          '🔲 Flexbox & Grid for modern layouts',
-          '✨ Animations, transitions, and hover effects for engagement',
-          '🧠 Understand design psychology for better user retention'
-        ]
-      },
-      {
-        heading: '4. JavaScript Basics',
-        subParts: [
-          '🔢 Variables, functions, loops, and conditionals simplified',
-          '📂 DOM manipulation and event handling',
-          '⚡ Make interactive elements like sliders, forms, and menus',
-          '🌐 Fetch and use APIs for dynamic data',
-          '💻 Build small real-world projects to practice logic',
-          '🧠 Understand user behavior to enhance interactivity'
-        ]
-      },
-      {
-        heading: '5. Front-End Projects',
-        subParts: [
-          '🖥️ Build personal portfolio website',
-          '📝 Develop business websites for real-world scenarios',
-          '📄 Create landing page templates for products or services',
-          '🧠 Apply best practices for responsive and user-friendly design'
-        ]
-      },
-      {
-        heading: '6. Bootstrap / Tailwind CSS',
-        subParts: [
-          '📐 Responsive layout creation quickly with Bootstrap or Tailwind',
-          '🧩 Re-usable UI components and utilities',
-          '⚡ Build modern, professional interfaces fast',
-          '🧠 Implement UI/UX principles for high engagement'
-        ]
-      },
-      {
-        heading: '7. Git & GitHub',
-        subParts: [
-          '🗂️ Version control basics and why it matters',
-          '⬆️ Push, pull, and manage code repositories like a pro',
-          '🌐 Host websites on GitHub Pages',
-          '🧠 Collaboration & teamwork using Git workflows'
-        ]
-      },
-      {
-        heading: '8. Introduction to Back-End',
-        subParts: [
-          '🖥️ Server-side programming explained simply',
-          '🗄️ Database basics (MySQL, MongoDB)',
-          '⚙️ Core dynamic website concepts and API integration',
-          '🧠 Understand full-stack thinking for project development'
-        ]
-      }
-    ],
-    Join: [
-      {
-        heading: 'This course is perfect for:',
-        subParts: [
-          '🎓 Students wanting programming & web development skills',
-          '🌱 Beginners with no prior tech knowledge',
-          '💼 Freelancers looking to offer professional services',
-          '🏢 Business owners building websites for their brand',
-          '💸 Anyone seeking a career in IT or digital services'
-        ]
-      }
-    ],
-    Outcome: [
-      {
-        heading: 'After completing the course, you will be able to:',
-        subParts: [
-          '💻 Build responsive, interactive websites using HTML, CSS & JS',
-          '🔢 Integrate front-end and back-end logic seamlessly',
-          '📱 Create mobile-friendly web experiences',
-          '🛠️ Deploy websites using hosting and GitHub',
-          '💻 Start freelancing or offer web services globally',
-          '🧠 Solve real-world problems with coding logic'
-        ]
-      }
-    ],
+    heading: "1. Introduction to Web Development & HTML",
+    subParts: [
+      '💡 What is Web Development and how websites work',
+      '🌐 Difference between Frontend, Backend, and Full Stack',
+      '🛠️ Setup tools: VS Code, browser dev tools, extensions',
+      '📄 HTML basics: structure of a website',
+      '🔗 Links, images, lists, tables,anchors, and forms',
+      '🏗️ Semantic HTML (header, footer, nav, section)',
+    ]
+  },
+  {
+    heading: "2. CSS Fundamentals & Layout Design",
+    subParts: [
+      '🎨 What is CSS and how styling works',
+      '🎯 Selectors, colors, fonts, spacing',
+      '📦 Box model and layout understanding',
+      '📐 Flexbox for modern layouts',
+      '🧩 Positioning (absolute, relative, fixed)',
+      '✨ Hover effects, transitions, and animations',
+      '📱 Introduction to responsive design'
+    ]
+  },
+  {
+    heading: "3. Advanced CSS & Responsive Websites",
+    subParts: [
+      '📱 Media queries for mobile-friendly websites',
+      '🖥️ Mobile-first design approach',
+      '📊 Grid system basics',
+      '🎯 UI components design (buttons, cards, navbar)',
+      '⚡ Real-world website layout practice',
+      '🚀 Build responsive business website project'
+    ]
+  },
+  {
+    heading: "4. JavaScript Basics",
+    subParts: [
+      '💡 Introduction to JavaScript and its role',
+      '📦 Variables, data types, and operators',
+      '🔄 Conditions (if/else statements)',
+      '🔁 Loops (for, while)',
+      '⚙️ Simple functions, with parameters and return',
+      '📚 Arrays and basic methods',
+      '🧠 Logic building practice'
+    ]
+  },
+  {
+    heading: "5. JavaScript DOM & Projects",
+    subParts: [
+      '🌐 What is DOM (Document Object Model)',
+      '🎯 Selecting and modifying elements',
+      '🖱️ Event handling (click, input, submit)',
+      '🧩 Dynamic content updates',
+      '📝 Form validation',
+      '🚀 Mini projects: To-do app / calculator / quiz app',
+      '💻 Real interactive website practice'
+    ]
+  },
+  {
+    heading: "6. Tailwind CSS Framework",
+    subParts: [
+      '⚡ Introduction to Tailwind CSS',
+      '🛠️ Utility-first approach explained',
+      '🎨 Building layouts quickly with Tailwind',
+      '📱 Responsive design with Tailwind classes',
+      '🧩 UI components using Tailwind',
+      '🚀 Build landing page project',
+      '💡 Faster design workflow techniques'
+    ]
+  },
+  {
+    heading: "7. React JS Basics",
+    subParts: [
+      '⚛️ What is React and why it is used',
+      '🚀 Setup React project using Vite',
+      '🧩 Components and JSX',
+      '📦 Props and reusable components',
+      '🔄 Hooks (useState, useEffect, useRef)',
+      '🔄 Props drilling problem solve',
+      '🎯 Event handling in React',
+      '⚡ Conditional rendering',
+    ]
+  },
+  {
+    heading: "8. React Projects Github & Deployment",
+    subParts: [
+      '🧠 Build React apps (Counter, Todo App)',
+      '📊 Form handling in React',
+      '🛒 Basic e-commerce UI project (not all',
+      '🧪 Github Basics (not full)',
+      '🌐 Deployment on vecel (only deployment)',
+      '💼 A simple portfolio just for understanding',
+    ]
+  }
+],
+
+Join: [
+  {
+    heading: "This course is perfect for:",
+    subParts: [
+      '🌱 Beginners who want to start web development from scratch',
+      '🎓 Students looking for high-income digital skills',
+      '💼 Job seekers aiming for web developer roles',
+      '🖥️ Freelancers who want to earn online',
+      '🏢 Business owners wanting to build websites',
+      '💰 Anyone interested in tech career and remote income',
+      '🚀 People who want practical skill-based learning'
+    ]
+  }
+],
+
+Outcome: [
+  {
+    heading: "By the end of this course, you will be able to:",
+    subParts: [
+      '🚀 Build professional responsive websites',
+      '🎨 Design modern UI layouts using CSS & Tailwind',
+      '⚙️ Add interactivity using JavaScript',
+      '⚛️ Create React-based web applications',
+      '🌐 Deploy websites online for clients or portfolio',
+      '💼 Start freelancing as a web developer',
+      '📈 Build strong foundation for advanced development'
+    ]
+  }
+]
     // Fee: '25000'
   },
 
