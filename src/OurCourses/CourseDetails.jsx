@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react"; // useState add kiya feedback ke liye
 import { 
   FaTimes, 
   FaCheckCircle, 
@@ -8,12 +8,27 @@ import {
   FaArrowRight, 
   FaUserGraduate,
   FaCalendarAlt,
-  FaCheckDouble
+  FaCheckDouble,
+  FaShareAlt, // Share icon
+  FaCheck // Success icon
 } from "react-icons/fa";
 import { BsArrowRight } from "react-icons/bs";
 
 const CourseDetails = ({ course, onClose, onOpenForm }) => {
+  const [copied, setCopied] = useState(false); // Copy feedback state
+
   if (!course) return null;
+
+  // --- Link Copy Logic ---
+  const handleShare = () => {
+    const baseUrl = window.location.origin + window.location.pathname;
+    const shareableLink = `${baseUrl}?course=${course.id}`;
+    
+    navigator.clipboard.writeText(shareableLink).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
 
   return (
     <div className="fixed inset-0 z-[100] bg-[#0d1f14]/95 backdrop-blur-md flex justify-center items-center p-0 transition-all duration-500 overflow-hidden text-gray-800 font-sans">
@@ -38,6 +53,14 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
           <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/dark-matter.png')]"></div>
           
           <div className="relative z-10 px-4">
+            {/* --- SHARE BUTTON (New Addition) --- */}
+            <button 
+              onClick={handleShare}
+              className="mb-6 mx-auto flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 px-4 py-2 rounded-full transition-all text-sm font-bold tracking-widest uppercase backdrop-blur-md"
+            >
+              {copied ? <><FaCheck className="text-emerald-400" /> Link Copied!</> : <><FaShareAlt /> Share Course</>}
+            </button>
+
             <h2 className="text-3xl md:text-7xl font-black mb-6 tracking-[0.15em] drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)] uppercase leading-tight">
               {course.title}
             </h2>
@@ -144,7 +167,7 @@ const CourseDetails = ({ course, onClose, onOpenForm }) => {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             
             <span className="relative z-10 tracking-[0.1em] uppercase drop-shadow-lg">
-               Admission Now
+                Admission Now
             </span>
             <BsArrowRight className="relative z-10 group-hover:translate-x-4 transition-transform duration-300 text-3xl md:text-5xl" />
           </button>
