@@ -49,7 +49,7 @@ const OurCourses = () => {
     e.preventDefault();
     const { name, address, education } = formData;
     const message = `📚 *Admission Request*\n\n🎓 *Course:* ${selectedCourse.title}\n\n🪪 *Name:* ${name}\n🏠 *Address:* ${address}\n🎓 *Education:* ${education}`;
-    window.open(`https://wa.me/923191942002?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/923315703284?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   const resetForm = () => setFormData({ name: "", address: "", education: "" });
