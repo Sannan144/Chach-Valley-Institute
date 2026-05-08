@@ -1,142 +1,138 @@
-// Updated courses.js with detailed & engaging syllabus, outcomes, and target audience
 const courses = [
   // ===== COURSE 1 =====
   {
     id: 1,
-img: 'https://i.ibb.co/srHRbYV/web-development.png',
-title: 'Web Development Course',
-duration: '16 Weeks | 5 Classes per Week',
-Mode: 'On-Campus / Online / One-to-One Classes',
-
-learn: [
-  {
-    heading: "1. Introduction to Web Development & HTML",
-    subParts: [
-      '💡 What is Web Development and how websites work',
-      '🌐 Difference between Frontend, Backend, and Full Stack',
-      '🛠️ Setup tools: VS Code, browser dev tools, extensions',
-      '📄 HTML basics: structure of a website',
-      '🔗 Links, images, lists, tables,anchors, and forms',
-      '🏗️ Semantic HTML (header, footer, nav, section)',
+    img: 'https://i.ibb.co/srHRbYV/web-development.png',
+    title: 'Web Development Course',
+    duration: '16 Weeks | 5 Classes per Week',
+    Mode: 'On-Campus / Online / One-to-One Classes',
+    Fee: '25000', // <-- Uncommented
+    learn: [
+      {
+        heading: "1. Introduction to Web Development & HTML",
+        subParts: [
+          '💡 What is Web Development and how websites work',
+          '🌐 Difference between Frontend, Backend, and Full Stack',
+          '🛠️ Setup tools: VS Code, browser dev tools, extensions',
+          '📄 HTML basics: structure of a website',
+          '🔗 Links, images, lists, tables,anchors, and forms',
+          '🏗️ Semantic HTML (header, footer, nav, section)',
+        ]
+      },
+      {
+        heading: "2. CSS Fundamentals & Layout Design",
+        subParts: [
+          '🎨 What is CSS and how styling works',
+          '🎯 Selectors, colors, fonts, spacing',
+          '📦 Box model and layout understanding',
+          '📐 Flexbox for modern layouts',
+          '🧩 Positioning (absolute, relative, fixed)',
+          '✨ Hover effects, transitions, and animations',
+          '📱 Introduction to responsive design'
+        ]
+      },
+      {
+        heading: "3. Advanced CSS & Responsive Websites",
+        subParts: [
+          '📱 Media queries for mobile-friendly websites',
+          '🖥️ Mobile-first design approach',
+          '📊 Grid system basics',
+          '🎯 UI components design (buttons, cards, navbar)',
+          '⚡ Real-world website layout practice',
+          '🚀 Build responsive business website project'
+        ]
+      },
+      {
+        heading: "4. JavaScript Basics",
+        subParts: [
+          '💡 Introduction to JavaScript and its role',
+          '📦 Variables, data types, and operators',
+          '🔄 Conditions (if/else statements)',
+          '🔁 Loops (for, while)',
+          '⚙️ Simple functions, with parameters and return',
+          '📚 Arrays and basic methods',
+          '🧠 Logic building practice'
+        ]
+      },
+      {
+        heading: "5. JavaScript DOM & Projects",
+        subParts: [
+          '🌐 What is DOM (Document Object Model)',
+          '🎯 Selecting and modifying elements',
+          '🖱️ Event handling (click, input, submit)',
+          '🧩 Dynamic content updates',
+          '📝 Form validation',
+          '🚀 Mini projects: To-do app / calculator / quiz app',
+          '💻 Real interactive website practice'
+        ]
+      },
+      {
+        heading: "6. Tailwind CSS Framework",
+        subParts: [
+          '⚡ Introduction to Tailwind CSS',
+          '🛠️ Utility-first approach explained',
+          '🎨 Building layouts quickly with Tailwind',
+          '📱 Responsive design with Tailwind classes',
+          '🧩 UI components using Tailwind',
+          '🚀 Build landing page project',
+          '💡 Faster design workflow techniques'
+        ]
+      },
+      {
+        heading: "7. React JS Basics",
+        subParts: [
+          '⚛️ What is React and why it is used',
+          '🚀 Setup React project using Vite',
+          '🧩 Components and JSX',
+          '📦 Props and reusable components',
+          '🔄 Hooks (useState, useEffect, useRef)',
+          '🔄 Props drilling problem solve',
+          '🎯 Event handling in React',
+          '⚡ Conditional rendering',
+        ]
+      },
+      {
+        heading: "8. React Projects Github & Deployment",
+        subParts: [
+          '🧠 Build React apps (Counter, Todo App)',
+          '📊 Form handling in React',
+          '🛒 Basic e-commerce UI project (not all',
+          '🧪 Github Basics (not full)',
+          '🌐 Deployment on vecel (only deployment)',
+          '💼 A simple portfolio just for understanding',
+        ]
+      }
+    ],
+    Join: [
+      {
+        heading: "This course is perfect for:",
+        subParts: [
+          '🌱 Beginners who want to start web development from scratch',
+          '🎓 Students looking for high-income digital skills',
+          '💼 Job seekers aiming for web developer roles',
+          '🖥️ Freelancers who want to earn online',
+          '🏢 Business owners wanting to build websites',
+          '💰 Anyone interested in tech career and remote income',
+          '🚀 People who want practical skill-based learning'
+        ]
+      }
+    ],
+    Outcome: [
+      {
+        heading: "By the end of this course, you will be able to:",
+        subParts: [
+          '🚀 Build professional responsive websites',
+          '🎨 Design modern UI layouts using CSS & Tailwind',
+          '⚙️ Add interactivity using JavaScript',
+          '⚛️ Create React-based web applications',
+          '🌐 Deploy websites online for clients or portfolio',
+          '💼 Start freelancing as a web developer',
+          '📈 Build strong foundation for advanced development'
+        ]
+      }
     ]
   },
-  {
-    heading: "2. CSS Fundamentals & Layout Design",
-    subParts: [
-      '🎨 What is CSS and how styling works',
-      '🎯 Selectors, colors, fonts, spacing',
-      '📦 Box model and layout understanding',
-      '📐 Flexbox for modern layouts',
-      '🧩 Positioning (absolute, relative, fixed)',
-      '✨ Hover effects, transitions, and animations',
-      '📱 Introduction to responsive design'
-    ]
-  },
-  {
-    heading: "3. Advanced CSS & Responsive Websites",
-    subParts: [
-      '📱 Media queries for mobile-friendly websites',
-      '🖥️ Mobile-first design approach',
-      '📊 Grid system basics',
-      '🎯 UI components design (buttons, cards, navbar)',
-      '⚡ Real-world website layout practice',
-      '🚀 Build responsive business website project'
-    ]
-  },
-  {
-    heading: "4. JavaScript Basics",
-    subParts: [
-      '💡 Introduction to JavaScript and its role',
-      '📦 Variables, data types, and operators',
-      '🔄 Conditions (if/else statements)',
-      '🔁 Loops (for, while)',
-      '⚙️ Simple functions, with parameters and return',
-      '📚 Arrays and basic methods',
-      '🧠 Logic building practice'
-    ]
-  },
-  {
-    heading: "5. JavaScript DOM & Projects",
-    subParts: [
-      '🌐 What is DOM (Document Object Model)',
-      '🎯 Selecting and modifying elements',
-      '🖱️ Event handling (click, input, submit)',
-      '🧩 Dynamic content updates',
-      '📝 Form validation',
-      '🚀 Mini projects: To-do app / calculator / quiz app',
-      '💻 Real interactive website practice'
-    ]
-  },
-  {
-    heading: "6. Tailwind CSS Framework",
-    subParts: [
-      '⚡ Introduction to Tailwind CSS',
-      '🛠️ Utility-first approach explained',
-      '🎨 Building layouts quickly with Tailwind',
-      '📱 Responsive design with Tailwind classes',
-      '🧩 UI components using Tailwind',
-      '🚀 Build landing page project',
-      '💡 Faster design workflow techniques'
-    ]
-  },
-  {
-    heading: "7. React JS Basics",
-    subParts: [
-      '⚛️ What is React and why it is used',
-      '🚀 Setup React project using Vite',
-      '🧩 Components and JSX',
-      '📦 Props and reusable components',
-      '🔄 Hooks (useState, useEffect, useRef)',
-      '🔄 Props drilling problem solve',
-      '🎯 Event handling in React',
-      '⚡ Conditional rendering',
-    ]
-  },
-  {
-    heading: "8. React Projects Github & Deployment",
-    subParts: [
-      '🧠 Build React apps (Counter, Todo App)',
-      '📊 Form handling in React',
-      '🛒 Basic e-commerce UI project (not all',
-      '🧪 Github Basics (not full)',
-      '🌐 Deployment on vecel (only deployment)',
-      '💼 A simple portfolio just for understanding',
-    ]
-  }
-],
-
-Join: [
-  {
-    heading: "This course is perfect for:",
-    subParts: [
-      '🌱 Beginners who want to start web development from scratch',
-      '🎓 Students looking for high-income digital skills',
-      '💼 Job seekers aiming for web developer roles',
-      '🖥️ Freelancers who want to earn online',
-      '🏢 Business owners wanting to build websites',
-      '💰 Anyone interested in tech career and remote income',
-      '🚀 People who want practical skill-based learning'
-    ]
-  }
-],
-
-Outcome: [
-  {
-    heading: "By the end of this course, you will be able to:",
-    subParts: [
-      '🚀 Build professional responsive websites',
-      '🎨 Design modern UI layouts using CSS & Tailwind',
-      '⚙️ Add interactivity using JavaScript',
-      '⚛️ Create React-based web applications',
-      '🌐 Deploy websites online for clients or portfolio',
-      '💼 Start freelancing as a web developer',
-      '📈 Build strong foundation for advanced development'
-    ]
-  }
-]
-    // Fee: '25000'
-  },
-
+  
   // ===== COURSE 3 =====
   {
     id: 3,
@@ -144,6 +140,7 @@ Outcome: [
     title: 'Microsoft Office Mastery',
     duration: '12 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
+    Fee: '18000', // <-- Uncommented
     learn: [
       {
         heading: 'Introduction to MS Office',
@@ -216,8 +213,7 @@ Outcome: [
           '🧠 Save time and work smarter in any office environment'
         ]
       }
-    ],
-    // Fee: '18000'
+    ]
   },
 
   // ===== COURSE 4 =====
@@ -227,6 +223,7 @@ Outcome: [
     title: 'Spoken English',
     duration: '12 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
+    Fee: '20000', // <-- Added
     learn: [
       {
         heading: 'Course Objective & Syllabus',
@@ -286,8 +283,7 @@ Outcome: [
           '🧠 Gain confidence for interviews, presentations, and meetings'
         ]
       }
-    ],
-    // Fee: '25000'
+    ]
   },
 
   // ===== COURSE 5 =====
@@ -297,6 +293,7 @@ Outcome: [
     title: 'Graphic Designing',
     duration: '12 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
+    Fee: '18000', // <-- Uncommented
     learn: [
       {
         heading: 'Introduction to Graphic Designing',
@@ -356,8 +353,7 @@ Outcome: [
           '🧠 Understand design principles for business impact'
         ]
       }
-    ],
-    // Fee: '18000'
+    ]
   },
 
   // ===== COURSE 6 =====
@@ -367,6 +363,7 @@ Outcome: [
     title: 'AutoCAD Mastery',
     duration: '12 Weeks | 5 classes per Week',
     Mode: 'On-Campus / Online / One-to-One Classes',
+    Fee: '20000', // <-- Uncommented
     learn: [
       {
         heading: 'Introduction to AutoCAD',
@@ -435,8 +432,7 @@ Outcome: [
           '🧠 Offer services confidently as a freelancer or professional'
         ]
       }
-    ],
-    // Fee: '20000'
+    ]
   }
 ];
 

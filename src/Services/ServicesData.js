@@ -1,311 +1,267 @@
 const ServicesData = [
-  // ==========================
-  // Service 01: Web Development
-  // ==========================
   {
     id: 1,
-    slug: "web-development",
-    title:
-      "Professional Web Development Services – Custom, Modern and Fully-Functional Websites for Every Business",
-    image:
-      "https://www.innovativesolutions.com.pk/wp-content/uploads/2019/04/Web-Development.jpg",
+    slug: "brand-logo-to-3d",
+    title: "Brand Logo to 3D Rendering",
+    basePrice: 5000,
+    image: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?auto=format&fit=crop&q=80&w=1000", // 3D/Neon abstract representation
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1634574744474-cefc03714ee6?auto=format&fit=crop&q=80&w=600"
+    ],
     desc: [
       {
-        description:
-          "Hum aap ko Professional, Modern aur Fully-Functional Websites provide karte hain jo aap ke business ko online kamyabi ki taraf le jaane ke liye tayar ki jati hain.",
-        bullets: []
-      },
-      {
-        description: "🌐 Our Complete Web Solutions:",
-        bullets: [
-          "🛒 **Shopify E-Commerce Stores** (Sales-ready setup)",
-          "💻 **Custom Coding Websites** (MERN Stack / PHP)",
-          "🌐 **WordPress Development** (Elementor / Divi)",
-          "📱 **Responsive Design** (Mobile, Tablet & PC Optimized)",
-          "⚡ **Speed Optimization** (Fast loading pages)",
-          "🔒 **Security Integration** (SSL & Anti-Hacking)",
-          "🎨 **UI/UX Design** (User-friendly interface)",
-          "🔌 **API Integration** (Payment Gateways, Maps, etc.)",
-          "🛠️ **Bug Fixing & Maintenance**",
-          "📈 **Basic SEO Setup** (Google Indexing)"
-        ]
-      },
-      {
-        description: "Why Choose Our Web Services?",
-        bullets: [
-          "🔥 100% Custom & Unique Design",
-          "🚀 High-Performance & Fast Speed",
-          "📱 Mobile & SEO Friendly Structure",
-          "💬 Live WhatsApp Chat Integration",
-          "📝 Easy-to-Manage Admin Panel",
-          "🔄 Social Media Integration",
-          "👨‍💻 30 Days Free Support After Delivery",
-          "💰 Affordable Pricing Packages",
-          "⏱️ On-Time Project Delivery",
-          "✨ Professional & Clean Code"
-        ]
-      },
-      {
-        description: "Final Delivery Includes:",
-        bullets: [
-          "🎉 Fully Functional Live Website",
-          "📂 Source Code & Backup Files",
-          "🎥 Video Tutorial (How to edit website)",
-          "📧 Professional Business Email Setup",
-          "🔐 Admin Login Credentials"
-        ]
+        heading: "Transform your flat 2D logo into a stunning 3D masterpiece.",
+        description: "Stand out with a highly realistic, premium 3D version of your brand logo. We convert your standard 2D designs into high-definition 3D graphics perfect for videos, websites, and physical printing.",
+        bullets: ["High-Resolution 4K Render", "Metallic, Glass, & Neon Effects", "Transparent PNG & Source Files"]
       }
     ],
-
-    formOptions: [
-      "Restaurant / Cafe Website",
-      "School / Academy Website",
-      "Hotel / Hostel Website",
-      "Real Estate Website",
-      "E-commerce Store (Online Shop)",
-      "Corporate / Business Website",
-      "Portfolio / CV Website",
-      "Blog / News Website",
-      "Landing Page (One Pager)",
-      "Web Application / SaaS"
-    ],
-
-    SecformOptions: [
-      "Standard Delivery (5-7 Days)",
-      "Fast Track (3-4 Days)",
-      "Urgent Launch (24-48 Hours)"
-    ],
-
+    formOptions: ["Standard 3D Logo", "Animated 3D Logo", "Neon Glow Effect"],
+    SecformOptions: ["2 Days", "24 Hours"],
+    ThirdformOptions: ["PNG/JPEG", "Source File", "Animation File"]
   },
-
-  // ==========================
-  // Service 02: Shopify Store
-  // ==========================
   {
     id: 2,
-    slug: "shopify-store",
-    title:
-      "Premium Shopify E-Commerce Store – Ready-Made Online Store with Graphics, Sliders, Content, Domain & Hosting",
-    image:
-      "https://prosglobalinc.com/wp-content/uploads/2022/03/Shopify-development-services.jpg",
-
+    slug: "product-graphic-creation",
+    title: "Product Graphic Creation",
+    basePrice: 3000,
+    image: "https://images.unsplash.com/photo-1627384113972-f4c0392fe5aa?auto=format&fit=crop&q=80&w=1000", // Product mockup scene
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600"
+    ],
     desc: [
       {
-        description:
-          "Apna Online Business shuru karein! Hum aap ko Shopify Online Stores complete branding aur automation ke sath deliver karte hain.",
-        bullets: []
-      },
-      {
-        description: "🛍️ Complete Shopify Store Setup:",
-        bullets: [
-          "🎨 **Premium Theme Customization** (High Converting)",
-          "📦 **Winning Product Research** (For Dropshipping)",
-          "🖼️ **Professional Logo & Banner Design**",
-          "📱 **Mobile Responsive Layout**",
-          "💳 **Payment Gateway Setup** (COD / Stripe / PayPal)",
-          "🚚 **Shipping Rates & Zones Setup**",
-          "🛒 **Checkout Process Optimization**",
-          "🔔 **Sales Pop-up & Urgency Apps**",
-          "📢 **Social Media Pixel Integration**",
-          "📝 **Legal Pages** (Privacy Policy, Terms, Refunds)"
-        ]
-      },
-      {
-        description: "✨ Why Our Stores Generate Sales?",
-        bullets: [
-          "🚀 Fast Loading Speed (Under 3 seconds)",
-          "📸 High-Quality Product Images & GIFs",
-          "✍️ SEO Optimized Product Descriptions",
-          "⭐ Customer Reviews Import",
-          "🔄 Automated Order Fulfillment Setup",
-          "💬 Live Chat Support Button",
-          "📧 Email Marketing Setup (Klaviyo)",
-          "🏷️ Discount Codes & Offers Setup",
-          "📊 Google Analytics Integration",
-          "🧠 1-Hour Consultation on How to Run Ads"
-        ]
+        heading: "Eye-catching product graphics for social media & e-commerce.",
+        description: "Increase your sales with visually appealing product mockups. We take your raw product images and turn them into highly-converting advertising graphics with premium backgrounds and lighting.",
+        bullets: ["Amazon/Shopify Optimized", "Lifestyle Mockups", "High-Converting Ad Creatives"]
       }
     ],
-
-    formOptions: [
-      "Clothing & Fashion Store",
-      "Cosmetics & Beauty Shop",
-      "Electronics & Gadgets Store",
-      "Home & Furniture Store",
-      "Jewelry & Accessories",
-      "Kids & Toys Store",
-      "Pet Supplies Store",
-      "One Product Store (Dropshipping)",
-      "General Store (Multiple Niches)"
-    ],
-
-    SecformOptions: [
-      "Basic Store (Ready in 4-5 Days)",
-      "Professional Store (Ready in 3 Days)",
-      "Premium Branded Store (Ready in 48 Hours)"
-    ],
-
+    formOptions: ["Social Media Post", "E-commerce Listing", "Ad Creative"],
+    SecformOptions: ["Standard (3 Days)", "Urgent (24 Hours)"],
+    ThirdformOptions: ["Single Image", "Carousel", "Full Campaign"]
   },
-
-  // ==========================
-  // Service 03: MS Office Services
-  // ==========================
   {
     id: 3,
-    slug: "microsoft-office-services",
-    title:
-      "Professional Microsoft Office Services – Expert Document Creation, Data Management & Business Presentation",
-    image:
-      "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/323943644/original/14b62fc26091a391129450b83ec53a3120f63207/provide-pro-service-in-ms-office.png",
-
+    slug: "ai-voice-generation",
+    title: "AI Voice Generation in Urdu",
+    basePrice: 2000,
+    image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=1000", // Soundwaves / AI tech
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1516280440502-a2fc98628078?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=600"
+    ],
     desc: [
       {
-        description:
-          "Professional Documents, Accurate Data Entry aur High-Impact Presentations ke liye humara expert service choose karein.",
-        bullets: []
-      },
-      {
-        description: "📄 MS Word Expert Services:",
-        bullets: [
-          "✍️ Professional Typing (Urdu / English)",
-          "📘 CV / Resume & Cover Letter Design",
-          "📝 Assignment & Thesis Formatting",
-          "📑 Table of Contents & Indexing",
-          "📜 Legal Agreements & Contracts",
-          "🔄 PDF to Word / Word to PDF Conversion",
-          "🖼️ Letterhead & Invoice Designing",
-          "📖 eBook Formatting & Layout",
-          "🔍 Proofreading & Editing",
-          "📨 Mail Merge Setup"
-        ]
-      },
-      {
-        description: "📊 MS Excel Data Solutions:",
-        bullets: [
-          "📥 Fast & Accurate Data Entry",
-          "🔢 Complex Formulas (VLOOKUP, IF, INDEX)",
-          "📊 Dynamic Dashboards & Graphs",
-          "💹 Profit/Loss & Balance Sheets",
-          "📉 Pivot Tables & Charts",
-          "🧾 Inventory Management Sheets",
-          "📅 Salary & Attendance Sheets",
-          "🧹 Data Cleaning & Sorting",
-          "🔗 Google Sheets Integration",
-          "🤖 Macro & VBA Automation"
-        ]
-      },
-      {
-        description: "🎨 MS PowerPoint Presentations:",
-        bullets: [
-          "🚀 Investor Pitch Decks",
-          "🏢 Corporate Company Profiles",
-          "🎓 Educational/University Slides",
-          "🎥 Slide Animations & Transitions",
-          "📊 Infographics & Charts Integration",
-          "🎤 Voice-over Synchronization",
-          "📹 Video Presentation Export",
-          "🎨 Custom Template Design",
-          "📑 Handouts & Notes Preparation",
-          "✨ Modern & Clean Look"
-        ]
+        heading: "Ultra-realistic AI voiceovers in native Urdu accents.",
+        description: "Get studio-quality AI-generated Urdu voiceovers for your YouTube videos, documentaries, and ads without the robotic tone.",
+        bullets: ["Human-like Emotions", "Multiple Accents & Ages", "Fast Delivery"]
       }
     ],
-
-    formOptions: [
-      "Word Document Formatting",
-      "Excel Data Analysis/Entry",
-      "PowerPoint Presentation",
-      "CV / Resume Making",
-      "Assignment / Thesis Work",
-      "Convert PDF to Word/Excel"
-    ],
-
-    SecformOptions: [
-      "Standard Delivery (2-3 Days)",
-      "Fast Delivery (24 Hours)",
-      "Urgent / Emergency (Within 6-12 Hours)"
-    ],
-
-    ThirdformOptions: [
-      "English Language",
-      "Urdu (Inpage/Unicode)",
-      "Roman Urdu",
-      "Mathematics/Equations"
-    ]
+    formOptions: ["YouTube Video", "Commercial Ad", "Documentary"],
+    SecformOptions: ["Under 5 Mins", "5-10 Mins", "10+ Mins"],
+    ThirdformOptions: ["Male Voice", "Female Voice"]
   },
-
-  // ==========================
-  // Service 04: AutoCAD
-  // ==========================
   {
     id: 4,
-    slug: "autocad-drafting",
-    title:
-      "Professional AutoCAD Drafting & 2D/3D Architectural Design Services – Complete House Maps & Engineering Drawings",
-    image:
-      "https://microdra.com/wp-content/uploads/2021/06/CAD-Drafting-Services-3-1024x576.png",
-
+    slug: "urdu-voice-over",
+    title: "Urdu Voice Over (Male + Female)",
+    basePrice: 4000,
+    image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=1000", // Professional studio mic
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1528459801415-a3c51c2c1924?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1516223725307-6f76b9ec8742?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1603048297172-c92544798d5e?auto=format&fit=crop&q=80&w=600"
+    ],
     desc: [
       {
-        description:
-          "Apne ghar ya plaza ka naksha banwayein! Hum provide karte hain Professional AutoCAD Drafting, 2D/3D Planning, Structural Drawings & Approval Maps.",
-        bullets: []
-      },
-      {
-        description: "🏠 2D Architectural Planning:",
-        bullets: [
-          "📏 Detailed Floor Plans (Ground & First)",
-          "🚪 Door & Window Schedule",
-          "📐 Furniture Layout Planning",
-          "🪟 Ventilation & Sunlight Analysis",
-          "🛁 Kitchen & Bath Detailed Layouts",
-          "🏗️ Foundation & Column Placement",
-          "🚽 Sewerage & Drainage Plan",
-          "⚡ Electrical & Plumbing Drawing",
-          "🚧 Boundary Wall Design",
-          "📋 Submission Drawings (LDA, CDA, DHA Standards)"
-        ]
-      },
-      {
-        description: "🏢 3D Visualization & Modeling:",
-        bullets: [
-          "🏙️ 3D Front Elevation (Modern/Classic)",
-          "🏡 3D Exterior Walkthrough",
-          "🛋️ 3D Interior Rendering (Bedroom/TV Lounge)",
-          "💡 Lighting & Texture Effects",
-          "🎥 360-Degree View Animation",
-          "🌳 Landscape & Garden Design",
-          "🎨 Color Scheme Selection",
-          "🏗️ Isometric Views",
-          "🖼️ High-Quality Rendered Images",
-          "🛠️ Material Details (Tiles, Wood, Glass)"
-        ]
+        heading: "Professional human voiceovers recorded in a studio.",
+        description: "Deep, engaging, and professional Urdu voiceovers by native artists for maximum impact on your audience.",
+        bullets: ["Broadcast Quality Audio", "Commercial Rights Included", "Expressive & Engaging"]
       }
     ],
-
-    formOptions: [
-      "2D House Map (Floor Plan)",
-      "3D Front Elevation",
-      "Full Architectural Set (2D + 3D)",
-      "Commercial Plaza Design",
-      "Renovation / Remodeling Plan",
-      "Electric & Plumbing Layout",
-      "Structural Drawings",
-      "Convert PDF/Image to AutoCAD (DWG)"
+    formOptions: ["TV/Radio Commercial", "Corporate Video", "Narration"],
+    SecformOptions: ["1-2 Days", "24 Hours"],
+    ThirdformOptions: ["Male Artist", "Female Artist", "Both"]
+  },
+  {
+    id: 5,
+    slug: "poster-creation",
+    title: "Creative Poster Design",
+    basePrice: 1500,
+    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&q=80&w=1000", // Graphic design posters
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1626785774625-ddc1e4a5b331?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&q=80&w=600"
     ],
-
-    SecformOptions: [
-      "Standard Timeline (5-7 Days)",
-      "Priority Service (3-4 Days)",
-      "Urgent Submission (24-48 Hours)"
+    desc: [
+      {
+        heading: "Stunning event, business, and social media posters.",
+        description: "We design posters that grab attention instantly, perfect for digital marketing or physical printing.",
+        bullets: ["Print-Ready Files", "Custom Illustrations", "Brand-Aligned Colors"]
+      }
     ],
-
-    ThirdformOptions: [
-      "Small Plot (3 - 5 Marla)",
-      "Medium Plot (7 - 10 Marla)",
-      "Large Plot (1 Kanal & Above)",
-      "Commercial Area"
-    ]
+    formOptions: ["Event Poster", "Sale/Promo Poster", "Educational Poster"],
+    SecformOptions: ["2 Days", "24 Hours Delivery"],
+    ThirdformOptions: ["Digital Use", "Print Quality (CMYK)"]
+  },
+  {
+    id: 6,
+    slug: "youtube-thumbnail",
+    title: "YouTube Thumbnail Design",
+    basePrice: 1000,
+    image: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&q=80&w=1000", // YouTube Screen
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1611162618479-ee4d1e03328e?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=600"
+    ],
+    desc: [
+      {
+        heading: "High-CTR thumbnails that make viewers click.",
+        description: "Boost your YouTube views with vibrant, high-contrast thumbnails tailored to your niche. A good thumbnail is the difference between 100 and 100,000 views.",
+        bullets: ["High Click-Through Rate", "Custom Typography", "Color Grading & Effects"]
+      }
+    ],
+    formOptions: ["Tech/Documentary", "Vlog/Lifestyle", "Gaming"],
+    SecformOptions: ["Standard (2 Days)", "Urgent (12 Hours)"],
+    ThirdformOptions: ["1 Thumbnail", "Bundle (5 Thumbnails)"]
+  },
+  {
+    id: 7,
+    slug: "cv-resume-creation",
+    title: "CV & Resume Creation",
+    basePrice: 2000,
+    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=1000", // Resume on desk
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1586282391129-76a6df230234?auto=format&fit=crop&q=80&w=600"
+    ],
+    desc: [
+      {
+        heading: "ATS-friendly and professional resume designs.",
+        description: "Land your dream job with a beautifully formatted, modern, and keyword-optimized resume that passes ATS scanners.",
+        bullets: ["ATS Optimized Formatting", "Cover Letter Included", "Modern Clean Layouts"]
+      }
+    ],
+    formOptions: ["Entry Level", "Professional Level", "Executive Level"],
+    SecformOptions: ["Standard Delivery", "24 Hour Rush"],
+    ThirdformOptions: ["PDF Format", "Editable Word/Canva"]
+  },
+  {
+    id: 8,
+    slug: "ms-word-composing",
+    title: "MS Word Composing & Formatting",
+    basePrice: 1500,
+    image: "https://images.unsplash.com/photo-1618042164219-62c820f10723?auto=format&fit=crop&q=80&w=1000", // Document editing on screen
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1568051243851-f9b1362108ed?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?auto=format&fit=crop&q=80&w=600"
+    ],
+    desc: [
+      {
+        heading: "Expert formatting, typing, and document design.",
+        description: "From academic thesis formatting to professional business reports, we handle all your MS Office needs with precise alignment and styling.",
+        bullets: ["Error-Free Typing", "Advanced Formatting", "PDF to Word Conversion"]
+      }
+    ],
+    formOptions: ["Thesis/Assignment", "Business Report", "Book Formatting"],
+    SecformOptions: ["3-5 Days", "1-2 Days"],
+    ThirdformOptions: ["English", "Urdu (Inpage)"]
+  },
+  {
+    id: 9,
+    slug: "2d-house-map",
+    title: "2D House Map Creation",
+    basePrice: 8000,
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1000", // Blueprint on a desk
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1536895058696-a69b1c7ba34d?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=600"
+    ],
+    desc: [
+      {
+        heading: "Professional AutoCAD floor plans and layouts.",
+        description: "Accurate, scaled 2D house maps designed to maximize space and comply with building standards.",
+        bullets: ["Detailed Measurements", "Furniture Layouts", "Fast Revisions"]
+      }
+    ],
+    formOptions: ["3-5 Marla", "10 Marla", "1 Kanal +"],
+    SecformOptions: ["Standard (4 Days)", "Urgent (2 Days)"],
+    ThirdformOptions: ["PDF Blueprint", "AutoCAD Source File"]
+  },
+  {
+    id: 10,
+    slug: "web-development",
+    title: "Full Stack Website Development",
+    basePrice: 30000,
+    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1000", // Laptop with code
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600"
+    ],
+    desc: [
+      {
+        heading: "Modern, responsive, and high-performance websites.",
+        description: "We build custom websites from scratch that elevate your brand and drive actual business results. SEO friendly and lightning fast.",
+        bullets: ["Custom UI/UX Design", "SEO Optimized Code", "Fast Loading Speeds"]
+      }
+    ],
+    formOptions: ["Corporate Website", "Portfolio", "Custom Web App"],
+    SecformOptions: ["1-2 Weeks", "3-4 Weeks"],
+    ThirdformOptions: ["MERN Stack", "WordPress", "Custom HTML/CSS"]
+  },
+  {
+    id: 11,
+    slug: "ecommerce-store",
+    title: "E-commerce Store Development",
+    basePrice: 25000,
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000", // Payment/Shopify screen
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&q=80&w=600"
+    ],
+    desc: [
+      {
+        heading: "High-converting Shopify & WooCommerce stores.",
+        description: "Launch your online business with a fully automated, payment-ready e-commerce store designed for maximum sales conversions.",
+        bullets: ["Payment Gateway Setup", "Premium Themes", "Product Uploads"]
+      }
+    ],
+    formOptions: ["Shopify Store", "WooCommerce", "Custom E-com"],
+    SecformOptions: ["Basic Setup", "Premium Branding"],
+    ThirdformOptions: ["Single Product", "Multi-Category"]
+  },
+  {
+    id: 12,
+    slug: "facebook-ads",
+    title: "Facebook Ads Management",
+    basePrice: 15000,
+    image: "https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&q=80&w=1000", // Meta dashboard
+    portfolioImages: [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=600",
+      "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=600"
+    ],
+    desc: [
+      {
+        heading: "Data-driven Meta ads that scale your business.",
+        description: "Stop wasting money on bad ads. We create, test, and scale highly profitable Facebook and Instagram campaigns using advanced pixel tracking.",
+        bullets: ["Pixel Integration", "Audience Targeting", "Creative Ad Copies"]
+      }
+    ],
+    formOptions: ["Lead Generation", "E-commerce Sales", "Brand Awareness"],
+    SecformOptions: ["1 Month Retainer", "Ad Setup Only"],
+    ThirdformOptions: ["$500-$1000 Ad Spend", "$1000+ Ad Spend"]
   }
 ];
 
