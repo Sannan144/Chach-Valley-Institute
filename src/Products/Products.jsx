@@ -499,12 +499,37 @@ const Products = () => {
                                 </div>
                               ))}
 
-                              {/* Custom Quantity Controller */}
+                              {/* Custom Quantity Controller with Typing & Suggestion */}
                               <div className="flex items-center justify-between bg-white p-3 rounded-xl border border-gray-200">
                                  <label className="font-bold text-gray-600 capitalize">Quantity:</label>
                                  <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-lg p-1">
                                     <button type="button" onClick={() => handleQuantityChange(-1)} className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-[#265336] font-bold text-lg transition-colors">-</button>
-                                    <span className="w-6 text-center font-bold text-gray-800">{formData.quantity}</span>
+                                    <div className="relative flex justify-center items-center">
+                                       <input 
+                                           type="number"
+                                           value={formData.quantity}
+                                           onChange={(e) => {
+                                               const val = e.target.value;
+                                               setFormData(prev => ({ ...prev, quantity: val === "" ? "" : parseInt(val) }));
+                                           }}
+                                           onBlur={() => {
+                                               if (!formData.quantity || formData.quantity < 1) {
+                                                   setFormData(prev => ({ ...prev, quantity: 1 }));
+                                               }
+                                           }}
+                                           className="w-12 text-center font-bold text-gray-800 bg-transparent outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                                           style={{ MozAppearance: 'textfield' }}
+                                           min="1"
+                                       />
+                                       {formData.quantity == 2 && (
+                                           <div 
+                                               onClick={() => setFormData(prev => ({...prev, quantity: 1000}))}
+                                               className="absolute top-[120%] left-1/2 -translate-x-1/2 bg-[#265336] text-white text-[11px] px-3 py-1.5 rounded-md shadow-xl cursor-pointer whitespace-nowrap z-50 animate-bounce after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-b-[#265336] hover:bg-[#1a3a26]"
+                                           >
+                                               1000 quantity?
+                                           </div>
+                                       )}
+                                    </div>
                                     <button type="button" onClick={() => handleQuantityChange(1)} className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-[#265336] font-bold text-lg transition-colors">+</button>
                                  </div>
                               </div>
@@ -514,12 +539,37 @@ const Products = () => {
                               {/* Reduced Text Size for Price */}
                               <div className="text-2xl md:text-3xl font-black text-[#265336] mb-1">{currentPrice}</div>
                               
-                              {/* Custom Quantity Controller */}
+                              {/* Custom Quantity Controller with Typing & Suggestion */}
                               <div className="flex items-center justify-between bg-white p-3 rounded-xl border border-gray-200">
                                  <label className="font-bold text-gray-600 capitalize">Quantity:</label>
                                  <div className="flex items-center gap-3 bg-gray-50 border border-gray-200 rounded-lg p-1">
                                     <button type="button" onClick={() => handleQuantityChange(-1)} className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-[#265336] font-bold text-lg transition-colors">-</button>
-                                    <span className="w-6 text-center font-bold text-gray-800">{formData.quantity}</span>
+                                    <div className="relative flex justify-center items-center">
+                                       <input 
+                                           type="number"
+                                           value={formData.quantity}
+                                           onChange={(e) => {
+                                               const val = e.target.value;
+                                               setFormData(prev => ({ ...prev, quantity: val === "" ? "" : parseInt(val) }));
+                                           }}
+                                           onBlur={() => {
+                                               if (!formData.quantity || formData.quantity < 1) {
+                                                   setFormData(prev => ({ ...prev, quantity: 1 }));
+                                               }
+                                           }}
+                                           className="w-12 text-center font-bold text-gray-800 bg-transparent outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+                                           style={{ MozAppearance: 'textfield' }}
+                                           min="1"
+                                       />
+                                       {formData.quantity == 2 && (
+                                           <div 
+                                               onClick={() => setFormData(prev => ({...prev, quantity: 1000}))}
+                                               className="absolute top-[120%] left-1/2 -translate-x-1/2 bg-[#265336] text-white text-[11px] px-3 py-1.5 rounded-md shadow-xl cursor-pointer whitespace-nowrap z-50 animate-bounce after:content-[''] after:absolute after:bottom-full after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-transparent after:border-b-[#265336] hover:bg-[#1a3a26]"
+                                           >
+                                               1000 quantity?
+                                           </div>
+                                       )}
+                                    </div>
                                     <button type="button" onClick={() => handleQuantityChange(1)} className="w-8 h-8 flex items-center justify-center text-gray-500 hover:text-[#265336] font-bold text-lg transition-colors">+</button>
                                  </div>
                               </div>
@@ -730,7 +780,7 @@ const Products = () => {
 
       {/* --- FLOATING WHATSAPP BUTTON --- */}
       <a 
-        href="https://wa.me/923191942002?text=Hello! I need some help with my order." 
+        href="https://wa.me/923125650852?text=Hello! I need some help with my order." 
         target="_blank" 
         rel="noreferrer"
         className="fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white p-4 rounded-full shadow-xl z-[90] hover:scale-110 transition-transform duration-300"

@@ -4,17 +4,10 @@ import courses from "./CoursesData";
 // import Logo from "../Logo/Logo"; // Uncomment if needed
 // import Footer from "../Footer/Footer"; // Uncomment if needed
 import CourseDetails from "./CourseDetails";
-import AdmissionForm from "./AdmissionForm";
 
 const OurCourses = () => {
   const [selectedCourse, setSelectedCourse] = useState(null);
-  const [showForm, setShowForm] = useState(false);
   const [copiedId, setCopiedId] = useState(null);
-  const [formData, setFormData] = useState({
-    name: "",
-    address: "",
-    education: ""
-  });
 
   const discounts = ["20%", "25%", "30%", "35%"];
 
@@ -28,9 +21,10 @@ const OurCourses = () => {
     }
   }, []);
 
+  // Modal open hone par background scroll roknay ke liye
   useEffect(() => {
-    document.body.style.overflow = showForm || selectedCourse ? "hidden" : "auto";
-  }, [showForm, selectedCourse]);
+    document.body.style.overflow = selectedCourse ? "hidden" : "auto";
+  }, [selectedCourse]);
 
   // --- COPY LINK FUNCTION ---
   const handleCopyLink = (e, id) => {
@@ -43,15 +37,6 @@ const OurCourses = () => {
       setTimeout(() => setCopiedId(null), 2000);
     });
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { name, address, education } = formData;
-    const message = `📚 *Admission Request*\n\n🎓 *Course:* ${selectedCourse.title}\n\n🪪 *Name:* ${name}\n🏠 *Address:* ${address}\n🎓 *Education:* ${education}`;
-    window.open(`https://wa.me/923315703284?text=${encodeURIComponent(message)}`, "_blank");
-  };
-
-  const resetForm = () => setFormData({ name: "", address: "", education: "" });
 
   return (
     <div className="bg-[#f8faf9] min-h-screen font-sans selection:bg-[#265336] selection:text-white">
@@ -104,11 +89,7 @@ const OurCourses = () => {
             return (
               <div
                 key={course.id}
-                onClick={() => {
-                  setSelectedCourse(course);
-                  setShowForm(false);
-                  resetForm();
-                }}
+                onClick={() => setSelectedCourse(course)}
                 className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer group flex flex-col h-full border border-gray-100 hover:border-[#10B981]/50 transform hover:-translate-y-2"
               >
                 {/* Card Image Wrapper */}
@@ -168,7 +149,7 @@ const OurCourses = () => {
 
                   <div className="mt-auto pt-4 border-t border-gray-100">
                     <button className="w-full bg-gray-50 group-hover:bg-[#265336] text-[#265336] group-hover:text-white font-bold py-3 rounded-xl transition-all duration-300 flex flex-col items-center justify-center gap-0.5">
-                      <span className="uppercase tracking-wider text-sm">View Details</span>
+                      <span className="uppercase tracking-wider text-sm">View Details/Apply Now</span>
                       <span className="font-urdu text-xs opacity-80">کورس کی تفصیلات دیکھیں</span>
                     </button>
                   </div>
@@ -179,25 +160,16 @@ const OurCourses = () => {
         </div>
       </div>
 
-      {/* --- MODALS --- */}
-      {selectedCourse && !showForm && (
+      {/* --- COURSE DETAILS MODAL --- */}
+      {selectedCourse && (
         <CourseDetails
           course={selectedCourse}
           onClose={() => {
             setSelectedCourse(null);
             window.history.pushState({}, "", window.location.pathname);
           }}
-          onOpenForm={() => setShowForm(true)}
-        />
-      )}
-
-      {selectedCourse && showForm && (
-        <AdmissionForm
-          course={selectedCourse}
-          onClose={() => setShowForm(false)}
-          formData={formData}
-          setFormData={setFormData}
-          onSubmit={handleSubmit}
+          // Yahan maine aapka Google form link laga diya hai
+          onOpenForm={() => window.open("https://forms.gle/HFPcgFmfuW16VkrX9", "_blank")}
         />
       )}
     </div>
