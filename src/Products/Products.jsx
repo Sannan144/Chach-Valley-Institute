@@ -187,7 +187,7 @@ const Products = () => {
 
   // --- WHATSAPP CHECKOUT LOGIC ---
   const sendToWhatsApp = () => {
-    const phoneNumber = "923191942002";
+    const phoneNumber = "923125650852";
     let text = "";
 
     if (formData.isCartCheckout) {
