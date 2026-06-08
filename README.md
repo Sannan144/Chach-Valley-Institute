@@ -1,12 +1,26 @@
-# React + Vite
+# Chach Valley Institute Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A complete Institute Management & E-learning website built for Chach Valley Institute.  
+**Live Demo:** https://www.chachvalley.site/  
+**GitHub Repo:** https://github.com/Sannan144/Chach-Valley-Institute
 
-Currently, two official plugins are available:
+### 📌 Project Overview
+This website was developed for a client who needed a professional online platform for their institute. The main goal was to showcase courses, products, and services, while providing students an easy way to explore and connect with the institute.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Key Features
+- **Course Catalog**: Display all courses with details, duration, and fees
+- **Products & Services Section**: Showcase institute offerings in a clean layout  
+- **Responsive Design**: Works perfectly on mobile, tablet, and desktop
+- **Contact Form**: Easy way for students/parents to get in touch
+- **Admin Friendly**: Simple structure to add/update courses and content
 
-## Expanding the ESLint configuration
+### 🛠 Tech Stack
+**Frontend:** HTML5, CSS3, JavaScript  
+**Backend:** Python, Flask  
+**Database:** MySQL  
+**Styling:** Custom CSS + Responsive Design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🚀 How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sannan144/Chach-Valley-Institute.git
